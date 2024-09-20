@@ -1,29 +1,34 @@
 import { useState } from 'react';
-import axios from 'axios';
 
-export default function ResumeParser() {
-  const [file, setFile] = useState(null);
-  const [parsedData, setParsedData] = useState('');
+const ResumeParser = () => {
+  const [parsedData, setParsedData] = useState(null);
 
-  const handleFileUpload = (event) => {
-    setFile(event.target.files[0]);
-  };
-
-  const handleParseResume = async () => {
+  const handleFileUpload = async (event) => {
+    const file = event.target.files[0];
     const formData = new FormData();
     formData.append('file', file);
 
-    // You would send this file to an API for parsing (e.g., OpenAI's API)
-    const response = await axios.post('/api/parse-resume', formData);
-    setParsedData(response.data.summary);
+    // Use fetch() instead of axios
+    const res = await fetch('/api/parse-resume', {
+      method: 'POST',
+      body: formData,
+    });
+    
+    if (res.ok) {
+      const data = await res.json();
+      setParsedData(data);
+    } else {
+      console.error('Error parsing resume');
+    }
   };
 
   return (
     <div>
-      <h1>Upload Your Resume</h1>
+      <h1>Resume Parser</h1>
       <input type="file" onChange={handleFileUpload} />
-      <button onClick={handleParseResume}>Parse Resume</button>
-      {parsedData && <div>{parsedData}</div>}
+      {parsedData && <pre>{JSON.stringify(parsedData, null, 2)}</pre>}
     </div>
   );
-}
+};
+
+export default ResumeParser;
