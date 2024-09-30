@@ -5,7 +5,8 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link href="/dist/output.css" rel="stylesheet" /> {/* Linking the output CSS here */}
+        {/* Tailwind CSS via CDN */}
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
       </Head>
       <body>
         <Main />
