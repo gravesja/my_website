@@ -1,5 +1,8 @@
-import "@/styles/globals.css";
+// _app.js or _app.tsx
+import '../dist/output.css'; // Correct path to your output.css
 
-export default function App({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
+
+export default MyApp;
