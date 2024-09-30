@@ -19,8 +19,7 @@ const ResumePage = () => {
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8 text-purple-800">My Resume</h1>
-
-
+        <h1 className="text-4xl font-bold mb-8 text-purple-800">Please navigate to the bottom right corner of screen for more info.</h1>
           {/* Personal Summary Section */}
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-purple-700 mb-4">Personal Summary</h2>
