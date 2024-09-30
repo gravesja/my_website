@@ -19,9 +19,9 @@ const ResumePage = () => {
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8 text-purple-800">My Resume</h1>
-        <h1 className="text-4xl font-bold mb-8 text-purple-800">Please navigate to the bottom right corner of screen for more info.</h1>
           {/* Personal Summary Section */}
           <section className="mb-10">
+            <h2 className="text-2xl font-bold text-purple-700 mb-4">Personal Summary</h2>
             <h2 className="text-2xl font-bold text-purple-700 mb-4">Personal Summary</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
               Passionate and dedicated IT professional with experience in network administration, system troubleshooting, and web development. Skilled at integrating creative problem-solving with technical expertise to develop reliable and efficient systems. Currently focusing on enhancing web development skills with AI and dynamic applications.
