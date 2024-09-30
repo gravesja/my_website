@@ -2,7 +2,7 @@ export default function Resume() {
     return (
       <div className="min-h-screen bg-gray-100 py-12">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-8 text-purple-800">My Resume</h1>
+          <h1 className="text-4xl font-bold mb-8 text-purple-800">My  Example Resume</h1>
   
           {/* Personal Summary Section */}
           <section className="mb-10">
@@ -24,15 +24,18 @@ export default function Resume() {
                 <li>Manage and configure network switches using PuTTY and ExtremeCloud IQ Pilot.</li>
                 <li>Develop and teach networking seminars for university staff and students.</li>
                 <li>Collaborate with network and system administrators to optimize network performance.</li>
+                <li>Top course instructor of the year, providing in-depth networking tutorials and hands-on labs.</li>
+                <li>Designed custom graphics and manuals for course materials.</li>
               </ul>
             </div>
   
             <div className="mb-6">
-              <h3 className="text-xl font-semibold text-purple-800">Course Instructor</h3>
-              <p className="text-gray-600 italic">Kean University, 2024</p>
+              <h3 className="text-xl font-semibold text-purple-800">IT Technician </h3>
+              <p className="text-gray-600 italic">September 2022 -March 2024</p>
               <ul className="list-disc list-inside text-gray-700 mt-2">
-                <li>Top course instructor of the year, providing in-depth networking tutorials and hands-on labs.</li>
-                <li>Designed custom graphics and manuals for course materials.</li>
+                <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and other peripheral devices.</li>
+                <li>Participated in multistage projects and deployments across multiple offices and computer labs.</li>
+               <li>Perform system troubleshooting repairs to laptops, projectors, and desktops.</li>
               </ul>
             </div>
           </section>
@@ -42,7 +45,7 @@ export default function Resume() {
             <h2 className="text-2xl font-bold text-purple-700 mb-4">Education</h2>
   
             <div className="mb-6">
-              <h3 className="text-xl font-semibold text-purple-800">BSc Information Technology</h3>
+              <h3 className="text-xl font-semibold text-purple-800">Bachelor of Science in Information Technology/Cybersecurity</h3>
               <p className="text-gray-600 italic">Kean University, Expected Graduation: 2025</p>
             </div>
           </section>
@@ -66,16 +69,6 @@ export default function Resume() {
                 <li>Python & Django</li>
               </ul>
             </div>
-          </section>
-  
-          {/* Certifications Section */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-purple-700 mb-4">Certifications</h2>
-  
-            <ul className="list-disc list-inside text-gray-700">
-              <li>CompTIA Network+ (Expected Dec 2024)</li>
-              <li>Cisco Threat Management (Expected Dec 2024)</li>
-            </ul>
           </section>
   
           {/* AI-powered Resume Parser */}

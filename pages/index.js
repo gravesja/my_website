@@ -5,7 +5,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white flex flex-col justify-center items-center">
       <h1 className="text-5xl font-extrabold mb-6">Welcome to My Portfolio</h1>
       <p className="mb-8 text-lg max-w-lg text-center">
-        Explore my journey as an IT professional. From networking to web development, I blend technology with creativity.
+        Explore my journey as an IT professional. From networking to desktop support to web development, I blend technology with creativity.
       </p>
       <nav>
         <ul className="flex space-x-4">
