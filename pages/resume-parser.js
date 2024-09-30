@@ -18,11 +18,8 @@ const ResumePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 text-purple-800">Resume Parser</h1>
+        <h1 className="text-4xl font-bold mb-8 text-purple-800">My Resume</h1>
 
-        {/* Example Resume Section */}
-        <section className="mb-10">
-          <h2 className="text-4xl font-bold mb-8 text-purple-800">My Example Resume</h2>
 
           {/* Personal Summary Section */}
           <section className="mb-10">
@@ -90,7 +87,6 @@ const ResumePage = () => {
               </ul>
             </div>
           </section>
-        </section>
       </div>
     </div>
   );
