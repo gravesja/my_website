@@ -22,10 +22,10 @@ export default function Portfolio() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h2 className="text-2xl font-bold mb-4">Web Development</h2>
               <p className="text-gray-700 mb-4">
-                Currently building a portfolio website with an AI-powered resume parser using Next.js and integrating external APIs for enhanced functionality.
+                Developed and publicly deployed a functional comicbook store that incorporates streamline functionality with vibrant and modern designs. 
               </p>
               <a
-                href="https://your-deployed-site.com"
+                href="https://comic-book-store.vercel.app/"
                 className="text-purple-700 hover:underline"
               >
                 Visit Website
