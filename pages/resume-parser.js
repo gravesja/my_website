@@ -22,7 +22,7 @@ const ResumePage = () => {
           {/* Personal Summary Section */}
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-purple-700 mb-4">Personal Summary</h2>
-            <h2 className="text-2xl font-bold text-purple-700 mb-4">For more infomation please navigate to the chatbot on the right hand corner of your screeen.</h2>
+            <h2 className="text-2xl font-bold text-purple-700 mb-4">For more infomation please scrool down and navigate to the chatbot on the right hand corner of your screeen.</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
               Passionate and dedicated IT professional with experience in network administration, system troubleshooting, and web development. Skilled at integrating creative problem-solving with technical expertise to develop reliable and efficient systems. Currently focusing on enhancing web development skills with AI and dynamic applications.
             </p>
