@@ -6,15 +6,15 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold mb-4">Networking Projects</h2>
+              <h2 className="text-2xl font-bold mb-4">AI Voice Cloning Project</h2>
               <p className="text-gray-700 mb-4">
-                Developed a network-wide ad-blocking server using Raspberry Pi and Pi-hole, significantly improving browsing security across the network.
+                Learn how to register for classes at Kean Univserity with our nation's great leaders!
               </p>
               <a
-                href="https://github.com/your-repo"
+                href="https://youtu.be/8B8M89NanDE"
                 className="text-purple-700 hover:underline"
               >
-                View on GitHub
+                View on YouTube
               </a>
             </div>
   
