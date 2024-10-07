@@ -40,7 +40,7 @@ const ResumePage = () => {
                 <li>Manage and configure network switches using PuTTY and ExtremeCloud IQ Pilot.</li>
                 <li>Develop and teach networking seminars for university staff and students.</li>
                 <li>Collaborate with network and system administrators to optimize network performance.</li>
-                <li>Top course instructor of the year, providing in-depth networking tutorials and hands-on labs.</li>
+                <li>Ranked #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program.</li>
                 <li>Designed custom graphics and manuals for course materials.</li>
               </ul>
             </div>
@@ -51,9 +51,22 @@ const ResumePage = () => {
               <ul className="list-disc list-inside text-gray-700 mt-2">
                 <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and other peripheral devices.</li>
                 <li>Participated in multistage projects and deployments across multiple offices and computer labs.</li>
-                <li>Perform system troubleshooting repairs to laptops, projectors, and desktops.</li>
+                <li>Track IT equipment, and inventory, using spreadsheets, and ManageEngine Endpoint Central.</li>
+                <li>Administered user groups and computer accounts via Active Directory.</li>
               </ul>
             </div>
+
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold text-purple-800">Audio Visual Technician</h3>
+              <p className="text-gray-600 italic">September 2021 -September 2022</p>
+              <ul className="list-disc list-inside text-gray-700 mt-2">
+                <li>Answer phones, resolve Tier I A/V technical issues, and schedule event support.</li>
+                <li>Operate 4k camera equipment to live stream on-campus events.</li>
+                <li>Set up A/V equipment for meetings and various functions around the campus.</li>
+                <li>Provide classroom support for faculty who utilize the projector systems. </li>
+              </ul>
+            </div>
+          
           </section>
 
           {/* Education Section */}
@@ -79,7 +92,7 @@ const ResumePage = () => {
               </ul>
 
               <ul className="list-disc list-inside text-gray-700">
-                <li>Web Development (Next.js, Flask)</li>
+                <li>Web Development (Next.js, Flask, React)</li>
                 <li>AI Integration</li>
                 <li>HTML, CSS, JavaScript</li>
                 <li>Python & Django</li>
