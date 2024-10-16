@@ -32,7 +32,7 @@ const ResumePage = () => {
             <h2 className="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
 
             <div className="mb-6">
-              <h3 className="text-xl font-semibold text-purple-800">Junior Network Administrator</h3>
+              <h3 className="text-xl font-semibold text-purple-800">Network Administrator</h3>
               <p className="text-gray-600 italic">Kean University, March 2024 - Present</p>
               <ul className="list-disc list-inside text-gray-700 mt-2">
                 <li>Troubleshoot network connectivity issues and maintain system stability for over 500+ users.</li>
