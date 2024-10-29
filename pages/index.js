@@ -39,11 +39,13 @@ export default function Home() {
               <a className="px-4 py-2 bg-white text-purple-700 font-semibold rounded-lg shadow-md hover:bg-purple-100">My Resume</a>
             </Link>
           </li>
-          <li>
-            <Link href="/contact">
-              <a className="px-4 py-2 bg-white text-purple-700 font-semibold rounded-lg shadow-md hover:bg-purple-100">Contact</a>
-            </Link>
-          </li>
+          {/* 
+<li>
+  <Link href="/contact">
+    <a className="px-4 py-2 bg-white text-purple-700 font-semibold rounded-lg shadow-md hover:bg-purple-100">Contact</a>
+  </Link>
+</li>
+*/}
         </ul>
       </nav>
     </div>
