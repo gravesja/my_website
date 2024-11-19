@@ -41,17 +41,24 @@ const ResumePage = () => {
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold text-purple-800">Network Administrator</h3>
-            <p className="text-gray-600 italic">Kean University, March 2024 - Present</p>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
-              <li>Troubleshoot network connectivity issues and maintain system stability for over 500+ users.</li>
-              <li>Manage and configure network switches using PuTTY and ExtremeCloud IQ Pilot.</li>
-              <li>Develop and teach networking seminars for university staff and students.</li>
-              <li>Collaborate with network and system administrators to optimize network performance.</li>
-              <li>Ranked #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program.</li>
-              <li>Designed custom graphics and manuals for course materials.</li>
-            </ul>
-          </div>
+  <h3 className="text-xl font-semibold text-purple-800">Network Administrator</h3>
+  <p className="text-gray-600 italic">Kean University | Union, NJ | March 2024 - Present</p>
+  <ul className="list-disc list-inside text-gray-700 mt-2">
+    <li>Troubleshoot network connectivity issues and maintain system stability for over 500 users across campus.</li>
+    <li>Manage and configure network switches using PuTTY and ExtremeCloud IQ Pilot to ensure optimal performance.</li>
+    <li>Develop and teach networking seminars to university staff and students, focusing on enhancing technical skills.</li>
+    <li>Collaborate with network and system administrators to optimize and maintain the university's network infrastructure.</li>
+    <li>Ranked #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program, excelling in student engagement and knowledge transfer.</li>
+    <li>Design and create custom graphics, training manuals, and documentation for course materials and technical guides.</li>
+  </ul>
+  <h4 className="text-lg font-semibold text-purple-800 mt-4">Key Accomplishments:</h4>
+  <ul className="list-disc list-inside text-gray-700 mt-2">
+    <li>Successfully configured WatchGuard firewall policies for secure ethernet connections in a test environment, integrating MFA, DHCP, and Windows Server Active Directory for enhanced security.</li>
+    <li>Configured a Raspberry Pi 4 to run a network-wide ad-blocking server, NAS, and mobile VPN, improving network privacy and reducing unwanted traffic.</li>
+    <li>Led the hiring process for the Student Security Operations Analyst role, managing resume reviews, candidate questionnaire evaluations, and behavioral interviews.</li>
+  </ul>
+</div>
+
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold text-purple-800">IT Technician</h3>
