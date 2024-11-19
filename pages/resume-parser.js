@@ -18,86 +18,96 @@ const ResumePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 text-purple-800">My Resume</h1>
-          {/* Personal Summary Section */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-purple-700 mb-4">Personal Summary</h2>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              Passionate and dedicated IT professional with experience in network administration, system troubleshooting, and web development. Skilled at integrating creative problem-solving with technical expertise to develop reliable and efficient systems. Currently focusing on enhancing web development skills with AI and dynamic applications.
-            </p>
-          </section>
+        <h1 className="text-4xl font-bold mb-4 text-purple-800">My Resume</h1>
+        
+        {/* Go Back to Homepage Button */}
+        <button
+          className="mb-8 px-4 py-2 bg-purple-700 text-white rounded-md hover:bg-purple-800 focus:outline-none"
+          onClick={() => window.location.href = '/'}
+        >
+          Go Back to Homepage
+        </button>
 
-          {/* Work Experience Section */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
+        {/* Personal Summary Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-purple-700 mb-4">Personal Summary</h2>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Passionate and dedicated IT professional with experience in network administration, system troubleshooting, and web development. Skilled at integrating creative problem-solving with technical expertise to develop reliable and efficient systems. Currently focusing on enhancing web development skills with AI and dynamic applications.
+          </p>
+        </section>
 
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold text-purple-800">Network Administrator</h3>
-              <p className="text-gray-600 italic">Kean University, March 2024 - Present</p>
-              <ul className="list-disc list-inside text-gray-700 mt-2">
-                <li>Troubleshoot network connectivity issues and maintain system stability for over 500+ users.</li>
-                <li>Manage and configure network switches using PuTTY and ExtremeCloud IQ Pilot.</li>
-                <li>Develop and teach networking seminars for university staff and students.</li>
-                <li>Collaborate with network and system administrators to optimize network performance.</li>
-                <li>Ranked #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program.</li>
-                <li>Designed custom graphics and manuals for course materials.</li>
-              </ul>
-            </div>
+        {/* Work Experience Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
 
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold text-purple-800">IT Technician</h3>
-              <p className="text-gray-600 italic">September 2022 - March 2024</p>
-              <ul className="list-disc list-inside text-gray-700 mt-2">
-                <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and other peripheral devices.</li>
-                <li>Participated in multistage projects and deployments across multiple offices and computer labs.</li>
-                <li>Track IT equipment, and inventory, using spreadsheets, and ManageEngine Endpoint Central.</li>
-                <li>Administered user groups and computer accounts via Active Directory.</li>
-              </ul>
-            </div>
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold text-purple-800">Network Administrator</h3>
+            <p className="text-gray-600 italic">Kean University, March 2024 - Present</p>
+            <ul className="list-disc list-inside text-gray-700 mt-2">
+              <li>Troubleshoot network connectivity issues and maintain system stability for over 500+ users.</li>
+              <li>Manage and configure network switches using PuTTY and ExtremeCloud IQ Pilot.</li>
+              <li>Develop and teach networking seminars for university staff and students.</li>
+              <li>Collaborate with network and system administrators to optimize network performance.</li>
+              <li>Ranked #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program.</li>
+              <li>Designed custom graphics and manuals for course materials.</li>
+            </ul>
+          </div>
 
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold text-purple-800">Audio Visual Technician</h3>
-              <p className="text-gray-600 italic">September 2021 -September 2022</p>
-              <ul className="list-disc list-inside text-gray-700 mt-2">
-                <li>Answer phones, resolve Tier I A/V technical issues, and schedule event support.</li>
-                <li>Operate 4k camera equipment to live stream on-campus events.</li>
-                <li>Set up A/V equipment for meetings and various functions around the campus.</li>
-                <li>Provide classroom support for faculty who utilize the projector systems. </li>
-              </ul>
-            </div>
-          
-          </section>
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold text-purple-800">IT Technician</h3>
+            <p className="text-gray-600 italic">September 2022 - March 2024</p>
+            <ul className="list-disc list-inside text-gray-700 mt-2">
+              <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and other peripheral devices.</li>
+              <li>Participated in multistage projects and deployments across multiple offices and computer labs.</li>
+              <li>Track IT equipment, and inventory, using spreadsheets, and ManageEngine Endpoint Central.</li>
+              <li>Administered user groups and computer accounts via Active Directory.</li>
+            </ul>
+          </div>
 
-          {/* Education Section */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-purple-700 mb-4">Education</h2>
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold text-purple-800">Audio Visual Technician</h3>
+            <p className="text-gray-600 italic">September 2021 - September 2022</p>
+            <ul className="list-disc list-inside text-gray-700 mt-2">
+              <li>Answer phones, resolve Tier I A/V technical issues, and schedule event support.</li>
+              <li>Operate 4k camera equipment to live stream on-campus events.</li>
+              <li>Set up A/V equipment for meetings and various functions around the campus.</li>
+              <li>Provide classroom support for faculty who utilize the projector systems.</li>
+            </ul>
+          </div>
+        </section>
 
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold text-purple-800">Bachelor of Science in Information Technology/Cybersecurity</h3>
-              <p className="text-gray-600 italic">Kean University, Expected Graduation: 2025</p>
-            </div>
-          </section>
+        {/* Education Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-purple-700 mb-4">Education</h2>
 
-          {/* Skills Section */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-purple-700 mb-4">Skills</h2>
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold text-purple-800">Bachelor of Science in Information Technology/Cybersecurity</h3>
+            <p className="text-gray-600 italic">Kean University, Expected Graduation: 2025</p>
+          </div>
+        </section>
 
-            <div className="grid grid-cols-2 gap-6">
-              <ul className="list-disc list-inside text-gray-700">
-                <li>Network Troubleshooting</li>
-                <li>Firewall Configuration (WatchGuard)</li>
-                <li>PuTTY & Switch Configuration</li>
-                <li>ExtremeCloud IQ Pilot</li>
-              </ul>
+        {/* Skills Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-purple-700 mb-4">Skills</h2>
 
-              <ul className="list-disc list-inside text-gray-700">
-                <li>Web Development (Next.js, Flask, React)</li>
-                <li>AI Integration</li>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Python & Django</li>
-              </ul>
-            </div>
-          </section>
+          <div className="grid grid-cols-2 gap-6">
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Network Troubleshooting</li>
+              <li>Firewall Configuration (WatchGuard)</li>
+              <li>Windows server</li>
+              <li>PuTTY & Switch Configuration</li>
+              <li>ExtremeCloud IQ Pilot</li>
+            </ul>
+
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Web Development (Next.js, Flask, React)</li>
+              <li>MySQL</li>
+              <li>AI Integration</li>
+              <li>HTML, CSS, JavaScript, PHP</li>
+              <li>Python & Django</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
   );
