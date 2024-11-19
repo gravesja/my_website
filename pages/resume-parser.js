@@ -48,12 +48,12 @@ const ResumePage = () => {
     <li>Manage and configure network switches using PuTTY and ExtremeCloud IQ Pilot to ensure optimal performance.</li>
     <li>Develop and teach networking seminars to university staff and students, focusing on enhancing technical skills.</li>
     <li>Collaborate with network and system administrators to optimize and maintain the university’s network infrastructure.</li>
-    <li>Ranked #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program, excelling in student engagement and knowledge transfer.</li>
     <li>Design and create custom graphics, training manuals, and documentation for course materials and technical guides.</li>
   </ul>
   
   <h4 className="text-md font-semibold text-purple-800 mt-4">Key Accomplishments:</h4>
   <ul className="list-disc list-inside text-gray-700 mt-2">
+  <li>Ranked #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program, excelling in student engagement and knowledge transfer.</li>
     <li>Successfully configured WatchGuard firewall policies for secure ethernet connections in a test environment, integrating MFA, DHCP, and Windows Server Active Directory for enhanced security.</li>
     <li>Configured a Raspberry Pi 4 to run a network-wide ad-blocking server, NAS, and mobile VPN, improving network privacy and reducing unwanted traffic.</li>
     <li>Led the hiring process for the Student Security Operations Analyst role, managing resume reviews, candidate questionnaire evaluations, and behavioral interviews.</li>
@@ -66,6 +66,7 @@ const ResumePage = () => {
             <p className="text-gray-600 italic">September 2022 - March 2024</p>
             <ul className="list-disc list-inside text-gray-700 mt-2">
               <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and other peripheral devices.</li>
+              <li>Attended staff, faculty, and students with computer-related issues, processing 15 to 35 support tickets weekly.</li>
               <li>Participated in multistage projects and deployments across multiple offices and computer labs.</li>
               <li>Track IT equipment, and inventory, using spreadsheets, and ManageEngine Endpoint Central.</li>
               <li>Administered user groups and computer accounts via Active Directory.</li>
