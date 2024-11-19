@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 
 const ResumePage = () => {
   useEffect(() => {
+    //update
     // Inject the ChatBot.com script
     const script = document.createElement('script');
     script.innerHTML = `
