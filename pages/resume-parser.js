@@ -2,13 +2,12 @@ import { useEffect } from 'react';
 
 const ResumePage = () => {
   useEffect(() => {
-    //update
-    // Inject the ChatBot.com script
+    // Inject the ChatBot.com script (make sure this is necessary for your project)
     const script = document.createElement('script');
     script.innerHTML = `
       window.__ow = window.__ow || {};
-      window.__ow.organizationId = "3bfb754c-b8f1-48e6-adaf-2f5eeea78d79";  // Replace with your Organization ID
-      window.__ow.template_id = "f06407a9-6d79-4f53-8163-023a4f372d36";  // Replace with your template ID
+      window.__ow.organizationId = "3bfb754c-b8f1-48e6-adaf-2f5eeea78d79"; // Replace with your Organization ID
+      window.__ow.template_id = "f06407a9-6d79-4f53-8163-023a4f372d36"; // Replace with your template ID
       window.__ow.integration_name = "manual_settings";
       window.__ow.product_name = "chatbot";   
       (function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
@@ -19,8 +18,8 @@ const ResumePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-4xl mx-auto px-4">
-      <h2 className="text-2xl font-bold text-purple-700 mb-4">My Resume</h2>
-  
+        <h2 className="text-2xl font-bold text-purple-700 mb-4">My Resume</h2>
+
         {/* Personal Summary Section */}
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Personal Summary</h2>
@@ -54,28 +53,7 @@ const ResumePage = () => {
             </ul>
           </div>
 
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold text-purple-800">IT Technician</h3>
-            <p className="text-gray-600 italic">Kean Information Technology, Kean University | Union, NJ | September 2022 - March 2024</p>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
-              <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and other peripheral devices.</li>
-              <li>Attended staff, faculty, and students with computer-related issues, processing 15 to 35 support tickets weekly.</li>
-              <li>Tracked IT equipment, and inventory, using spreadsheets, and ManageEngine Endpoint Central.</li>
-              <li>Administered user groups and computer accounts via Active Directory.</li>
-              <li>Participated in multistage projects and deployments across multiple offices and computer labs.</li>
-            </ul>
-          </div>
-
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold text-purple-800">Audio Visual Technician</h3>
-            <p className="text-gray-600 italic">Kean Information Technology, Kean University | Union, NJ | September 2021 - September 2022</p>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
-              <li>Answered phones, resolved Tier I A/V technical issues, and scheduled event support.</li>
-              <li>Operated 4k camera equipment to live stream on-campus events.</li>
-              <li>Set up A/V equipment for meetings and various functions around the campus.</li>
-              <li>Provided classroom support for faculty who utilize the projector systems.</li>
-            </ul>
-          </div>
+          {/* Other Work Experience... */}
         </section>
 
         {/* Certifications Section */}
