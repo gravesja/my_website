@@ -19,11 +19,15 @@ const ResumePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-4xl mx-auto px-4">
-      <h2 className="text-2xl font-bold text-purple-700 mb-4">My Resume</h2>
-  
         {/* Personal Summary Section */}
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Personal Summary</h2>
+          <button
+          className="mb-8 px-4 py-2 bg-purple-700 text-white rounded-md hover:bg-purple-800 focus:outline-none"
+          onClick={() => window.location.href = '/'}
+        >
+          Go Back to Homepage
+        </button>
           <p className="text-gray-700 text-lg leading-relaxed">
             Passionate and dedicated IT professional with experience in network administration, system troubleshooting, and web development. Skilled at integrating creative problem-solving with technical expertise to develop reliable and efficient systems. Currently focusing on enhancing web development skills with AI and dynamic applications.
           </p>
