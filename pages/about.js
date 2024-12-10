@@ -43,6 +43,7 @@ const ResumePage = () => {
             <ul className="list-disc list-inside text-gray-700 mt-2">
               <li>Troubleshoot Tier III network connectivity issues for computers, printers, and other systems across 34 buildings.</li>
               <li>Collaborate with Network and System Administrators on deploying and maintaining network technology.</li>
+              <li>Analyze firewall traffic to identify and investigate potential cyber threats and vulnerabilities.</li>
               <li>Analyze ExtremeCloud IQ Pilot and Extreme Site Engine data to pinpoint and troubleshoot network-related issues.</li>
               <li>Configure and test web policies utilizing WatchGuard Firebox software in test environments.</li>
               <li>Configure Extreme Networks switches utilizing PuTTY and assist in deploying them to the Kean Data Center.</li>
