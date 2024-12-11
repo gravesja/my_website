@@ -44,7 +44,7 @@ export default function Portfolio() {
             Engage with a personalized AI chatbot modeled after Fee&apos;s SESmag personality. Upload a PDF to the chat and have dynamic discussions about its content.
             </p>
             <a
-              href="https://sesmagbot-fee.vercel.app/chatbot.html"
+              href="https://sesmagbot-fee.vercel.app/index.html"
               className="text-purple-700 hover:underline"
             >
               Visit Website
