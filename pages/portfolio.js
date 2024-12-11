@@ -37,6 +37,19 @@ export default function Portfolio() {
               Visit Website
             </a>
           </div>
+          {/* Project 3 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-bold mb-4">OpenAI API chatbot</h2>
+            <p className="text-gray-700 mb-4">
+            Engage with a personalized AI chatbot modeled after Fee's SESmag personality. Upload a PDF to the chat and have dynamic discussions about its content.
+            </p>
+            <a
+              href="https://sesmagbot-fee.vercel.app/chatbot.html"
+              className="text-purple-700 hover:underline"
+            >
+              Visit Website
+            </a>
+          </div>
         </div>
       </div>
     </div>
