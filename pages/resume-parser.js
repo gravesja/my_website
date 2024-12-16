@@ -1,4 +1,5 @@
 import { useState } from "react";
+import mammoth from "mammoth";
 
 export default function ResumeParser() {
   const [documentContent, setDocumentContent] = useState("");
@@ -47,8 +48,19 @@ export default function ResumeParser() {
   };
 
   const processWord = (file) => {
-    // Implement Word document processing here (could use libraries like mammoth.js)
-    return "Word file content processing coming soon!";
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = async function (event) {
+        try {
+          const arrayBuffer = event.target.result;
+          const result = await mammoth.extractRawText({ arrayBuffer });
+          resolve(result.value); // The text extracted from the Word document
+        } catch (err) {
+          reject(err);
+        }
+      };
+      reader.readAsArrayBuffer(file);
+    });
   };
 
   const handleSubmit = async () => {
