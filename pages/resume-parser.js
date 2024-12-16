@@ -6,32 +6,31 @@ export default function ResumeParser() {
   const [loading, setLoading] = useState(false);
 
   const handleSendMessage = async () => {
-    if (!userMessage.trim()) return;
-
-    // Add the user's message to the chat
+    if (!userMessage.trim() && !documentContent.trim()) return;
+  
     setMessages([...messages, { sender: "user", text: userMessage }]);
-    setUserMessage("");  // Clear the input
-
+    setUserMessage(""); // Clear the input
+  
     setLoading(true);
-
+  
     try {
-      // Send the message to the backend API
       const res = await fetch("/api/resumeparser", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage }),
+        method: "POST", // Ensure this is a POST request
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ message: userMessage, documentContent }),
       });
-
-      const data = await res.json();
+  
+      const data = await res.json(); // Ensure the response is JSON
       const responseText = data.response || "Sorry, I couldn't process your request.";
-
-      // Add the response to the chat
+  
       setMessages([...messages, { sender: "user", text: userMessage }, { sender: "bot", text: responseText }]);
     } catch (error) {
       console.error("Error:", error);
       setMessages([...messages, { sender: "user", text: userMessage }, { sender: "bot", text: "There was an error processing your request." }]);
     }
-
+  
     setLoading(false);
   };
 

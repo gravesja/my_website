@@ -1,4 +1,4 @@
-import openai from 'openai';  // OpenAI's Node SDK (make sure you've installed it)
+import openai from 'openai';
 
 const openaiApiKey = process.env.OPENAI_API_KEY;
 openai.apiKey = openaiApiKey;
@@ -8,22 +8,25 @@ export default async function handler(req, res) {
     return res.status(405).json({ response: "Method Not Allowed" });
   }
 
-  const { message } = req.body;
+  const { message, documentContent } = req.body;
 
-  if (!message) {
-    return res.status(400).json({ response: "Message is required." });
+  if (!message && !documentContent) {
+    return res.status(400).json({ response: "Message or Document content is required." });
   }
 
   try {
-    // OpenAI API call to process the message
+    let prompt = message;
+    if (documentContent) {
+      prompt = `Resume content: ${documentContent}\n\nUser Question: ${message}`;
+    }
+
     const openaiResponse = await openai.Completion.create({
-      model: 'text-davinci-003', // Replace with your preferred OpenAI model
-      prompt: `Resume Question: ${message}`,
+      model: 'text-davinci-003',
+      prompt: prompt,
       max_tokens: 150,
     });
 
     const responseText = openaiResponse.choices[0].text.trim();
-    
     return res.status(200).json({ response: responseText });
   } catch (error) {
     console.error('Error:', error);
