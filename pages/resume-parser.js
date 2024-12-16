@@ -1,102 +1,76 @@
 import { useState } from "react";
-import mammoth from "mammoth";
 
 export default function ResumeParser() {
-  const [documentContent, setDocumentContent] = useState("");
+  const [messages, setMessages] = useState([]);
   const [userMessage, setUserMessage] = useState("");
-  const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleFileUpload = async (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      setLoading(true);
-      // Process PDF or Word file (convert to text)
-      const text = await processDocument(file);
-      setDocumentContent(text);
-      setLoading(false);
-    }
-  };
-
-  const processDocument = async (file) => {
-    if (file.type === "application/pdf") {
-      return await processPDF(file);
-    } else if (file.type === "application/msword" || file.type === "application/vnd.openxmlformats-officedocument.wordprocessingml.document") {
-      return await processWord(file);
-    } else {
-      alert("Invalid file format. Please upload a PDF or Word document.");
-      return "";
-    }
-  };
-
-  const processPDF = async (file) => {
-    const reader = new FileReader();
-    return new Promise((resolve, reject) => {
-      reader.onload = async (e) => {
-        const typedArray = new Uint8Array(e.target.result);
-        const pdf = await window.pdfjsLib.getDocument(typedArray).promise;
-        let text = "";
-        for (let i = 1; i <= pdf.numPages; i++) {
-          const page = await pdf.getPage(i);
-          const content = await page.getTextContent();
-          text += content.items.map(item => item.str).join(" ");
-        }
-        resolve(text);
-      };
-      reader.readAsArrayBuffer(file);
-    });
-  };
-
-  const processWord = (file) => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = async function (event) {
-        try {
-          const arrayBuffer = event.target.result;
-          const result = await mammoth.extractRawText({ arrayBuffer });
-          resolve(result.value); // The text extracted from the Word document
-        } catch (err) {
-          reject(err);
-        }
-      };
-      reader.readAsArrayBuffer(file);
-    });
-  };
-
-  const handleSubmit = async () => {
+  const handleSendMessage = async () => {
     if (!userMessage.trim()) return;
 
+    // Add the user's message to the chat
+    setMessages([...messages, { sender: "user", text: userMessage }]);
+    setUserMessage("");  // Clear the input
+
     setLoading(true);
+
     try {
-      const res = await fetch("/api/chat", {
+      // Send the message to the backend API
+      const res = await fetch("/api/resumeparser", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage, documentContent }),
+        body: JSON.stringify({ message: userMessage }),
       });
+
       const data = await res.json();
-      setResponse(data.response || "Sorry, I couldn't process your request.");
+      const responseText = data.response || "Sorry, I couldn't process your request.";
+
+      // Add the response to the chat
+      setMessages([...messages, { sender: "user", text: userMessage }, { sender: "bot", text: responseText }]);
     } catch (error) {
-      setResponse("There was an error processing your request.");
+      console.error("Error:", error);
+      setMessages([...messages, { sender: "user", text: userMessage }, { sender: "bot", text: "There was an error processing your request." }]);
     }
+
     setLoading(false);
   };
 
   return (
-    <div className="container mx-auto p-4 sm:p-8">
-      <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-blue-700">Resume Parser</h2>
-        <input type="file" onChange={handleFileUpload} accept=".pdf,.docx" className="mb-4 w-full p-3 border border-gray-300 rounded" />
-        {loading && <div>Loading...</div>}
-        <textarea
-          className="w-full p-3 border border-gray-300 rounded mt-2"
-          placeholder="Ask your question about the resume"
-          value={userMessage}
-          onChange={(e) => setUserMessage(e.target.value)}
-        />
-        <button onClick={handleSubmit} className="bg-green-500 text-white w-full py-3 rounded mt-4 hover:bg-green-600">
-          Ask
-        </button>
-        {response && <div className="mt-4">{response}</div>}
+    <div className="flex flex-col max-w-xl mx-auto p-4">
+      <div className="bg-white p-6 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-bold mb-4 text-center text-blue-700">Resume Chatbot</h2>
+        
+        {/* Chatbox */}
+        <div className="h-80 overflow-y-scroll bg-gray-100 p-4 mb-4 rounded-lg border border-gray-300">
+          {messages.map((message, index) => (
+            <div key={index} className={message.sender === "user" ? "text-right" : "text-left"}>
+              <div
+                className={`inline-block rounded-lg p-2 mb-2 max-w-full ${message.sender === "user" ? "bg-blue-500 text-white" : "bg-gray-300"}`}
+              >
+                {message.text}
+              </div>
+            </div>
+          ))}
+          {loading && <div className="text-center text-gray-500">...</div>}
+        </div>
+
+        {/* Input */}
+        <div className="flex">
+          <input
+            type="text"
+            className="w-full p-3 border border-gray-300 rounded-l-lg"
+            placeholder="Ask a question about the resume..."
+            value={userMessage}
+            onChange={(e) => setUserMessage(e.target.value)}
+          />
+          <button
+            onClick={handleSendMessage}
+            className="bg-green-500 text-white p-3 rounded-r-lg hover:bg-green-600"
+            disabled={loading}
+          >
+            Send
+          </button>
+        </div>
       </div>
     </div>
   );
