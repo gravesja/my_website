@@ -4,55 +4,81 @@ import Link from 'next/link';
 export default function ResumeParser() {
   const [userMessage, setUserMessage] = useState('');
   const [botResponse, setBotResponse] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSendMessage = async () => {
-    setLoading(true);
+  const handleMessageChange = (e) => {
+    setUserMessage(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setIsLoading(true);
+    setError('');
+    setBotResponse('');
+
     try {
       const response = await fetch('/api/chat', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify({ userMessage }),
       });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch response from server');
+      }
+
       const data = await response.json();
       setBotResponse(data.message);
-    } catch (error) {
-      console.error('Error:', error);
-      setBotResponse('Failed to connect to the bot.');
+    } catch (err) {
+      setError('Error: ' + err.message);
+    } finally {
+      setIsLoading(false);
     }
-    setLoading(false);
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-      <h1 className="text-3xl font-bold text-gray-800 mb-6">Resume Bot</h1>
-      
-      {/* User message input */}
-      <textarea
-        value={userMessage}
-        onChange={(e) => setUserMessage(e.target.value)}
-        placeholder="Type your message here..."
-        className="w-full md:w-1/2 p-4 border rounded-md mb-4"
-      ></textarea>
-      
-      {/* Button to send message */}
-      <button
-        onClick={handleSendMessage}
-        className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300"
-      >
-        {loading ? 'Loading...' : 'Send Message'}
-      </button>
-      
-      {/* Bot response */}
-      <div className="mt-4 text-gray-700">
-        <strong>Bot Response:</strong>
-        <p className="mt-2">{botResponse}</p>
-      </div>
+    <div className="container mx-auto p-6">
+      <div className="bg-white p-4 shadow-lg rounded-lg">
+        <h1 className="text-2xl font-semibold text-center mb-4">Resume Parser Bot</h1>
+        <form onSubmit={handleSubmit}>
+          <textarea
+            value={userMessage}
+            onChange={handleMessageChange}
+            rows="4"
+            className="w-full p-2 border border-gray-300 rounded-md mb-4"
+            placeholder="Ask for resume suggestions or advice..."
+          />
+          <button
+            type="submit"
+            disabled={isLoading}
+            className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+          >
+            {isLoading ? 'Processing...' : 'Submit'}
+          </button>
+        </form>
 
-      {/* Back to home link */}
-      <Link href="/" className="mt-8 px-4 py-2 text-blue-500 hover:underline">
-        Back to Info
-      </Link>
+        {botResponse && (
+          <div className="mt-4 p-4 bg-green-100 text-green-700 border border-green-300 rounded-md">
+            <p>{botResponse}</p>
+          </div>
+        )}
+
+        {error && (
+          <div className="mt-4 p-4 bg-red-100 text-red-700 border border-red-300 rounded-md">
+            <p>{error}</p>
+          </div>
+        )}
+
+        <div className="mt-4 text-center">
+          <Link href="/" passHref>
+            <a className="text-blue-500 hover:underline">Back to Info</a>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
