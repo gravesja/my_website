@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from 'next/link';
 import Head from "next/head";
 
 export default function FeeBot() {
@@ -78,12 +79,12 @@ export default function FeeBot() {
       <header className="bg-blue-600 text-white py-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center px-4">
           <h1 className="text-3xl font-bold">Fee Document Roleplay Bot</h1>
-          <a
-            href="/"
-            className="text-white bg-green-500 px-4 py-2 rounded hover:bg-green-600"
-          >
-            Back to Info
-          </a>
+          <Link 
+        href="/"
+        className="px-6 py-3 bg-blue-500 text-white rounded-md shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out"
+      >
+        Back to homepage
+      </Link>
         </div>
       </header>
 
