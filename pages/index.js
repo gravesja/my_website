@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Home() {
+  {/* 
   useEffect(() => {
     
     const script = document.createElement('script');
@@ -15,7 +16,7 @@ export default function Home() {
     `;
     document.body.appendChild(script);
   }, []);
-
+*/}
   return (
     <div className="min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white flex flex-col justify-center items-center p-4 bg-animate-wave">
       <h1 className="text-4xl md:text-5xl font-extrabold mb-4 md:mb-6">Welcome to My Portfolio</h1>

@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
 
 const ResumePage = () => {
+  {/* 
   useEffect(() => {
     //update
+    
     // Inject the ChatBot.com script
     const script = document.createElement('script');
     script.innerHTML = `
@@ -15,7 +17,7 @@ const ResumePage = () => {
     `;
     document.body.appendChild(script);
   }, []);
-
+*/}
   return (
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-4xl mx-auto px-4">
@@ -88,7 +90,7 @@ const ResumePage = () => {
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Certifications</h2>
           <ul className="list-disc list-inside text-gray-700">
             <li>CISCO Threat Management- December 2024</li>
-            <li>CompTIA Network+ Expected January 2025</li>
+            <li>CompTIA Network+ Expected March 2025</li>
           </ul>
         </section>
 
@@ -98,7 +100,7 @@ const ResumePage = () => {
           <div className="mb-6">
             <h3 className="text-xl font-semibold text-purple-800">Bachelor of Science in Information Technology/Cybersecurity</h3>
             <p className="text-gray-600 italic">Kean University | Expected Graduation: May 2025</p>
-            <p className="text-gray-600">Award: Athletics Director&apos;s Honor Roll</p>
+            <p className="text-gray-600">Award: Athletics Director&apos;s Honor Roll, Dean&apos;s List</p>
             <p className="text-gray-600">Organizations: Association for Computer Machinery, National Student Cybersecurity Association, Kean Esports</p>
           </div>
         </section>
