@@ -50,6 +50,19 @@ export default function Portfolio() {
               Visit Website
             </a>
           </div>
+          {/* Project 4 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-bold mb-4">Homework Helper Bot</h2>
+            <p className="text-gray-700 mb-4">
+            A bot designed to assist grade school students with thier homework and provide supplemental instruction. 
+            </p>
+            <a
+              href="https://homeworkhelper-gravesja.vercel.app/"
+              className="text-purple-700 hover:underline"
+            >
+              Visit Website
+            </a>
+          </div>
         </div>
       </div>
     </div>
