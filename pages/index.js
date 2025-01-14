@@ -51,7 +51,7 @@ export default function Home() {
           */}
         </ul>
       </nav>
-  <footer class="bg-teal-700 text-blue-700 py-8 mt-12">
+  <footer class="bg-teal-700 text-white-700 py-8 mt-12">
     <div class="container mx-auto text-center">
       <p class="text-lg">
         Powered by
