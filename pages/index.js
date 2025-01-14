@@ -55,7 +55,7 @@ export default function Home() {
     <div class="container mx-auto text-center">
       <p class="text-lg">
         Powered by 
-        <a href="https://www.linkedin.com/in/jayden-graves-40108021a/" class="underline hover:text-teal-200">Jayden Graves</a>
+        <a href="https://www.linkedin.com/in/jayden-graves-40108021a/" class="underline hover:text-teal-200"> Jayden Graves</a>
       </p>
     </div>
   </footer>
