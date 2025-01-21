@@ -86,11 +86,45 @@ const ResumePage = () => {
         </section>
 
         {/* Work Experience Section */}
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
-          {/* ... Work Experience content ... */}
-        </section>
-
+<section className="mb-10">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
+  <div className="mb-6">
+    <h3 className="font-semibold text-lg text-gray-800">Network Administrator</h3>
+    <p className="text-gray-600">March 2024 - Present</p>
+    <p className="text-gray-600">Kean Information Technology - Kean University | Union, NJ</p>
+    <ul className="list-disc list-inside text-gray-700 mt-2">
+      <li>Troubleshoot Tier III network connectivity issues for computers, printers, and other systems across 34 buildings.</li>
+      <li>Collaborate with Network and System Administrators on deploying and maintaining network technology.</li>
+      <li>Analyze firewall traffic to identify and investigate potential cyber threats and vulnerabilities.</li>
+      <li>Analyze ExtremeCloud IQ Pilot and Extreme Site Engine data to pinpoint and troubleshoot network-related issues.</li>
+      <li>Configure and test web policies utilizing WatchGuard Fireware software in test environments.</li>
+      <li>Configure Extreme Networks switches utilizing PuTTY and assist in deploying them to the Kean Data Center.</li>
+      <li>Create course material, teach networking seminars to technicians, and assess skills through examinations.</li>
+      <li>Design custom graphics and user manuals for in-house training and customer use.</li>
+    </ul>
+  </div>
+  <div className="mb-6">
+    <h3 className="font-semibold text-lg text-gray-800">IT Support Specialist</h3>
+    <p className="text-gray-600">September 2022 - March 2024</p>
+    <p className="text-gray-600">Kean Information Technology - Kean University | Union, NJ</p>
+    <ul className="list-disc list-inside text-gray-700 mt-2">
+      <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and other peripheral devices.</li>
+      <li>Attended staff, faculty, and students with computer-related issues, processing 15 to 35 support tickets weekly.</li>
+      <li>Tracked IT equipment and inventory using spreadsheets and ManageEngine Endpoint Central.</li>
+      <li>Participated in multistage projects and deployments across multiple offices and computer labs.</li>
+    </ul>
+  </div>
+  <div className="mb-6">
+    <h3 className="font-semibold text-lg text-gray-800">Audio Visual Technician</h3>
+    <p className="text-gray-600">September 2021 - September 2022</p>
+    <p className="text-gray-600">Kean Information Technology - Kean University | Union, NJ</p>
+    <ul className="list-disc list-inside text-gray-700 mt-2">
+      <li>Provided classroom support for faculty using projector systems, resolved Tier I A/V technical issues, answered phones, and coordinated event support scheduling.</li>
+      <li>Operated 4k camera equipment to live stream on-campus events.</li>
+      <li>Set up A/V equipment for meetings and various functions around the campus.</li>
+    </ul>
+  </div>
+</section>
         {/* Certifications Section */}
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Certifications</h2>
