@@ -141,7 +141,7 @@ const ResumePage = () => {
     <p className="text-gray-600">Bachelor of Science in Information Technology/Cybersecurity</p>
     <p className="text-gray-600">Expected Graduation: May 2025</p>
     <ul className="list-disc list-inside text-gray-700 mt-2">
-      <li><strong>Awards:</strong> Dean's List, Athletics Director's Honor Roll</li>
+      <li><strong>Awards:</strong> Dean&apos;s List, Athletics Director&apos;s Honor Roll</li>
       <li><strong>Organizations:</strong> Association for Computer Machinery, National Student Cybersecurity Association, Kean Esports</li>
     </ul>
   </div>
