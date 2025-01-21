@@ -133,12 +133,20 @@ const ResumePage = () => {
             <li>CompTIA Network+ Expected March 2025</li>
           </ul>
         </section>
+{/* Education Section */}
+<section className="mb-10">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4">Education</h2>
+  <div>
+    <h3 className="font-semibold text-lg text-gray-800">Kean University</h3>
+    <p className="text-gray-600">Bachelor of Science in Information Technology/Cybersecurity</p>
+    <p className="text-gray-600">Expected Graduation: May 2025</p>
+    <ul className="list-disc list-inside text-gray-700 mt-2">
+      <li><strong>Awards:</strong> Dean's List, Athletics Director's Honor Roll</li>
+      <li><strong>Organizations:</strong> Association for Computer Machinery, National Student Cybersecurity Association, Kean Esports</li>
+    </ul>
+  </div>
+</section>
 
-        {/* Education Section */}
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Education</h2>
-          {/* ... Education content ... */}
-        </section>
       </div>
     </div>
   );
