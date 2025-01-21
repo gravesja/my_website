@@ -53,12 +53,26 @@ const ResumePage = () => {
               <li>Design custom graphics and user manuals for in-house training and customer use.</li>
             </ul>
             <h4 className="text-lg font-semibold text-purple-800 mt-4">Key Accomplishments:</h4>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
-              <li>Ranked #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program.</li>
-              <li>Successfully configured WatchGuard firewall policies to manage user authentication via Windows Server Active Directory, MFA, and DHCP for secure ethernet connections in a test environment.</li>
-              <li>Successfully configured a Raspberry Pi 4 to run a network-wide ad-blocking server, NAS, and mobile VPN in a test environment, enhancing privacy and reducing unwanted traffic.</li>
-              <li>Conducted the hiring process for the Student Security Operations Analyst position, including resume review, candidate questionnaire analysis, and leading behavioral interviews to assess fit for IT security operations.</li>
-            </ul>
+  <ul className="list-disc list-inside text-gray-700 mt-2">
+    <li>
+      <strong>Network Administration Course Instructor:</strong> Ranked #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program.
+    </li>
+    <li>
+      <strong>Network Configuration and Security:</strong> Configured WatchGuard firewall policies to manage user authentication via Windows Server Active Directory, multi-factor authentication (MFA), and DHCP, ensuring secure ethernet connections in a functional network environment.
+    </li>
+    <li>
+      Set up a Raspberry Pi 4 to operate as a network-wide ad-blocking server, Samba, NAS, and mobile VPN, enhancing privacy, reducing unwanted traffic, and demonstrating proficiency in network management.
+    </li>
+    <li>
+      Designed and implemented a quarantine server to isolate and analyze potentially compromised devices in a controlled environment.
+    </li>
+    <li>
+      <strong>Hiring and Talent Development:</strong> Led the hiring process for the Student Security Operations Analyst position, streamlining resume reviews, candidate questionnaire analysis, and leading interviews to assess fit for IT security operations.
+    </li>
+    <li>
+      <strong>Active Directory Operations:</strong> Managed user groups and computer accounts within Active Directory, supporting the system integrity with 20,000+ active objects.
+    </li>
+  </ul>
           </div>
 
           <div className="mb-6">
