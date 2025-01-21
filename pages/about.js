@@ -76,7 +76,7 @@ const ResumePage = () => {
           </div>
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold text-purple-800">IT Technician</h3>
+            <h3 className="text-xl font-semibold text-purple-800">IT Support Specialist</h3>
             <p className="text-gray-600 italic">Kean Information Technology, Kean University | Union, NJ | September 2022 - March 2024</p>
             <ul className="list-disc list-inside text-gray-700 mt-2">
               <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and other peripheral devices.</li>
@@ -121,19 +121,31 @@ const ResumePage = () => {
 
         {/* Skills Section */}
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Skills</h2>
-          <div className="grid grid-cols-2 gap-6">
-            <ul className="list-disc list-inside text-gray-700">
-              <li>Networking: Windows Server, PuTTY, VLAN, LAN, DHCP, DNS, Linux, TCP/IP, MFA, Data analysis</li>
-              <li>IT: Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Xerox, HP, Google, Freshservice, Help Desk, Customer Service, Adaptability</li>
-            </ul>
+  <h2 className="text-2xl font-bold text-purple-700 mb-4">Skills</h2>
+  <div className="grid grid-cols-2 gap-6">
+    <ul className="list-disc list-inside text-gray-700">
+      <li>
+        <strong>Networking:</strong> Windows Server, PowerShell, Linux, Wireshark, PuTTY, CISCO, VLAN, LAN, DHCP, DNS, 802.ax/ac, Linux, TCP/IP
+      </li>
+      <li>
+        <strong>Cybersecurity:</strong> IPS/IDS, EDR, 802.1x, TLS/SSL, VPN, MFA, DLP, RBAC
+      </li>
+      <li>
+        <strong>IT:</strong> Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Xerox, HP, Google, Freshservice, Help Desk
+      </li>
+    </ul>
 
-            <ul className="list-disc list-inside text-gray-700">
-              <li>Coding: Java, Javascript, HTML, Python, MySQL, PHP, OpenAI API</li>
-              <li>Video Editing: Filmora, Premiere, DaVinci Resolve</li>
-            </ul>
-          </div>
-        </section>
+    <ul className="list-disc list-inside text-gray-700">
+      <li>
+        <strong>Coding:</strong> React.js, Node.js, JavaScript, HTML, Python, SQL, PHP, OpenAI API
+      </li>
+      <li>
+        <strong>Video Editing:</strong> Filmora, Premiere, DaVinci Resolve
+      </li>
+    </ul>
+  </div>
+</section>
+
       </div>
     </div>
   );
