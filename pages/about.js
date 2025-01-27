@@ -54,6 +54,9 @@ const ResumePage = () => {
       Installed and configured an SNMP-based monitoring solution using Cacti to track network performance and CPU usage.
     </li>
     <li>
+    Implemented Splunk Enterprise SIEM to monitor real-time network security and automate threat detection in a simulated network.
+    </li>
+    <li>
       <strong>Hiring and Talent Development:</strong> Led the hiring process for the Student Security Operations Analyst position, streamlining resume reviews, questionnaire analysis, and leading interviews to assess fit for IT security operations.
     </li>
     <li>
