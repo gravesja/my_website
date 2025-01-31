@@ -102,8 +102,8 @@ const ResumePage = () => {
     <p className="text-gray-600">March 2024 - Present</p>
     <p className="text-gray-600">Kean Information Technology - Kean University | Union, NJ</p>
     <ul className="list-disc list-inside text-gray-700 mt-2">
-  <li>Troubleshoot Tier III network connectivity issues for computers, printers, and other systems across 34 buildings.</li>
-  <li>Collaborate with Network and System Administrators to deploy and maintain advanced network technologies.</li>
+  <li>Troubleshoot Tier III network connectivity issues for computers, printers, and other end systems across 34 buildings.</li>
+  <li>Collaborate with Network and System Administrators and vendors to deploy and maintain advanced network technologies.</li>
   <li>Analyze firewall traffic to identify and mitigate potential cyber threats and vulnerabilities.</li>
   <li>Utilize ExtremeCloud IQ Pilot and Extreme Site Engine to diagnose and resolve network-related issues.</li>
   <li>Conduct system troubleshooting and maintenance on access points to ensure uninterrupted connectivity.</li>
