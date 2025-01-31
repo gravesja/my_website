@@ -81,6 +81,9 @@ const ResumePage = () => {
               </li>
             </ul>
             <ul className="list-disc list-inside text-gray-700">
+            <li>
+                <strong>Hardware:</strong>  Ethernet, Fiber, Coaxial, routers, patch panels
+              </li>
               <li>
                 <strong>Coding:</strong> React.js, Node.js, JavaScript, HTML, Python, SQL, PHP, OpenAI API
               </li>
