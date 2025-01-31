@@ -74,7 +74,7 @@ const ResumePage = () => {
                 <strong>Networking:</strong> Windows Server, PowerShell, Linux, Wireshark, PuTTY, CISCO, VLAN, LAN, DHCP, DNS, 802.ax/ac, Linux, TCP/IP
               </li>
               <li>
-                <strong>Cybersecurity:</strong> IPS/IDS, EDR, 802.1x, TLS/SSL, VPN, MFA, DLP, RBAC
+                <strong>Cybersecurity:</strong> IPS/IDS, EDR, 802.1x, TLS/SSL, Splunk, VPN, MFA, ZTNA, DLP-HIPAA, RBAC
               </li>
               <li>
                 <strong>IT:</strong> Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Xerox, HP, Google, Freshservice, Help Desk
