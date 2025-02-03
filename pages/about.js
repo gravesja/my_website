@@ -57,6 +57,9 @@ const ResumePage = () => {
     Implemented Splunk Enterprise SIEM to monitor real-time network security and automate threat detection in a simulated network.
     </li>
     <li>
+    Developed a Disaster Recovery Plan for a WatchGuard Firebox network to ensure rapid firewall restoration.
+    </li>
+    <li>
       <strong>Hiring and Talent Development:</strong> Led the hiring process for the Student Security Operations Analyst position, streamlining resume reviews, questionnaire analysis, and leading interviews to assess fit for IT security operations.
     </li>
     <li>
@@ -74,7 +77,7 @@ const ResumePage = () => {
                 <strong>Networking:</strong> Windows Server, Powershell, Linux, Cisco, Wireshark, PuTTY, CISCO, VLAN, LAN, DHCP, DNS, 802.ax/ac, TCP/IP
               </li>
               <li>
-                <strong>Cybersecurity:</strong> IPS/IDS, EDR, 802.1x, TLS/SSL, Splunk, VPN, MFA, ZTNA, DLP-HIPAA, RBAC
+                <strong>Cybersecurity:</strong> IPS/IDS, EDR, 802.1x, TLS/SSL, Splunk, VPN, MFA, ZTNA, DRP, DLP-HIPAA, RBAC
               </li>
               <li>
                 <strong>IT:</strong> Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Xerox, HP, Google, Freshservice, Help Desk
