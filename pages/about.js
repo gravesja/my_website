@@ -140,7 +140,7 @@ const ResumePage = () => {
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Certifications</h2>
           <ul className="list-disc list-inside text-gray-700">
             <li>CISCO Threat Management - December 2024</li>
-            <li>CompTIA Network+ Expected March 2025</li>
+            <li>CompTIA Network+ Expected April 2025</li>
           </ul>
         </section>
 {/* Education Section */}
