@@ -38,6 +38,7 @@ export default function Portfolio() {
             </a>
           </div>
           {/* Project 3 */}
+           {/*
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">OpenAI API chatbot</h2>
             <p className="text-gray-700 mb-4">
@@ -50,7 +51,10 @@ export default function Portfolio() {
               Visit Website
             </a>
           </div>
+          */}
+           
           {/* Project 4 */}
+          {/*
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">Homework Helper Bot</h2>
             <p className="text-gray-700 mb-4">
@@ -63,6 +67,7 @@ export default function Portfolio() {
               Visit Website
             </a>
           </div>
+          */}
         </div>
       </div>
     </div>
