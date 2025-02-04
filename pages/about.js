@@ -51,13 +51,13 @@ const ResumePage = () => {
       Designed and implemented a quarantine server to isolate and analyze potentially compromised devices in a controlled environment.
     </li>
     <li>
-      Installed and configured an SNMP-based monitoring solution using Cacti to track network performance and CPU usage.
+    Configured an SNMP-based network monitoring solution, integrating automated email notifications to alert on device status.
     </li>
     <li>
     Implemented Splunk Enterprise SIEM to monitor real-time network security and automate threat detection in a simulated network.
     </li>
     <li>
-    Developed a Disaster Recovery Plan for a WatchGuard Firebox network to ensure rapid firewall restoration.
+    Designed a Disaster Recovery Plan for a WatchGuard Firebox network to ensure rapid firewall restoration and seamless failover.
     </li>
     <li>
       <strong>Hiring and Talent Development:</strong> Led the hiring process for the Student Security Operations Analyst position, streamlining resume reviews, questionnaire analysis, and leading interviews to assess fit for IT security operations.
