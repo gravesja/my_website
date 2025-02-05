@@ -51,7 +51,7 @@ const ResumePage = () => {
       Designed and implemented a quarantine server to isolate and analyze potentially compromised devices in a controlled environment.
     </li>
     <li>
-    Configured an SNMP-based network monitoring solution, integrating automated email notifications to alert on device status.
+    Configured an SNMP-based network monitoring solution, integrating automated Python scripts and alert systems. 
     </li>
     <li>
     Implemented Splunk Enterprise SIEM to monitor real-time network security and automate threat detection in a simulated network.
