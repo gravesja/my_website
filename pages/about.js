@@ -74,7 +74,7 @@ const ResumePage = () => {
           <div className="grid grid-cols-2 gap-6">
             <ul className="list-disc list-inside text-gray-700">
               <li>
-                <strong>Networking:</strong> Windows Server, Powershell, Linux, Cisco, Wireshark, PuTTY, CISCO, VLAN, LAN, DHCP, DNS, 802.ax/ac, TCP/IP
+                <strong>Networking:</strong> Windows Server, Powershell, Linux, Cisco, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.ax/ac, TCP/IP
               </li>
               <li>
                 <strong>Cybersecurity:</strong> IPS/IDS, EDR, 802.1x, TLS/SSL, Splunk, VPN, ACLs, MFA, ZTNA, DRP, DLP-HIPAA, RBAC
@@ -107,7 +107,7 @@ const ResumePage = () => {
     <ul className="list-disc list-inside text-gray-700 mt-2">
   <li>Troubleshoot Tier III network connectivity issues for computers, printers, and other end systems across 34 buildings.</li>
   <li>Collaborate with Network and System Administrators and vendors to deploy and maintain advanced network technologies.</li>
-  <li>Analyze firewall traffic to identify and mitigate potential cyber threats and vulnerabilities.</li>
+  <li>Analyze FortiGate and WatchGuard firewall traffic to identify and mitigate potential cyber threats and vulnerabilities.</li>
   <li>Utilize ExtremeCloud IQ Pilot and Extreme Site Engine to diagnose and resolve network-related issues.</li>
   <li>Conduct system troubleshooting and maintenance on access points to ensure uninterrupted connectivity.</li>
   <li>Configure and test web policies using WatchGuard Fireware software in dynamic network environments.</li>
