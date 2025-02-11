@@ -42,7 +42,7 @@ const ResumePage = () => {
       <strong>Network Administration Course Instructor:</strong> Recognized as the #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program.
     </li>
     <li>
-      <strong>Network Configuration and Security:</strong> Developed a mobile network with an AT&T Netgear router, integrating a Fortinet FortiGate-90D Firewall, and a GL-SFT1200. This project will be presented at the Senior Project Fair, showcasing networking security solutions for enterprise environments.
+      <strong>Network Configuration and Security:</strong> Developed a mobile network with an AT&T Netgear router, integrating a Fortinet FortiGate-90D Firewall, and a GL-SFT1200 travel router. This project will be presented at the Senior Project Fair, showcasing networking security solutions for enterprise environments.
     </li>
     <li>
     Configured WatchGuard firewall policies, integrating Windows Server Active Directory, MFA, and DHCP to ensure secure Ethernet connectivity.
@@ -80,7 +80,7 @@ const ResumePage = () => {
                 <strong>Networking:</strong> Windows Server, Powershell, Linux, Cisco, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.ax/ac, TCP/IP
               </li>
               <li>
-                <strong>Cybersecurity:</strong> IPS/IDS, EDR, 802.1x, TLS/SSL, Splunk, VPN, ACLs, MFA, ZTNA, DRP, DLP-HIPAA, RBAC
+                <strong>Cybersecurity:</strong> IPS/IDS, EDR, Fortinet firewalls, 802.1x, TLS/SSL, Splunk, VPN, ACLs, MFA, ZTNA, DRP, DLP-HIPAA, RBAC
               </li>
               <li>
                 <strong>IT:</strong> Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Xerox, HP, Google, Freshservice, Help Desk
