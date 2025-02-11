@@ -30,7 +30,7 @@ const ResumePage = () => {
             Go Back to Homepage
           </button>
           <p className="text-gray-700 text-lg leading-relaxed">
-            Passionate and dedicated IT professional with experience in network administration, system troubleshooting, and web development. Skilled at integrating creative problem-solving with technical expertise to develop reliable and efficient systems. Currently focusing on enhancing web development skills with AI and dynamic applications.
+            Passionate and dedicated IT professional with experience in network administration, system troubleshooting, and web development. Skilled at integrating creative problem-solving with technical expertise to develop reliable and efficient systems. Currently focusing on enhancing network automation skills with AI and dynamic applications.
           </p>
         </section>
 
