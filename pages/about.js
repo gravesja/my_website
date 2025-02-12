@@ -75,7 +75,7 @@ const ResumePage = () => {
           <div className="grid grid-cols-2 gap-6">
             <ul className="list-disc list-inside text-gray-700">
               <li>
-                <strong>Networking:</strong> Windows Server, Powershell, Linux, Cisco, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.ax/ac, TCP/IP
+                <strong>Networking:</strong> Windows Server, Powershell, Linux, Cisco, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.11-ax/ac, TCP/IP
               </li>
               <li>
                 <strong>Cybersecurity:</strong> IPS/IDS, EDR, Fortinet firewalls, 802.1x, TLS/SSL, Splunk, VPN, ACLs, MFA, ZTNA, DRP, DLP-HIPAA, RBAC
