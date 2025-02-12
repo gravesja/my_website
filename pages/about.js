@@ -42,19 +42,17 @@ const ResumePage = () => {
       <strong>Network Administration Course Instructor:</strong> Recognized as the #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program.
     </li>
     <li>
-      <strong>Network Configuration and Security:</strong> Developed a mobile network with an AT&T Netgear router, integrating a Fortinet FortiGate-90D Firewall, and a GL-SFT1200 travel router. This project will be presented at the Senior Project Fair, showcasing networking security solutions for enterprise environments.
+      <strong>Network Configuration and Security:</strong> Deployed a secure mobile network with an AT&T Netgear router, integrating a Fortinet FortiGate-90D Firewall, Raspberry Pi ad-blocking DNS server, NAS, VPN, and a GL.iNet router showcasing portable solutions for enterprise network environments.
+
     </li>
     <li>
     Configured WatchGuard firewall policies, integrating Windows Server Active Directory, MFA, and DHCP to ensure secure Ethernet connectivity.
     </li>
     <li>
-      Set up a Raspberry Pi 4 to operate as a network-wide ad-blocking server, NAS, and mobile VPN, reducing unwanted traffic.
-    </li>
-    <li>
       Designed and implemented a quarantine server to isolate and analyze potentially compromised devices in a controlled environment.
     </li>
     <li>
-    Configured an SNMP-based network monitoring solution, integrating automated Python scripts and alert systems. 
+    Constructed an SNMP-based network monitoring solution, integrating automated Python scripts and alert systems. 
     </li>
     <li>
     Implemented Splunk Enterprise SIEM to monitor real-time network security and automate threat detection in a simulated network.
