@@ -42,8 +42,7 @@ const ResumePage = () => {
       <strong>Network Administration Course Instructor:</strong> Recognized as the #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program.
     </li>
     <li>
-      <strong>Network Configuration and Security:</strong> Deployed a secure mobile network with an AT&T Netgear router, integrating a Fortinet FortiGate-90D Firewall, Raspberry Pi ad-blocking DNS server, NAS, VPN, and a GL.iNet router showcasing portable solutions for enterprise network environments.
-
+      <strong>Network Configuration and Security:</strong> Deployed a secure mobile network with an AT&T Netgear router, integrating a Fortinet FortiGate-90D Firewall, captive portal, ad-blocking DNS server, NAS, VPN, and a GL.iNet router showcasing portable solutions for enterprise network environments.
     </li>
     <li>
     Configured WatchGuard firewall policies, integrating Windows Server Active Directory, MFA, and DHCP to ensure secure Ethernet connectivity.
@@ -75,13 +74,13 @@ const ResumePage = () => {
           <div className="grid grid-cols-2 gap-6">
             <ul className="list-disc list-inside text-gray-700">
               <li>
-                <strong>Networking:</strong> Windows Server, Powershell, Linux, Cisco, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.11-ax/ac, TCP/IP
+                <strong>Networking:</strong> Windows Server, Powershell, Linux, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.11-ax/ac, TCP/IP
               </li>
               <li>
                 <strong>Cybersecurity:</strong> IPS/IDS, EDR, Fortinet firewalls, 802.1x, TLS/SSL, Splunk, VPN, ACLs, MFA, ZTNA, DRP, DLP-HIPAA, RBAC
               </li>
               <li>
-                <strong>IT:</strong> Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Xerox, HP, Google, Freshservice, Help Desk
+                <strong>IT:</strong> Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Xerox, HP, Webex, Google, Freshservice, Help Desk
               </li>
             </ul>
             <ul className="list-disc list-inside text-gray-700">
