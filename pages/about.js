@@ -45,7 +45,7 @@ const ResumePage = () => {
       <strong>Network Configuration and Security:</strong> Deployed a secure mobile network with an AT&T Netgear router, integrating a Fortinet FortiGate-90D Firewall, captive portal, ad-blocking DNS server, NAS, VPN, and a GL.iNet router showcasing portable solutions for enterprise network environments.
     </li>
     <li>
-    Configured WatchGuard firewall policies, integrating Windows Server Active Directory, MFA, and DHCP to ensure secure Ethernet connectivity.
+    Configured WatchGuard firewall to host Windows Server Active Directory, Group Policy, DNS, MFA, and DHCP, integrating a captive portal for network authentication and access control.
     </li>
     <li>
       Designed and implemented a quarantine server to isolate and analyze potentially compromised devices in a controlled environment.
@@ -60,7 +60,8 @@ const ResumePage = () => {
     Designed a Disaster Recovery Plan for a WatchGuard Firebox network to ensure rapid firewall restoration and seamless failover.
     </li>
     <li>
-      <strong>Hiring and Talent Development:</strong> Led the hiring process for the Student Security Operations Analyst position, streamlining resume reviews, questionnaire analysis, and leading interviews to assess fit for IT security operations.
+      <strong>Hiring and Talent Development:</strong> Oversaw the hiring process for the Student Security Operations Analyst position, refining candidate evaluation methods and leading interviews to recruit top talent for IT security operations.
+
     </li>
     <li>
       <strong>Active Directory Operations:</strong> Managed user groups and computer accounts within Active Directory, ensuring system integrity with 20,000+ active objects.
@@ -74,7 +75,7 @@ const ResumePage = () => {
           <div className="grid grid-cols-2 gap-6">
             <ul className="list-disc list-inside text-gray-700">
               <li>
-                <strong>Networking:</strong> Windows Server, Powershell, Linux, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.11-ax/ac, TCP/IP
+                <strong>Networking:</strong> Windows Server, Powershell, Linux, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.11-ax/ac, TCP/IP, WPA2/3
               </li>
               <li>
                 <strong>Cybersecurity:</strong> IPS/IDS, EDR, Fortinet firewalls, 802.1x, TLS/SSL, Splunk, VPN, ACLs, MFA, ZTNA, DRP, DLP-HIPAA, RBAC
@@ -105,9 +106,9 @@ const ResumePage = () => {
     <p className="text-gray-600">March 2024 - Present</p>
     <p className="text-gray-600">Kean Information Technology - Kean University | Union, NJ</p>
     <ul className="list-disc list-inside text-gray-700 mt-2">
-  <li>Troubleshoot Tier III network connectivity issues for computers, printers, and other end systems across 34 buildings.</li>
+  <li>Resolved Tier III network issues across 34 buildings, minimizing disruptions for seamless connectivity for faculty, staff, and students.  </li>
   <li>Collaborate with Network and System Administrators and vendors to deploy and maintain advanced network technologies.</li>
-  <li>Analyze FortiGate and WatchGuard firewall traffic to identify and mitigate potential cyber threats and vulnerabilities.</li>
+  <li>Monitored FortiGate and WatchGuard firewall logs for anomalies, identifying potential cyber threats to prevent security incidents. </li>
   <li>Utilize ExtremeCloud IQ Pilot and Extreme Site Engine to diagnose and resolve network-related issues.</li>
   <li>Conduct system troubleshooting and maintenance on access points to ensure uninterrupted connectivity.</li>
   <li>Configure and test web policies using WatchGuard Fireware software in dynamic network environments.</li>
