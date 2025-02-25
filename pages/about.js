@@ -45,7 +45,7 @@ const ResumePage = () => {
       <strong>Network Configuration and Security:</strong> Deployed a secure mobile network with an AT&T Netgear router, integrating a Fortinet FortiGate-90D Firewall, captive portal, ad-blocking DNS server, NAS, VPN, and a GL.iNet router providing a scalable solution for field deployments for enterprise networks. 
     </li>
     <li>
-    Configured WatchGuard firewall to host Windows Server Active Directory, Group Policy, DNS, MFA, and DHCP, integrating a captive portal for network authentication and access control.
+    Configured WatchGuard firewall to host Windows Server Active Directory, Group Policy, Linux DNS server, MFA, and DHCP, while integrating a captive portal for network authentication and access control.
     </li>
     <li>
     Designed and implemented a quarantine server to isolate and analyze potentially compromised devices in a controlled environment.
@@ -63,7 +63,10 @@ const ResumePage = () => {
       <strong>Hiring and Talent Development:</strong> Led the hiring process for the Student Security Operations Analyst position, refining candidate evaluation methods and leading interviews to recruit top talent for IT security operations.
     </li>
     <li>
-      <strong>Active Directory Operations:</strong> Managed user groups and computer accounts within Active Directory, ensuring system integrity with 20,000+ active objects.
+      <strong>Active Directory Operations:</strong> Administered 20,000+ active objects, including user groups and computers, ensuring secure and efficient directory operations.
+    </li>
+    <li>
+    Migrated a standalone Windows Server 2019 AD to Microsoft Entra ID (Azure AD), for user access across hybrid cloud environments.
     </li>
   </ul>
 </section>
