@@ -77,16 +77,19 @@ const ResumePage = () => {
           <div className="grid grid-cols-2 gap-6">
             <ul className="list-disc list-inside text-gray-700">
               <li>
-                <strong>Networking:</strong> Windows Server, Powershell, Linux, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.11-ax/ac, TCP/IP, WPA2/3
+                <strong>Networking:</strong> Windows Server, Powershell, Linux, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.11, TCP/IP, WPA2/3
               </li>
               <li>
                 <strong>Cybersecurity:</strong> IPS/IDS, EDR, Fortinet firewalls, 802.1x, TLS/SSL, Splunk, VPN, ACLs, MFA, ZTNA, DRP, DLP-HIPAA, RBAC
               </li>
               <li>
-                <strong>IT:</strong> Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Xerox, HP, Webex, Google, Freshservice, Help Desk
+                <strong>IT:</strong> Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Xerox, HP, Webex, Google, Freshservice
               </li>
             </ul>
             <ul className="list-disc list-inside text-gray-700">
+            <li>
+                <strong>Cloud:</strong> Azure, WatchGuard Cloud, AWS
+              </li>
             <li>
                 <strong>Hardware:</strong> Cisco switches, routers, Ap&apos;s, Fiber, Coaxial, patch panels
               </li>
