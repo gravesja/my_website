@@ -39,29 +39,28 @@ const ResumePage = () => {
   <h2 className="text-2xl font-bold text-purple-700 mb-4">Career Highlights</h2>
   <ul className="list-disc list-inside text-gray-700">
     <li>
-      <strong>Network Administration Course Instructor:</strong> Recognized as the #1 course instructor for the 2024 Kean University IT Student Rotational Learning Program.
+      <strong>Network Administration Course Instructor:</strong> Recognized as the #1 instructor for the 2024 Kean University IT Student Rotational Learning Program.
     </li>
     <li>
-      <strong>Network Configuration and Security:</strong> Deployed a secure mobile network with an AT&T Netgear router, integrating a Fortinet FortiGate-90D Firewall, captive portal, ad-blocking DNS server, NAS, VPN, and a GL.iNet router showcasing portable solutions for enterprise network environments.
+      <strong>Network Configuration and Security:</strong> Deployed a secure mobile network with an AT&T Netgear router, integrating a Fortinet FortiGate-90D Firewall, captive portal, ad-blocking DNS server, NAS, VPN, and a GL.iNet router providing a scalable solution for field deployments for enterprise networks. 
     </li>
     <li>
     Configured WatchGuard firewall to host Windows Server Active Directory, Group Policy, DNS, MFA, and DHCP, integrating a captive portal for network authentication and access control.
     </li>
     <li>
-      Designed and implemented a quarantine server to isolate and analyze potentially compromised devices in a controlled environment.
+    Designed and implemented a quarantine server to isolate and analyze potentially compromised devices in a controlled environment.
     </li>
     <li>
-    Constructed an SNMP-based network monitoring solution, integrating automated Python scripts and alert systems. 
+    Constructed an SNMP-based network monitoring solution, incorporating automated Python scripts and alert systems. 
     </li>
     <li>
-    Implemented Splunk Enterprise SIEM to monitor real-time network security and automate threat detection in a simulated network.
+    Deployed Splunk Enterprise SIEM, enabling real-time threat detection and automated security monitoring.
     </li>
     <li>
-    Designed a Disaster Recovery Plan for a WatchGuard Firebox network to ensure rapid firewall restoration and seamless failover.
+    Presented a Firewall Recovery Plan for a WatchGuard Firebox network to ensure rapid firewall restoration and seamless failover.
     </li>
     <li>
-      <strong>Hiring and Talent Development:</strong> Oversaw the hiring process for the Student Security Operations Analyst position, refining candidate evaluation methods and leading interviews to recruit top talent for IT security operations.
-
+      <strong>Hiring and Talent Development:</strong> Led the hiring process for the Student Security Operations Analyst position, refining candidate evaluation methods and leading interviews to recruit top talent for IT security operations.
     </li>
     <li>
       <strong>Active Directory Operations:</strong> Managed user groups and computer accounts within Active Directory, ensuring system integrity with 20,000+ active objects.
