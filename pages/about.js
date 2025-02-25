@@ -111,15 +111,15 @@ const ResumePage = () => {
     <p className="text-gray-600">March 2024 - Present</p>
     <p className="text-gray-600">Kean Information Technology - Kean University | Union, NJ</p>
     <ul className="list-disc list-inside text-gray-700 mt-2">
-  <li>Resolved Tier III network issues across 34 buildings, minimizing disruptions for seamless connectivity for faculty, staff, and students.  </li>
-  <li>Collaborate with Network and System Administrators and vendors to deploy and maintain advanced network technologies.</li>
-  <li>Monitored FortiGate and WatchGuard firewall logs for anomalies, identifying potential cyber threats to prevent security incidents. </li>
-  <li>Utilize ExtremeCloud IQ Pilot and Extreme Site Engine to diagnose and resolve network-related issues.</li>
-  <li>Conduct system troubleshooting and maintenance on access points to ensure uninterrupted connectivity.</li>
-  <li>Configure and test web policies using WatchGuard Fireware software in dynamic network environments.</li>
-  <li>Set up and configure Extreme Networks switches via PuTTY and assist with deployment in the Kean Data Center.</li>
-  <li>Develop course materials, lead networking seminars for technicians, and evaluate skills through hands-on examinations.</li>
-  <li>Design custom graphics and user manuals for in-house training programs and client resources.</li>
+  <li>Resolved Tier III network issues across 34 buildings, minimizing disruptions for seamless connectivity for faculty, staff, and students.</li>
+  <li>Collaborate with Network & System Administrators and vendors to deploy, optimize, and maintain enterprise-grade network infrastructure.</li>
+  <li>Monitor and analyze firewall traffic (FortiGate & WatchGuard) to detect and mitigate potential cyber threats.</li>
+  <li>Leverage ExtremeCloud IQ Pilot and Extreme Site Engine for real-time network diagnostics and performance optimization.</li>
+  <li>Conduct system troubleshooting and proactive maintenance on access points, minimizing downtime and connectivity disruptions.</li>
+  <li>Configure, test, and refine web policies in WatchGuard Fireware, adapting to dynamic network security requirements.</li>
+  <li>Set up and deploy Extreme Networks switches using PuTTY and assist with data center integration.</li>
+  <li>Develop training materials and lead networking seminars for IT technicians, providing hands-on skill assessments.</li>
+  <li>Design custom graphics and user manuals to enhance in-house training programs and client-facing resources.</li>
 </ul>
   </div>
   <div className="mb-6">
@@ -128,9 +128,9 @@ const ResumePage = () => {
     <p className="text-gray-600">Kean Information Technology - Kean University | Union, NJ</p>
     <ul className="list-disc list-inside text-gray-700 mt-2">
       <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and other peripheral devices.</li>
-      <li>Assisted staff, faculty, and students with computer-related issues, managing 15–35 support tickets weekly.</li>
-      <li>Tracked IT equipment and inventory using spreadsheets and ManageEngine Endpoint Central.</li>
-      <li>Contributed to multistage IT projects and deployments across offices and computer labs, ensuring seamless operations.</li>
+      <li>Managed 20–35 weekly support tickets, assisting faculty, staff, and students with IT-related concerns to ensure minimal downtime.</li>
+      <li>Maintained IT inventory by asset tracking using spreadsheets and ManageEngine Endpoint Central, improving equipment accountability.</li>
+      <li>Supported IT projects and large-scale deployments across offices and computer labs, ensuring efficient implementation. </li>
     </ul>
   </div>
   <div className="mb-6">
@@ -138,9 +138,9 @@ const ResumePage = () => {
     <p className="text-gray-600">September 2021 - September 2022</p>
     <p className="text-gray-600">Kean Information Technology - Kean University | Union, NJ</p>
     <ul className="list-disc list-inside text-gray-700 mt-2">
-      <li>Provided classroom support for faculty using projector systems and resolved Tier I A/V technical issues.</li>
+      <li>Provided classroom A/V support for faculty, ensuring smooth projector and multimedia operation and resolving Tier I technical issues.</li>
       <li>Operated 4K camera equipment to live stream on-campus events, enhancing accessibility for remote participants.</li>
-      <li>Answered phones, coordinated event support scheduling, and set up A/V equipment for meetings and functions across campus.</li>
+      <li>Answered technical inquiries, offering prompt resolutions for faculty, staff, and students during events and classes.</li>
     </ul>
   </div>
 </section>
