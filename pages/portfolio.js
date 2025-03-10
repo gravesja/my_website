@@ -27,7 +27,7 @@ export default function Portfolio() {
 
          {/* Project 2 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-4">Moblie Network Soltuion ( Senior Project)</h2>
+            <h2 className="text-2xl font-bold mb-4">Moblie Network Soltuion- Senior Project</h2>
             <p className="text-gray-700 mb-4">
             Developed a portable, scalable mobile network with a focus on security and performance optimization.
             </p>
