@@ -50,19 +50,42 @@ const ResumePage = () => {
         </section>
 
         {/* Work Experience Section */}
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
-          <div className="mb-6">
-            <h3 className="font-semibold text-lg text-black">Network Administrator</h3>
-            <p className="text-black">March 2024 - Present | Kean University, Union, NJ</p>
-            <ul className="list-disc list-inside text-black mt-2">
-              <li>Resolved Tier III network issues across 34 buildings, collaborating with Network & System Administrators.</li>
-              <li>Implemented and managed a quarantine server to isolate and analyze potentially compromised devices while testing security policies.</li>
-              <li>Monitored and analyzed firewall traffic (FortiGate & WatchGuard) to detect and mitigate cyber threats.</li>
-              <li>Configured and optimized web policies in WatchGuard Fireware.</li>
-            </ul>
-          </div>
-        </section>
+        <section class="mb-10">
+  <h2 class="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
+  <div class="mb-6">
+    <h3 class="font-semibold text-lg text-black">Network Administrator</h3>
+    <p class="text-black">March 2024 - Present | Kean University, Union, NJ</p>
+    <ul class="list-disc list-inside text-black mt-2">
+      <li>Resolved Tier III network issues across 34 buildings, collaborating with Network & System Administrators.</li>
+      <li>Implemented and managed a quarantine server to isolate and analyze potentially compromised devices while testing security policies.</li>
+      <li>Monitored and analyzed firewall traffic (FortiGate & WatchGuard) to detect and mitigate cyber threats.</li>
+      <li>Configured and optimized web policies in WatchGuard Fireware.</li>
+    </ul>
+  </div>
+
+  <div class="mb-6">
+    <h3 class="font-semibold text-lg text-black">IT Support Specialist</h3>
+    <p class="text-black">September 2022 - March 2024 | Kean University, Union, NJ</p>
+    <ul class="list-disc list-inside text-black mt-2">
+      <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and peripheral devices.</li>
+      <li>Managed 20–35 weekly support tickets, assisting faculty, staff, and students with IT-related concerns to minimize downtime.</li>
+      <li>Tracked IT assets using spreadsheets and ManageEngine Endpoint Central, improving accountability.</li>
+      <li>Supported IT projects and large-scale deployments across offices and computer labs, ensuring efficient implementation.</li>
+    </ul>
+  </div>
+
+  <div class="mb-6">
+    <h3 class="font-semibold text-lg text-black">Audio Visual Technician</h3>
+    <p class="text-black">September 2021 - September 2022 | Kean University, Union, NJ</p>
+    <ul class="list-disc list-inside text-black mt-2">
+      <li>Provided Tier I A/V support for faculty in classrooms, ensuring smooth operation of projectors and multimedia equipment.</li>
+      <li>Operated 4K camera equipment to live stream on-campus events, enhancing accessibility for remote participants.</li>
+      <li>Answered technical inquiries and offered prompt resolutions for faculty, staff, and students during events and classes.</li>
+    </ul>
+  </div>
+
+</section>
+
 
         {/* Certifications Section */}
         <section className="mb-10">
