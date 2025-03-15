@@ -45,9 +45,9 @@ const ResumePage = () => {
       <strong>Senior Project: Portable Mobile Network (See website portfolio for more details):</strong>Constructed a mobile network with an AT&T Netgear router, integrating Fortinet FortiGate-90D and pfsense firewalls, GL.inet  router, captive portal, Cisco Catalyst 2960X, ad-blocking DNS, and a NAS interchangeably for scalable enterprise field deployments.
     </li>
     <li>
-    <li>
     Developed a dedicated website showcasing the project, including an AI chatbot for technical assistance and troubleshooting.
     </li>
+    <li>
       <strong>Network Configuration and Security:</strong> Configured a WatchGuard firewall to host AD, Group Policy, Linux DNS, MFA, DHCP, and a captive portal for network access.
     </li>
     <li>
@@ -86,13 +86,13 @@ const ResumePage = () => {
           <div className="grid grid-cols-2 gap-6">
             <ul className="list-disc list-inside text-gray-700">
               <li>
-                <strong>Networking:</strong> Windows Server, Powershell, Linux, Wireshark, PuTTY, CISCO, VLAN, LAN, WAN, DHCP, DNS, 802.11, TCP/IP, WPA2/3
+                <strong>Networking:</strong> PowerShell, Wireshark, PuTTY, VLAN/LAN/WAN, DHCP, ARP, NAT, DNS, 802.11, Nmap, Cisco IOS, TCP/IP, WPA2/3, QoS
               </li>
               <li>
-                <strong>Cybersecurity:</strong> IPS/IDS, EDR, Fortinet firewalls, 802.1x, TLS/SSL, Splunk, VPN, ACLs, MFA, ZTNA, DRP, DLP-HIPAA, RBAC
+                <strong>Cybersecurity:</strong> IPS/IDS, EDR, Fortinet, Netgate- pfSense, Ubiquiti Cloud Gateway, 802.1x, TLS/SSL,  VPN, ACLs, MFA, ZTNA DLP, RBAC
               </li>
               <li>
-                <strong>IT:</strong> Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Xerox, HP, Webex, Google, Freshservice
+                <strong>IT:</strong> Windows, BeyondTrust remote support, IOS, Office 365, Dell, Mac, Sharp, Xerox, HP, Webex, Google, Freshservice
               </li>
             </ul>
             <ul className="list-disc list-inside text-gray-700">
@@ -103,7 +103,7 @@ const ResumePage = () => {
                 <strong>Hardware:</strong> Cisco switches, routers, Ap&apos;s, Fiber, Coaxial, patch panels
               </li>
               <li>
-                <strong>Coding:</strong> React.js, Node.js, JavaScript, HTML, Python, SQL, PHP, OpenAI API
+                <strong>Coding:</strong> React.js, Node.js, JavaScript, Ruby, HTML, Python, SQL, PHP, OpenAI API 
               </li>
               <li>
                 <strong>Video Editing:</strong> Filmora, Premiere, DaVinci Resolve
