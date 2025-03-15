@@ -56,10 +56,11 @@ const ResumePage = () => {
     <h3 class="font-semibold text-lg text-black">Network Administrator</h3>
     <p class="text-black">March 2024 - Present | Kean University, Union, NJ</p>
     <ul class="list-disc list-inside text-black mt-2">
-      <li>Resolved Tier III network issues across 34 buildings, collaborating with Network & System Administrators.</li>
+      <li>Resolve Tier III network issues across 34 buildings and collaborate with Network & System Administrators and vendors to optimize and maintain an enterprise-grade network.</li>
       <li>Implemented and managed a quarantine server to isolate and analyze potentially compromised devices while testing security policies.</li>
-      <li>Monitored and analyzed firewall traffic (FortiGate & WatchGuard) to detect and mitigate cyber threats.</li>
-      <li>Configured and optimized web policies in WatchGuard Fireware.</li>
+      <li>Optimized firewall security (FortiGate & WatchGuard) by analyzing traffic and mitigating threats.</li>
+      <li>Leverage ExtremeCloud IQ Pilot and Extreme Site Engine for real-time network diagnostics and performance optimization.</li>
+      <li>Develop training materials and lead networking seminars for technicians, providing hands-on skill assessments.</li>
     </ul>
   </div>
 
