@@ -3,18 +3,20 @@ export default function Portfolio() {
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-4xl font-bold mb-4 text-purple-800">My Portfolio</h1>
-        <button
-  className="mb-8 px-4 py-2 bg-purple-700 text-white rounded-md hover:bg-purple-800 focus:outline-none"
-  onClick={() => window.location.href = '/'}
->
-  Go Back to Homepage
-</button>
-<button
-  className="mt-2 px-4 py-2 bg-white text-purple-700 font-semibold rounded-lg shadow-md hover:bg-purple-100 focus:outline-none"
-  onClick={() => window.location.href = 'https://github.com/gravesja'}
->
-  Github
-</button>
+  {/* Flex container for buttons */}
+  <div className="flex justify-between mb-8">
+      <button
+        className="px-4 py-2 bg-purple-700 text-white font-semibold rounded-md hover:bg-purple-800 focus:outline-none w-full md:w-auto"
+        onClick={() => window.location.href = '/'}
+      >
+        Go Back to Homepage
+      </button>
+      <button
+        className="ml-4 px-4 py-2 bg-purple-700 text-white font-semibold rounded-md hover:bg-purple-800 focus:outline-none w-full md:w-auto"
+        onClick={() => window.location.href = 'https://github.com/gravesja'}
+      >
+        Github
+      </button>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       
@@ -89,6 +91,7 @@ export default function Portfolio() {
           </div>
           
         </div>
+      </div>
       </div>
     </div>
   );
