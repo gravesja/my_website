@@ -9,11 +9,13 @@ export default function Portfolio() {
 >
   Go Back to Homepage
 </button>
-<li className="mt-2">
-  <Link href="https://github.com/gravesja">
-    <a className="px-4 py-2 bg-white text-purple-700 font-semibold rounded-lg shadow-md hover:bg-purple-100">Github</a>
-  </Link>
-</li>
+<button
+  className="mt-2 px-4 py-2 bg-white text-purple-700 font-semibold rounded-lg shadow-md hover:bg-purple-100 focus:outline-none"
+  onClick={() => window.location.href = 'https://github.com/gravesja'}
+>
+  Github
+</button>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       
           {/* Project 1 */}
