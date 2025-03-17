@@ -4,11 +4,16 @@ export default function Portfolio() {
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-4xl font-bold mb-4 text-purple-800">My Portfolio</h1>
         <button
-          className="mb-8 px-4 py-2 bg-purple-700 text-white rounded-md hover:bg-purple-800 focus:outline-none"
-          onClick={() => window.location.href = '/'}
-        >
-          Go Back to Homepage
-        </button>
+  className="mb-8 px-4 py-2 bg-purple-700 text-white rounded-md hover:bg-purple-800 focus:outline-none"
+  onClick={() => window.location.href = '/'}
+>
+  Go Back to Homepage
+</button>
+<li className="mt-2">
+  <Link href="https://github.com/gravesja">
+    <a className="px-4 py-2 bg-white text-purple-700 font-semibold rounded-lg shadow-md hover:bg-purple-100">Github</a>
+  </Link>
+</li>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       
           {/* Project 1 */}

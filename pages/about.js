@@ -36,14 +36,14 @@ const ResumePage = () => {
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Skills</h2>
           <div className="grid grid-cols-2 gap-6">
             <ul className="list-disc list-inside text-black">
-              <li><strong>Networking:</strong> PowerShell, Wireshark, VLAN/LAN/WAN, DHCP, ARP, NAT, DNS, 802.1x, TCP/IP, QoS</li>
-              <li><strong>Cybersecurity:</strong> IPS/IDS, EDR, Fortinet, pfSense, Ubiquiti, TLS/SSL, VPN, MFA, ZTNA, RBAC</li>
-              <li><strong>IT:</strong> Windows, macOS, Office 365, Google Suite, Freshservice</li>
+              <li><strong>Networking:</strong> PowerShell, Wireshark, PuTTY, VLAN/LAN/WAN, DHCP, ARP, NAT, DNS, 802.11, Nmap, Cisco IOS, TCP/IP, WPA2/3, QoS</li>
+              <li><strong>Cybersecurity:</strong> IPS/IDS, EDR, Fortinet, Netgate- pfSense, Ubiquiti Cloud Gateway, 802.1x, TLS/SSL,  VPN, ACLs, MFA, ZTNA DLP, RBAC</li>
+              <li><strong>IT:</strong> Windows, Mac, IOS, Office 365, Dell, Google Suite, Xerox, Sharp, Webex  Freshservice</li>
             </ul>
             <ul className="list-disc list-inside text-black">
               <li><strong>Cloud:</strong> Azure, WatchGuard Cloud, AWS</li>
-              <li><strong>Hardware:</strong> Cisco switches, routers, patch panels</li>
-              <li><strong>Coding:</strong> React.js, Node.js, JavaScript, Python, SQL, PHP, OpenAI API</li>
+              <li><strong>Hardware:</strong> Cisco switches, routers, APs, patch panels</li>
+              <li><strong>Coding:</strong> React.js, Node.js, JavaScript, Python, SQL, PHP, Rest API, OpenAI API</li>
               <li><strong>Video Editing:</strong> Premiere, DaVinci Resolve</li>
             </ul>
           </div>
