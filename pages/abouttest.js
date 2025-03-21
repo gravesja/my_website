@@ -37,13 +37,13 @@ const ResumePage = () => {
   {/* Skills Container */}
   <div className="flex justify-between flex-wrap gap-3">
     {[
-      { title: "Networking", icon: "../images/hardware.png", skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", "DNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"] },
-      { title: "Cybersecurity", icon: "/placeholder.png", skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"] },
-      { title: "IT & Support", icon: "/placeholder.png", skills: ["Windows", "Mac", "iOS", "Office 365", "Dell", "Google Suite", "Xerox", "Sharp", "Webex", "Freshservice"] },
-      { title: "Cloud", icon: "/placeholder.png", skills: ["Azure", "WatchGuard Cloud", "AWS"] },
-      { title: "Hardware", icon: "/images/hardware.jpg", skills: ["Cisco Switches", "Routers", "APs", "Patch Panels"] },
-      { title: "Programming", icon: "/placeholder.png", skills: ["React.js", "Node.js", "JavaScript", "Python", "SQL", "PHP", "REST API", "OpenAI API"] },
-      { title: "Video Editing", icon: "/placeholder.png", skills: ["Premiere", "DaVinci Resolve"] },
+      { title: "Networking", icon: "🌐", skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", "DNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"] },
+      { title: "Cybersecurity", icon: "🔒", skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"] },
+      { title: "IT & Support", icon: "🖥️", skills: ["Windows", "Mac", "iOS", "Office 365", "Dell", "Google Suite", "Xerox", "Sharp", "Webex", "Freshservice"] },
+      { title: "Cloud", icon: "☁️", skills: ["Azure", "WatchGuard Cloud", "AWS"] },
+      { title: "Hardware", icon: "🛠️", skills: ["Cisco Switches", "Routers", "APs", "Patch Panels"] },
+      { title: "Programming", icon: "💻", skills: ["React.js", "Node.js", "JavaScript", "Python", "SQL", "PHP", "REST API", "OpenAI API"] },
+      { title: "Video Editing", icon: "🎬", skills: ["Premiere", "DaVinci Resolve"] },
     ].map((category, index) => (
       <div key={index} className="bg-white p-3 rounded-lg shadow-md w-1/7 flex-grow transition-transform transform hover:shadow-lg duration-300">
         <h3 className="text-sm font-semibold text-gray-800 flex items-center mb-2">
