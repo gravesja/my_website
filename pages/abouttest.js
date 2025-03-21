@@ -31,29 +31,27 @@ const ResumePage = () => {
             </ul>
           </section>
 
-  {/* Skills Section - Compact & Animated */}
+ {/* Skills Section - Compact & Improved */}
 <section className="mb-10">
-  <h2 className="text-2xl font-bold text-purple-700 mb-4 text-center"> Skills</h2>
-
+  <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">Technical Skills</h2>
   {/* Skills Container */}
-  <div className="flex overflow-x-auto space-x-4 pb-4 scrollbar-hide">
-    
+  <div className="flex justify-between flex-wrap gap-3">
     {[
-      { title: "Networking", icon: "network-wired", skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", "DNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"] },
-      { title: "Cybersecurity", icon: "shield-alt", skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"] },
-      { title: "IT & Support", icon: "laptop-code", skills: ["Windows", "Mac", "iOS", "Office 365", "Dell", "Google Suite", "Xerox", "Sharp", "Webex", "Freshservice"] },
-      { title: "Cloud", icon: "cloud", skills: ["Azure", "WatchGuard Cloud", "AWS"] },
-      { title: "Hardware", icon: "microchip", skills: ["Cisco Switches", "Routers", "APs", "Patch Panels"] },
-      { title: "Programming", icon: "code", skills: ["React.js", "Node.js", "JavaScript", "Python", "SQL", "PHP", "REST API", "OpenAI API"] },
-      { title: "Video Editing", icon: "video", skills: ["Premiere", "DaVinci Resolve"] },
+      { title: "Networking", icon: "/placeholder.png", skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", "DNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"] },
+      { title: "Cybersecurity", icon: "/placeholder.png", skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"] },
+      { title: "IT & Support", icon: "/placeholder.png", skills: ["Windows", "Mac", "iOS", "Office 365", "Dell", "Google Suite", "Xerox", "Sharp", "Webex", "Freshservice"] },
+      { title: "Cloud", icon: "/placeholder.png", skills: ["Azure", "WatchGuard Cloud", "AWS"] },
+      { title: "Hardware", icon: "/placeholder.png", skills: ["Cisco Switches", "Routers", "APs", "Patch Panels"] },
+      { title: "Programming", icon: "/placeholder.png", skills: ["React.js", "Node.js", "JavaScript", "Python", "SQL", "PHP", "REST API", "OpenAI API"] },
+      { title: "Video Editing", icon: "/placeholder.png", skills: ["Premiere", "DaVinci Resolve"] },
     ].map((category, index) => (
-      <div key={index} className="bg-white p-4 rounded-lg shadow-md w-64 flex-shrink-0 transition-transform transform hover:-translate-y-1 hover:bg-gray-900 hover:shadow-lg duration-300">
-        <h3 className="text-md font-semibold text-gray-800 flex items-center mb-2">
-          <i className={`fas fa-${category.icon} mr-2 text-purple-700`}></i> {category.title}
+      <div key={index} className="bg-white p-3 rounded-lg shadow-md w-1/7 flex-grow transition-transform transform hover:shadow-lg duration-300">
+        <h3 className="text-sm font-semibold text-gray-800 flex items-center mb-2">
+          <img src={category.icon} alt="icon" className="w-5 h-5 mr-2 object-contain" /> {category.title}
         </h3>
         <div className="flex flex-wrap">
           {category.skills.map(skill => (
-            <span key={skill} className="m-1 px-2 py-1 text-sm bg-purple-100 text-purple-700 rounded-md transition-colors duration-300 hover:bg-purple-700 hover:text-white">
+            <span key={skill} className="m-1 px-2 py-1 text-xs bg-purple-100 text-purple-700 rounded-md transition-colors duration-300 hover:bg-purple-700 hover:text-white">
               {skill}
             </span>
           ))}
@@ -62,7 +60,6 @@ const ResumePage = () => {
     ))}
   </div>
 </section>
-
 
           {/* Work Experience Section */}
           <section class="mb-10">
