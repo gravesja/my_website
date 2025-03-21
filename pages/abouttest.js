@@ -41,7 +41,7 @@ const ResumePage = () => {
       { title: "Cybersecurity", icon: "/placeholder.png", skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"] },
       { title: "IT & Support", icon: "/placeholder.png", skills: ["Windows", "Mac", "iOS", "Office 365", "Dell", "Google Suite", "Xerox", "Sharp", "Webex", "Freshservice"] },
       { title: "Cloud", icon: "/placeholder.png", skills: ["Azure", "WatchGuard Cloud", "AWS"] },
-      { title: "Hardware", icon: "../images/hardware.png", skills: ["Cisco Switches", "Routers", "APs", "Patch Panels"] },
+      { title: "Hardware", icon: "/images/hardware.png", skills: ["Cisco Switches", "Routers", "APs", "Patch Panels"] },
       { title: "Programming", icon: "/placeholder.png", skills: ["React.js", "Node.js", "JavaScript", "Python", "SQL", "PHP", "REST API", "OpenAI API"] },
       { title: "Video Editing", icon: "/placeholder.png", skills: ["Premiere", "DaVinci Resolve"] },
     ].map((category, index) => (
