@@ -30,121 +30,39 @@ const ResumePage = () => {
               <li>Developed a Firewall Recovery Plan for a WatchGuard Firebox to ensure failover and business continuity.</li>
             </ul>
           </section>
-  
-        {/* Skills Section - Expanded */}
+
+  {/* Skills Section - Compact & Animated */}
 <section className="mb-10">
-  <h2 className="text-2xl font-bold text-purple-700 mb-4">Skills</h2>
-  <div className="grid md:grid-cols-2 gap-6">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4 text-center"> Skills</h2>
 
-    {/* Networking Skills */}
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h3 className="text-lg font-semibold text-gray-800 flex items-center">
-        <i className="fas fa-network-wired mr-2 text-purple-700"></i> Networking
-      </h3>
-      <div className="flex flex-wrap mt-2">
-        {[
-          "PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", 
-          "DNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"
-        ].map(skill => (
-          <span key={skill} className="m-1 px-3 py-1 bg-purple-100 text-purple-700 rounded-md text-sm">
-            {skill}
-          </span>
-        ))}
+  {/* Skills Container */}
+  <div className="flex overflow-x-auto space-x-4 pb-4 scrollbar-hide">
+    
+    {[
+      { title: "Networking", icon: "network-wired", skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", "DNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"] },
+      { title: "Cybersecurity", icon: "shield-alt", skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"] },
+      { title: "IT & Support", icon: "laptop-code", skills: ["Windows", "Mac", "iOS", "Office 365", "Dell", "Google Suite", "Xerox", "Sharp", "Webex", "Freshservice"] },
+      { title: "Cloud", icon: "cloud", skills: ["Azure", "WatchGuard Cloud", "AWS"] },
+      { title: "Hardware", icon: "microchip", skills: ["Cisco Switches", "Routers", "APs", "Patch Panels"] },
+      { title: "Programming", icon: "code", skills: ["React.js", "Node.js", "JavaScript", "Python", "SQL", "PHP", "REST API", "OpenAI API"] },
+      { title: "Video Editing", icon: "video", skills: ["Premiere", "DaVinci Resolve"] },
+    ].map((category, index) => (
+      <div key={index} className="bg-white p-4 rounded-lg shadow-md w-64 flex-shrink-0 transition-transform transform hover:-translate-y-1 hover:bg-gray-900 hover:shadow-lg duration-300">
+        <h3 className="text-md font-semibold text-gray-800 flex items-center mb-2">
+          <i className={`fas fa-${category.icon} mr-2 text-purple-700`}></i> {category.title}
+        </h3>
+        <div className="flex flex-wrap">
+          {category.skills.map(skill => (
+            <span key={skill} className="m-1 px-2 py-1 text-sm bg-purple-100 text-purple-700 rounded-md transition-colors duration-300 hover:bg-purple-700 hover:text-white">
+              {skill}
+            </span>
+          ))}
+        </div>
       </div>
-    </div>
-
-    {/* Cybersecurity Skills */}
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h3 className="text-lg font-semibold text-gray-800 flex items-center">
-        <i className="fas fa-shield-alt mr-2 text-purple-700"></i> Cybersecurity
-      </h3>
-      <div className="flex flex-wrap mt-2">
-        {[
-          "IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", 
-          "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"
-        ].map(skill => (
-          <span key={skill} className="m-1 px-3 py-1 bg-purple-100 text-purple-700 rounded-md text-sm">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* IT Skills */}
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h3 className="text-lg font-semibold text-gray-800 flex items-center">
-        <i className="fas fa-laptop-code mr-2 text-purple-700"></i> IT & Support
-      </h3>
-      <div className="flex flex-wrap mt-2">
-        {[
-          "Windows", "Mac", "iOS", "Office 365", "Dell", "Google Suite", 
-          "Xerox", "Sharp", "Webex", "Freshservice"
-        ].map(skill => (
-          <span key={skill} className="m-1 px-3 py-1 bg-purple-100 text-purple-700 rounded-md text-sm">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* Cloud Skills */}
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h3 className="text-lg font-semibold text-gray-800 flex items-center">
-        <i className="fas fa-cloud mr-2 text-purple-700"></i> Cloud
-      </h3>
-      <div className="flex flex-wrap mt-2">
-        {["Azure", "WatchGuard Cloud", "AWS"].map(skill => (
-          <span key={skill} className="m-1 px-3 py-1 bg-purple-100 text-purple-700 rounded-md text-sm">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* Hardware Skills */}
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h3 className="text-lg font-semibold text-gray-800 flex items-center">
-        <i className="fas fa-microchip mr-2 text-purple-700"></i> Hardware
-      </h3>
-      <div className="flex flex-wrap mt-2">
-        {["Cisco Switches", "Routers", "APs", "Patch Panels"].map(skill => (
-          <span key={skill} className="m-1 px-3 py-1 bg-purple-100 text-purple-700 rounded-md text-sm">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* Programming Skills */}
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h3 className="text-lg font-semibold text-gray-800 flex items-center">
-        <i className="fas fa-code mr-2 text-purple-700"></i> Programming
-      </h3>
-      <div className="flex flex-wrap mt-2">
-        {["React.js", "Node.js", "JavaScript", "Python", "SQL", "PHP", "REST API", "OpenAI API"].map(skill => (
-          <span key={skill} className="m-1 px-3 py-1 bg-purple-100 text-purple-700 rounded-md text-sm">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    {/* Video Editing Skills */}
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h3 className="text-lg font-semibold text-gray-800 flex items-center">
-        <i className="fas fa-video mr-2 text-purple-700"></i> Video Editing
-      </h3>
-      <div className="flex flex-wrap mt-2">
-        {["Premiere", "DaVinci Resolve"].map(skill => (
-          <span key={skill} className="m-1 px-3 py-1 bg-purple-100 text-purple-700 rounded-md text-sm">
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
-
+    ))}
   </div>
 </section>
+
 
           {/* Work Experience Section */}
           <section class="mb-10">
