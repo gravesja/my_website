@@ -30,25 +30,62 @@ const ResumePage = () => {
               <li>Developed a Firewall Recovery Plan for a WatchGuard Firebox to ensure failover and business continuity.</li>
             </ul>
           </section>
-
- {/* Skills Section - Compact & Improved */}
-<section className="mb-10">
+          <section className="mb-10">
   <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">Technical Skills</h2>
-  {/* Skills Container */}
   <div className="flex justify-between flex-wrap gap-3">
     {[
-      { title: "Networking", icon: "🌐", skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", "DNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"] },
-      { title: "Cybersecurity", icon: "🔒", skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"] },
-      { title: "IT & Support", icon: "🖥️", skills: ["Windows", "Mac", "iOS", "Office 365", "Dell", "Google Suite", "Xerox", "Sharp", "Webex", "Freshservice"] },
-      { title: "Cloud", icon: "☁️", skills: ["Azure", "WatchGuard Cloud", "AWS"] },
-      { title: "Hardware", icon: "🛠️", skills: ["Cisco Switches", "Routers", "APs", "Patch Panels"] },
-      { title: "Programming", icon: "💻", skills: ["React.js", "Node.js", "JavaScript", "Python", "SQL", "PHP", "REST API", "OpenAI API"] },
-      { title: "Video Editing", icon: "🎬", skills: ["Premiere", "DaVinci Resolve"] },
+      {
+        title: "Networking",
+        image: "/images/network.png",
+        skills: [
+          "PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", "DNS/DDNS",
+          "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"
+        ],
+      },
+      {
+        title: "Cybersecurity",
+        image: "/images/cyber.png",
+        skills: [
+          "IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway",
+          "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"
+        ],
+      },
+      {
+        title: "Cloud",
+        image: "/images/cloud.jpg",
+        skills: ["Azure", "WatchGuard Cloud", "AWS"],
+      },
+      {
+        title: "Hardware",
+        image: "/images/hardware.jpg",
+        skills: ["Routers", "APs", "Fiber", "Coaxial"],
+      },
+      {
+        title: "IT",
+        image: "/images/it.jpg",
+        skills: [
+          "Windows", "Mac", "iOS", "Office 365", "Dell", "Xerox", "Sharp", "Webex"
+        ],
+      },
+      {
+        title: "Coding",
+        image: "/images/coding.png",
+        skills: [
+          "React.js", "Node.js", "JavaScript", "Ruby", "HTML", "Python", "SQL", "PHP",
+          "REST API", "OpenAI API"
+        ],
+      },
+      {
+        title: "Editing",
+        image: "/images/video-editing.png",
+        skills: ["Premiere", "DaVinci Resolve"],
+      },
     ].map((category, index) => (
       <div key={index} className="bg-white p-3 rounded-lg shadow-md w-1/7 flex-grow transition-transform transform hover:shadow-lg duration-300">
-        <h3 className="text-sm font-semibold text-gray-800 flex items-center mb-2">
-          <img src={category.icon} alt="icon" className="w-5 h-5 mr-2 object-contain" /> {category.title}
-        </h3>
+        <div className="flex flex-col items-center">
+          <img src={category.image} alt={category.title} className="w-12 h-12 mb-2 object-contain" />
+          <h3 className="text-sm font-semibold text-gray-800 text-center">{category.title}</h3>
+        </div>
         <div className="flex flex-wrap">
           {category.skills.map(skill => (
             <span key={skill} className="m-1 px-2 py-1 text-xs bg-purple-100 text-purple-700 rounded-md transition-colors duration-300 hover:bg-purple-700 hover:text-white">
