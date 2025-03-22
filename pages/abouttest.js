@@ -97,7 +97,7 @@ const ResumePage = () => {
 
         <section className="mb-10">
   <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">Technical Skills</h2>
-  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+  <div className="flex justify-between flex-wrap gap-3">
     {[ 
       {
         title: "Networking",
