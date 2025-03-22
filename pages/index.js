@@ -21,7 +21,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white flex flex-col justify-center items-center p-4 bg-animate-wave">
       <h1 className="text-4xl md:text-5xl font-extrabold mb-4 md:mb-6">Welcome to My Portfolio</h1>
       <p className="mb-6 text-base md:text-lg max-w-lg text-center">
-        Explore my journey as an IT professional. From networking to desktop support to web development, I blend technology with creativity.
+        Explore my journey as an IT professional. From networking to IT support to web development, I blend technology with creativity.
       </p>
       <nav>
       <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-8">
@@ -44,14 +44,23 @@ export default function Home() {
           */}
         </ul>
       </nav>
-  <footer class="bg-teal-700 text-white-700 py-8 mt-12">
-    <div class="container mx-auto text-center">
-      <p class="text-lg">
-        Powered by 
-        <a href="https://www.linkedin.com/in/jayden-graves-40108021a/" class="underline hover:text-teal-200"> Jayden Graves</a>
-      </p>
+      <footer class="bg-teal-700 text-white py-8 mt-12">
+  <div class="container mx-auto text-center">
+    <p class="text-lg">
+      Powered by 
+      <span class="text-white">Jayden Graves</span>
+    </p>
+    <div class="mt-4">
+      <p class="text-lg">Let's Connect:</p>
+      <a 
+        href="https://www.linkedin.com/in/jayden-graves-40108021a/" 
+        class="inline-block mt-2 px-6 py-2 text-lg font-semibold text-purple-700 bg-white rounded-full hover:bg-teal-200 transition-colors duration-300"
+      >
+        LinkedIn
+      </a>
     </div>
-  </footer>
+  </div>
+</footer>
     </div>
   );
 }
