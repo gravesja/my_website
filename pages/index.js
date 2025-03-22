@@ -51,7 +51,7 @@ export default function Home() {
       <span class="text-white">Jayden Graves</span>
     </p>
     <div class="mt-4">
-      <p class="text-lg">Let's Connect:</p>
+      <p class="text-lg">Let&apos;s Connect:</p>
       <a 
         href="https://www.linkedin.com/in/jayden-graves-40108021a/" 
         class="inline-block mt-2 px-6 py-2 text-lg font-semibold text-purple-700 bg-white rounded-full hover:bg-teal-200 transition-colors duration-300"
