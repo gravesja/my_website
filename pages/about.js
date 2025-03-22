@@ -31,9 +31,9 @@ const ResumePage = () => {
           </ul>
         </section>
 
-        {/* Skills Section */}
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Skills</h2>
+{/*Skills Section */}
+<section id="Skills" className="mb-10">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4">Skills</h2>
           <div className="grid grid-cols-2 gap-6">
             <ul className="list-disc list-inside text-black">
               <li><strong>Networking:</strong> PowerShell, Wireshark, PuTTY, VLAN/LAN/WAN, DHCP, ARP, NAT, DNS, 802.11, Nmap, Cisco IOS, TCP/IP, WPA2/3, QoS</li>
@@ -48,9 +48,9 @@ const ResumePage = () => {
             </ul>
           </div>
         </section>
-        {/* Work Experience Section */}
-        <section class="mb-10">
-  <h2 class="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
+{/* Work Experience Section */}
+<section id="work-experience" className="mb-10">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
   <div class="mb-6">
     <h3 class="font-semibold text-lg text-black">Network Administrator</h3>
     <p class="text-black">March 2024 - Present | Kean University, Union, NJ</p>
@@ -87,18 +87,18 @@ const ResumePage = () => {
 </section>
 
 
-        {/* Certifications Section */}
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Certifications</h2>
+{/* Certifications Section */}
+<section id="certifications" className="mb-10">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4">Certifications</h2>
           <ul className="list-disc list-inside text-black">
             <li>CISCO Threat Management - December 2024</li>
             <li>Cisco Certified Network Associate (CCNA) – In Progress</li>
           </ul>
         </section>
 
-        {/* Education Section */}
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Education</h2>
+ {/* Education Section */}
+<section id="education" className="mb-10">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4">Education</h2>
           <div>
             <h3 className="font-semibold text-lg text-black">Kean University</h3>
             <p className="text-black">Bachelor of Science in Information Technology/Cybersecurity</p>
