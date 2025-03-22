@@ -183,21 +183,21 @@ const ResumePage = () => {
         <section id="certifications" className="mb-10">
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Certifications</h2>
           <ul className="list-disc list-inside text-black">
-            <li>CompTIA Security+</li>
-            <li>CCNA Routing & Switching</li>
-            <li>Fortinet NSE4</li>
-            <li>Certified Ethical Hacker (CEH)</li>
+          <li>CISCO Threat Management - December 2024</li>
+          <li>Cisco Certified Network Associate (CCNA) – In Progress</li>
           </ul>
         </section>
 
         {/* Education Section */}
         <section id="education" className="mb-10">
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Education</h2>
-          <p className="text-black">
-            <strong>Bachelor of Science in Information Technology</strong> - Kean University, Union, NJ
-            <br />
-            <strong>Graduation:</strong> May 2025
-          </p>
+          <h3 className="font-semibold text-lg text-black">Kean University</h3>
+            <p className="text-black">Bachelor of Science in Information Technology/Cybersecurity</p>
+            <p className="text-black">Expected Graduation: May 2025</p>
+            <ul className="list-disc list-inside text-black mt-2">
+              <li><strong>Awards:</strong> Dean’s List, Athletics Director’s Honor Roll</li>
+              <li><strong>Organizations:</strong> ACM, National Student Cybersecurity Association, Kean Esports</li>
+            </ul>
         </section>
       </div>
 
