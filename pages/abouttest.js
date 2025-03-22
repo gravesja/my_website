@@ -95,63 +95,62 @@ const ResumePage = () => {
           </ul>
         </section>
 
-        {/* Technical Skills Section */}
         <section className="mb-10">
-          <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">Technical Skills</h2>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            {[ 
-              {
-                title: "Networking",
-                image: "/network.png",
-                skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", "DNS/DDNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"]
-              },
-              {
-                title: "Cybersecurity",
-                image: "/cyber.png",
-                skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"]
-              },
-              {
-                title: "Cloud",
-                image: "/cloud.jpg",
-                skills: ["Azure", "WatchGuard Cloud", "AWS"]
-              },
-              {
-                title: "Hardware",
-                image: "/hardware.jpg",
-                skills: ["Routers", "APs", "Fiber", "Coaxial"]
-              },
-              {
-                title: "IT",
-                image: "/it.jpg",
-                skills: ["Windows", "Mac", "iOS", "Office 365", "Dell", "Xerox", "Sharp", "Webex"]
-              },
-              {
-                title: "Coding",
-                image: "/coding.png",
-                skills: ["React.js", "Node.js", "JavaScript", "Ruby", "HTML", "Python", "SQL", "PHP", "REST API", "OpenAI API"]
-              },
-              {
-                title: "Editing",
-                image: "/edit.jpg",
-                skills: ["Premiere", "DaVinci Resolve", "Filmora"]
-              }
-            ].map((category, index) => (
-              <div key={index} className="bg-white p-3 rounded-lg shadow-md w-full sm:w-1/4 md:w-1/5 flex-grow transition-transform transform hover:shadow-lg duration-300">
-                <div className="flex flex-col items-center">
-                  <img src={category.image} alt={category.title} className="w-12 h-12 mb-2 object-contain" />
-                  <h3 className="text-sm font-semibold text-gray-800 text-center">{category.title}</h3>
-                </div>
-                <div className="flex flex-wrap justify-center">
-                  {category.skills.map(skill => (
-                    <span key={skill} className="m-1 px-2 py-1 text-xs bg-purple-100 text-purple-700 rounded-md transition-colors duration-300 hover:bg-purple-700 hover:text-white">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+  <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">Technical Skills</h2>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+    {[ 
+      {
+        title: "Networking",
+        image: "/network.png",
+        skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", "DNS/DDNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"]
+      },
+      {
+        title: "Cybersecurity",
+        image: "/cyber.png",
+        skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"]
+      },
+      {
+        title: "Cloud",
+        image: "/cloud.jpg",
+        skills: ["Azure", "WatchGuard Cloud", "AWS"]
+      },
+      {
+        title: "Hardware",
+        image: "/hardware.jpg",
+        skills: ["Routers", "APs", "Fiber", "Coaxial"]
+      },
+      {
+        title: "IT",
+        image: "/it.jpg",
+        skills: ["Windows", "Mac", "iOS", "Office 365", "Dell", "Xerox", "Sharp", "Webex"]
+      },
+      {
+        title: "Coding",
+        image: "/coding.png",
+        skills: ["React.js", "Node.js", "JavaScript", "Ruby", "HTML", "Python", "SQL", "PHP", "REST API", "OpenAI API"]
+      },
+      {
+        title: "Editing",
+        image: "/edit.jpg",
+        skills: ["Premiere", "DaVinci Resolve", "Filmora"]
+      }
+    ].map((category, index) => (
+      <div key={index} className="bg-white p-3 rounded-lg shadow-md w-full sm:w-1/4 md:w-1/5 flex-grow transition-transform transform hover:shadow-lg duration-300">
+        <div className="flex flex-col items-center">
+          <img src={category.image} alt={category.title} className="w-12 h-12 mb-2 object-contain" />
+          <h3 className="text-sm font-semibold text-gray-800 text-center">{category.title}</h3>
+        </div>
+        <div className="flex flex-wrap justify-center">
+          {category.skills.map(skill => (
+            <span key={skill} className="m-1 px-2 py-1 text-xs bg-purple-100 text-purple-700 rounded-md transition-colors duration-300 hover:bg-purple-700 hover:text-white">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
         {/* Work Experience Section */}
         <section id="work-experience" className="mb-10">
