@@ -48,7 +48,7 @@ export default function Home() {
   <div class="container mx-auto text-center">
     <p class="text-lg">
       Powered by 
-      <span class="text-white">Jayden Graves</span>
+      <span class="text-white"> Jayden Graves</span>
     </p>
     <div class="mt-4">
       <p class="text-lg">Let&apos;s Connect:</p>
