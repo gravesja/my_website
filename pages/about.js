@@ -76,24 +76,76 @@ const ResumePage = () => {
         </section>
 
         {/* Career Highlights Section */}
-        <section className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Career Highlights</h2>
-          <ul className="list-disc list-inside text-black">
-            <li><strong>Network Administration Course Instructor:</strong> Recognized as the #1 instructor for the 2024 Kean University IT Student Rotational Learning Program.</li>
-            <li><strong>Senior Project: Portable Mobile Network:</strong> Constructed a mobile network with an AT&T Netgear router, integrating Fortinet FortiGate-90D and pfsense firewalls, GL.inet  router, captive portal, Cisco Catalyst 2960X, ad-blocking DNS, and a NAS interchangeably for scalable enterprise field deployments.</li>
-            <li>Developed a dedicated website showcasing the project, including an AI chatbot for technical assistance and troubleshooting.</li>
-            <li><strong>Network Security:</strong> Configured a WatchGuard firewall to host AD, Group Policy, Linux DNS, MFA, DHCP, and a captive portal for network access.</li>
-            <li>Imaged and configured pfSense and OPNsense firewalls on mini-PCs and integrated them into network security appliances.</li>
-            <li>Designed an SNMP-based monitoring system with automated Python scripts for real-time alerts and performance tracking.</li>
-            <li>Deployed Splunk Enterprise SIEM, improving threat detection and response efficiency.</li>
-            <li>Developed a Firewall Recovery Plan for a WatchGuard Firebox, ensuring rapid restoration, failover, and business continuity.</li>
-            <li><strong>Data Center Network Operations:</strong> Collaborated on a data center reorganization project, optimizing space and rack positioning. Decommissioned legacy servers and PDUs, installed new ones, and mapped, inventoried, and labeled servers while tracking operational status in Excel.</li>
-            <li>Set up and deploy Extreme Networks switches using PuTTY and assist with data center integration.</li>
-            <li><strong>Active Directory & Identity Management:</strong> Managed 20,000+ AD objects (users, groups, devices), enforcing security policies for authentication and compliance.</li>
-            <li>Migrated a Windows Server 2019 AD to Microsoft Entra ID (Azure AD) for user access across hybrid cloud environments.</li>
-            <li><strong>Talent Development & Hiring:</strong> Led the hiring process for the Student Security Operations Analyst position, refining candidate evaluation methods and leading interviews to recruit top talent for IT security operations.</li>
-          </ul>
-        </section>
+<section className="mb-10 text-center">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4">Career Highlights</h2>
+  <ul className="list-none space-y-6 text-black mx-auto max-w-3xl">
+    {[
+      {
+        title: "Network Administration",
+        logo: "/teach.png",
+        points: [
+          "Recognized as the #1 instructor for the 2024 Kean University IT Student Rotational Learning Program.",
+        ],
+      },
+      {
+        title: "Senior Project: Portable Mobile Network",
+        logo: "/moblie.png",
+        points: [
+          "Constructed a mobile network with an AT&T Netgear router, integrating Fortinet FortiGate-90D and pfSense firewalls, GL.iNet router, captive portal, Cisco Catalyst 2960X, ad-blocking DNS, and a NAS interchangeably for scalable enterprise field deployments.",
+          "Developed a dedicated website showcasing the project, including an AI chatbot for technical assistance and troubleshooting.",
+        ],
+      },
+      {
+        title: "Network Security",
+        logo: "/security.jpg",
+        points: [
+          "Configured a WatchGuard firewall to host AD, Group Policy, Linux DNS, MFA, DHCP, and a captive portal for network access.",
+          "Imaged and configured pfSense and OPNsense firewalls on mini-PCs and integrated them into network security appliances.",
+          "Deployed Splunk Enterprise SIEM, improving threat detection and response efficiency.",
+          "Developed a Firewall Recovery Plan for a WatchGuard Firebox, ensuring rapid restoration, failover, and business continuity.",
+        ],
+      },
+      {
+        title: "Data Center Network Operations",
+        logo: "/datacenter.jpg",
+        points: [
+          "Collaborated on a data center reorganization project, optimizing space and rack positioning.",
+          "Decommissioned legacy servers and PDUs, installed new ones, and mapped, inventoried, and labeled servers while tracking operational status in Excel.",
+          "Set up and deployed Extreme Networks switches using PuTTY and assisted with data center integration.",
+        ],
+      },
+      {
+        title: "Active Directory & Identity Management",
+        logo: "/AD.png",
+        points: [
+          "Managed 20,000+ AD objects (users, groups, devices), enforcing security policies for authentication and compliance.",
+          "Migrated a Windows Server 2019 AD to Microsoft Entra ID (Azure AD) for user access across hybrid cloud environments.",
+        ],
+      },
+      {
+        title: "Talent Development & Hiring",
+        logo: "/talent.png",
+        points: [
+          "Led the hiring process for the Student Security Operations Analyst position.",
+          "Refined candidate evaluation methods and conducted interviews to recruit top talent for IT security operations.",
+        ],
+      },
+    ].map((category, index) => (
+      <li key={index} className="flex flex-col items-center">
+        <div className="flex items-center space-x-3 mb-2">
+          <img src={category.logo} alt={category.title} className="w-8 h-8 object-contain" />
+          <h3 className="text-lg font-semibold">{category.title}</h3>
+        </div>
+        <ul className="list-disc list-inside text-left">
+          {category.points.map((point, idx) => (
+            <li key={idx}>{point}</li>
+          ))}
+        </ul>
+      </li>
+    ))}
+  </ul>
+</section>
+
 
         <section className="mb-10">
   <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">Technical Skills</h2>
@@ -112,7 +164,7 @@ const ResumePage = () => {
       {
         title: "Cloud",
         image: "/cloud.jpg",
-        skills: ["Azure", "WatchGuard Cloud", "AWS"]
+        skills: ["Azure AD", "WatchGuard Cloud", "AWS"]
       },
       {
         title: "Hardware",
@@ -163,7 +215,7 @@ const ResumePage = () => {
               <li>Implemented and managed a quarantine server to isolate and analyze potentially compromised devices while testing security policies.</li>
               <li>Optimized firewall security (FortiGate & WatchGuard) by analyzing traffic and mitigating threats.</li>
               <li>Leverage ExtremeCloud IQ Pilot and Extreme Site Engine for real-time network diagnostics and performance optimization.</li>
-              <li>Develop training materials and lead networking seminars for technicians, providing hands-on skill assessments.</li>
+              <li>Created training materials and led networking seminars, enhancing hands-on skills for 60+ technicians.</li>
             </ul>
           </div>
 
@@ -171,14 +223,23 @@ const ResumePage = () => {
             <h3 className="font-semibold text-lg text-black">IT Support Specialist</h3>
             <p className="text-black">September 2022 - March 2024 | Kean University, Union, NJ</p>
             <ul className="list-disc list-inside text-black mt-2">
-              <li>Performed Tier II system troubleshooting and repairs on laptops, projectors, desktops, and peripheral devices.</li>
-              <li>Managed 20–35 weekly support tickets, assisting faculty, staff, and students with IT-related concerns to minimize downtime.</li>
+              <li>Diagnosed and resolved 500+ Tier II system issues across laptops, projectors, desktops, and other peripheral devices.</li>
+              <li>Handled 20–35 weekly IT support tickets, ensuring a 90%+ first-contact resolution rate and minimizing faculty/staff downtime.</li>
               <li>Tracked IT assets using spreadsheets and ManageEngine Endpoint Central, improving accountability.</li>
-              <li>Supported IT projects and office networking for improved efficiency.</li>
+              <li>Assisted in 5+ large-scale IT deployments, ensuring seamless office and lab setups with zero downtime.</li>
             </ul>
           </div>
-        </section>
-
+        <div className="mb-6">
+    <h3 className="font-semibold text-lg text-gray-800">Audio Visual Technician</h3>
+    <p className="text-gray-600">September 2021 - September 2022</p>
+    <p className="text-gray-600">Kean Information Technology - Kean University | Union, NJ</p>
+    <ul className="list-disc list-inside text-gray-700 mt-2">
+      <li>Provided classroom Tier I  A/V support for faculty, ensuring smooth projector/multimedia operation and resolving technical issues.</li>
+      <li>Operated 4K camera equipment to live stream on-campus events, enhancing accessibility for remote participants.</li>
+      <li>Answered technical inquiries, offering prompt resolutions for faculty, staff, and students during events and classes.</li>
+    </ul>
+  </div>
+  </section>
         {/* Certifications Section */}
         <section id="certifications" className="mb-10">
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Certifications</h2>
