@@ -78,7 +78,7 @@ const ResumePage = () => {
         {/* Career Highlights Section */}
 <section className="mb-10 text-center">
   <h2 className="text-2xl font-bold text-purple-700 mb-4">Career Highlights</h2>
-  <ul className="list-none space-y-6 text-black mx-auto max-w-3xl">
+  <ul className="list-none space-y-6 text-black mx-auto max-w-5xl px-8">
     {[
       {
         title: "Network Administration",
@@ -107,7 +107,7 @@ const ResumePage = () => {
       },
       {
         title: "Data Center Network Operations",
-        logo: "/datacenter.jpg",
+        logo: "/center.png",
         points: [
           "Collaborated on a data center reorganization project, optimizing space and rack positioning.",
           "Decommissioned legacy servers and PDUs, installed new ones, and mapped, inventoried, and labeled servers while tracking operational status in Excel.",
@@ -124,7 +124,7 @@ const ResumePage = () => {
       },
       {
         title: "Talent Development & Hiring",
-        logo: "/talent.png",
+        logo: "/inter.png",
         points: [
           "Led the hiring process for the Student Security Operations Analyst position.",
           "Refined candidate evaluation methods and conducted interviews to recruit top talent for IT security operations.",
@@ -133,7 +133,7 @@ const ResumePage = () => {
     ].map((category, index) => (
       <li key={index} className="flex flex-col items-center">
         <div className="flex items-center space-x-3 mb-2">
-          <img src={category.logo} alt={category.title} className="w-8 h-8 object-contain" />
+          <img src={category.logo} alt={category.title} className="w-9 h-9 object-contain" />
           <h3 className="text-lg font-semibold">{category.title}</h3>
         </div>
         <ul className="list-disc list-inside text-left">
