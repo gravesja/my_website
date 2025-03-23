@@ -25,7 +25,7 @@ export default function Portfolio() {
           {/* Project 1 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">AI Voice Cloning Project</h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-black-700 mb-4">
               Learn how to register for classes at Kean University with our nation&apos;s great leaders!
             </p>
             <a
@@ -39,7 +39,7 @@ export default function Portfolio() {
           {/* Project 2 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">Mobile Network Solution- Senior Project</h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-black-700 mb-4">
               Developed a portable, scalable mobile network with a focus on security and performance optimization.
             </p>
             <a
@@ -52,8 +52,22 @@ export default function Portfolio() {
 
           {/* Project 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-bold mb-4">Open AI API- CivAI technology assistant</h2>
+            <p className="text-black-700 mb-4">
+            CivAI was developed during the Kean 2025 Hackathon as a collaborative project by a team of three, utilizing the OpenAI API. Designed to bridge the urban tech divide, CivAI is an AI-powered chatbot that provides 24/7 support for city residents navigating emerging technologies.
+            </p>
+            <a
+              href="https://civai-eight.vercel.app/"
+              className="text-purple-700 hover:underline"
+            >
+              Visit Website
+            </a>
+          </div>
+
+          {/* Project 4 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">Open AI API- Homework Helper Bot</h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-black-700 mb-4">
               A bot designed to assist grade school students with their homework and provide supplemental instruction. 
             </p>
             <a
@@ -64,10 +78,10 @@ export default function Portfolio() {
             </a>
           </div>
 
-          {/* Project 4 */}
+          {/* Project 5 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">OpenAI API- SESmag chatbot</h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-black-700 mb-4">
               Engage with a personalized AI chatbot modeled after Fee&apos;s SESmag personality. Upload a PDF to the chat and have dynamic discussions about its content.
             </p>
             <a
@@ -78,10 +92,10 @@ export default function Portfolio() {
             </a>
           </div>
 
-          {/* Project 5 */}
+          {/* Project 6 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">Web Development- Comic Book Website</h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-black-700 mb-4">
               Developed and publicly deployed a functional comic book store that incorporates streamlined functionality with vibrant and modern designs. 
             </p>
             <a
