@@ -230,10 +230,10 @@ const ResumePage = () => {
             </ul>
           </div>
         <div className="mb-6">
-    <h3 className="font-semibold text-lg text-gray-800">Audio Visual Technician</h3>
-    <p className="text-gray-600">September 2021 - September 2022</p>
-    <p className="text-gray-600">Kean Information Technology - Kean University | Union, NJ</p>
-    <ul className="list-disc list-inside text-gray-700 mt-2">
+    <h3 className="font-semibold text-lg text-black-800">Audio Visual Technician</h3>
+    <p className="text-black-600">September 2021 - September 2022</p>
+    <p className="text-black-600">Kean Information Technology - Kean University | Union, NJ</p>
+    <ul className="list-disc list-inside text-black-700 mt-2">
       <li>Provided classroom Tier I  A/V support for faculty, ensuring smooth projector/multimedia operation and resolving technical issues.</li>
       <li>Operated 4K camera equipment to live stream on-campus events, enhancing accessibility for remote participants.</li>
       <li>Answered technical inquiries, offering prompt resolutions for faculty, staff, and students during events and classes.</li>
