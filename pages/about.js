@@ -81,14 +81,14 @@ const ResumePage = () => {
   <ul className="list-none space-y-6 text-black mx-auto max-w-5xl px-8">
     {[
       {
-        title: "Network Administration",
+        title: "Network Administration Course Instructor",
         logo: "/teach.png",
         points: [
           "Recognized as the #1 instructor for the 2024 Kean University IT Student Rotational Learning Program.",
         ],
       },
       {
-        title: "Senior Project: Portable Mobile Network",
+        title: "Senior Project: Portable Mobile Network (See portfolio page for more details)",
         logo: "/moblie.png",
         points: [
           "Constructed a mobile network with an AT&T Netgear router, integrating Fortinet FortiGate-90D and pfSense firewalls, GL.iNet router, captive portal, Cisco Catalyst 2960X, ad-blocking DNS, and a NAS interchangeably for scalable enterprise field deployments.",
@@ -96,7 +96,7 @@ const ResumePage = () => {
         ],
       },
       {
-        title: "Network Security",
+        title: "Network Security & Infrastructure",
         logo: "/security.jpg",
         points: [
           "Configured a WatchGuard firewall to host AD, Group Policy, Linux DNS, MFA, DHCP, and a captive portal for network access.",
