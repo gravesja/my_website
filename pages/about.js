@@ -204,42 +204,49 @@ const ResumePage = () => {
   </div>
 </section>
 
-        {/* Work Experience Section */}
-        <section id="work-experience" className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Work Experience</h2>
-          <div className="mb-6">
-            <h3 className="font-semibold text-lg text-black">Network Administrator</h3>
-            <p className="text-black">March 2024 - Present | Kean University, Union, NJ</p>
-            <ul className="list-disc list-inside text-black mt-2">
-              <li>Resolve Tier III network issues across 34 buildings and collaborate with Network & System Administrators and vendors to optimize and maintain an enterprise-grade network.</li>
-              <li>Implemented and managed a quarantine server to isolate and analyze potentially compromised devices while testing security policies.</li>
-              <li>Optimized firewall security (FortiGate & WatchGuard) by analyzing traffic and mitigating threats.</li>
-              <li>Leverage ExtremeCloud IQ Pilot and Extreme Site Engine for real-time network diagnostics and performance optimization.</li>
-              <li>Created training materials and led networking seminars, enhancing hands-on skills for 60+ technicians.</li>
-            </ul>
-          </div>
+    {/* Work Experience Section */}
+<section id="work-experience" className="mb-10 flex flex-col items-center">
+  <h2 className="text-2xl font-bold text-purple-700 mb-6">Work Experience</h2>
+  <div className="space-y-6 w-full max-w-3xl">
+    {/* Network */}
+    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+      <h3 className="font-semibold text-lg text-black">Network Administrator</h3>
+      <p className="text-black">March 2024 - Present | Kean University, Union, NJ</p>
+      <ul className="list-disc list-inside text-black mt-2">
+        <li>Resolve Tier III network issues across 34 buildings and collaborate with Network & System Administrators and vendors to optimize and maintain an enterprise-grade network.</li>
+        <li>Implemented and managed a quarantine server to isolate and analyze potentially compromised devices while testing security policies.</li>
+        <li>Optimized firewall security (FortiGate & WatchGuard) by analyzing traffic and mitigating threats.</li>
+        <li>Leverage ExtremeCloud IQ Pilot and Extreme Site Engine for real-time network diagnostics and performance optimization.</li>
+        <li>Created training materials and led networking seminars, enhancing hands-on skills for 60+ technicians.</li>
+      </ul>
+    </div>
 
-          <div className="mb-6">
-            <h3 className="font-semibold text-lg text-black">IT Support Specialist</h3>
-            <p className="text-black">September 2022 - March 2024 | Kean University, Union, NJ</p>
-            <ul className="list-disc list-inside text-black mt-2">
-              <li>Diagnosed and resolved 500+ Tier II system issues across laptops, projectors, desktops, and other peripheral devices.</li>
-              <li>Handled 20–35 weekly IT support tickets, ensuring a 90%+ first-contact resolution rate and minimizing faculty/staff downtime.</li>
-              <li>Tracked IT assets using spreadsheets and ManageEngine Endpoint Central, improving accountability.</li>
-              <li>Assisted in 5+ large-scale IT deployments, ensuring seamless office and lab setups with zero downtime.</li>
-            </ul>
-          </div>
-        <div className="mb-6">
-    <h3 className="font-semibold text-lg text-black-800">Audio Visual Technician</h3>
-    <p className="text-black-600">September 2021 - September 2022</p>
-    <p className="text-black-600">Kean Information Technology - Kean University | Union, NJ</p>
-    <ul className="list-disc list-inside text-black-700 mt-2">
-      <li>Provided classroom Tier I  A/V support for faculty, ensuring smooth projector/multimedia operation and resolving technical issues.</li>
-      <li>Operated 4K camera equipment to live stream on-campus events, enhancing accessibility for remote participants.</li>
-      <li>Answered technical inquiries, offering prompt resolutions for faculty, staff, and students during events and classes.</li>
-    </ul>
+    {/* IT */}
+    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+      <h3 className="font-semibold text-lg text-black">IT Support Specialist</h3>
+      <p className="text-black">September 2022 - March 2024 | Kean University, Union, NJ</p>
+      <ul className="list-disc list-inside text-black mt-2">
+        <li>Diagnosed and resolved 500+ Tier II system issues across laptops, projectors, desktops, and other peripheral devices.</li>
+        <li>Handled 20–35 weekly IT support tickets, ensuring a 90%+ first-contact resolution rate and minimizing faculty/staff downtime.</li>
+        <li>Tracked IT assets using spreadsheets and ManageEngine Endpoint Central, improving accountability.</li>
+        <li>Assisted in 5+ large-scale IT deployments, ensuring seamless office and lab setups with zero downtime.</li>
+      </ul>
+    </div>
+
+    {/* A/V */}
+    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+      <h3 className="font-semibold text-lg text-black">Audio Visual Technician</h3>
+      <p className="text-black">September 2021 - September 2022</p>
+      <p className="text-black">Kean Information Technology - Kean University | Union, NJ</p>
+      <ul className="list-disc list-inside text-black mt-2">
+        <li>Provided classroom Tier I A/V support for faculty, ensuring smooth projector/multimedia operation and resolving technical issues.</li>
+        <li>Operated 4K camera equipment to live stream on-campus events, enhancing accessibility for remote participants.</li>
+        <li>Answered technical inquiries, offering prompt resolutions for faculty, staff, and students during events and classes.</li>
+      </ul>
+    </div>
   </div>
-  </section>
+</section>
+
         {/* Certifications Section */}
         <section id="certifications" className="mb-10">
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Certifications</h2>
