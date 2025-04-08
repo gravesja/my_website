@@ -75,10 +75,10 @@ const ResumePage = () => {
           </p>
         </section>
 
-        {/* Career Highlights Section */}
-<section className="mb-10 text-center">
-  <h2 className="text-2xl font-bold text-purple-700 mb-4">Career Highlights</h2>
-  <ul className="list-none space-y-6 text-black mx-auto max-w-5xl px-8">
+ {/* Career Highlights Section */}
+<section className="mb-10 text-center flex flex-col items-center">
+  <h2 className="text-2xl font-bold text-purple-700 mb-6">Career Highlights</h2>
+  <div className="grid gap-6 max-w-6xl w-full px-4 md:grid-cols-1">
     {[
       {
         title: "Network Administration Course Instructor",
@@ -131,22 +131,25 @@ const ResumePage = () => {
         ],
       },
     ].map((category, index) => (
-      <li key={index} className="flex flex-col items-center">
-        <div className="flex items-center space-x-3 mb-2">
+      <div
+        key={index}
+        className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 text-left"
+      >
+        <div className="flex items-center space-x-3 mb-3">
           <img src={category.logo} alt={category.title} className="w-9 h-9 object-contain" />
-          <h3 className="text-lg font-semibold">{category.title}</h3>
+          <h3 className="text-lg font-semibold text-black">{category.title}</h3>
         </div>
-        <ul className="list-disc list-inside text-left">
+        <ul className="list-disc list-inside text-black">
           {category.points.map((point, idx) => (
             <li key={idx}>{point}</li>
           ))}
         </ul>
-      </li>
+      </div>
     ))}
-  </ul>
+  </div>
 </section>
 
-
+ {/* Skills section */}
         <section className="mb-10">
   <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">Technical Skills</h2>
   <div className="flex justify-between flex-wrap gap-3">
@@ -207,7 +210,7 @@ const ResumePage = () => {
     {/* Work Experience Section */}
 <section id="work-experience" className="mb-10 flex flex-col items-center">
   <h2 className="text-2xl font-bold text-purple-700 mb-6">Work Experience</h2>
-  <div className="space-y-6 w-full max-w-3xl">
+  <div className="space-y-6 w-full max-w-5xl">
     {/* Network */}
     <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
       <h3 className="font-semibold text-lg text-black">Network Administrator</h3>
@@ -247,28 +250,32 @@ const ResumePage = () => {
   </div>
 </section>
 
-        {/* Certifications Section */}
-        <section id="certifications" className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Certifications</h2>
-          <ul className="list-disc list-inside text-black">
-          <li>CISCO Threat Management - December 2024</li>
-          <li>Cisco Certified Network Associate (CCNA) – In Progress</li>
-          </ul>
-        </section>
+{/* Certifications Section */}
+<section id="certifications" className="mb-10 flex flex-col items-center">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4 text-center">Certifications</h2>
+  <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 w-full max-w-4xl">
+    <ul className="list-disc list-inside text-black">
+      <li>CISCO Threat Management - December 2024</li>
+      <li>Cisco Certified Network Associate (CCNA) – In Progress</li>
+    </ul>
+  </div>
+</section>
 
-        {/* Education Section */}
-        <section id="education" className="mb-10">
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Education</h2>
-          <h3 className="font-semibold text-lg text-black">Kean University</h3>
-            <p className="text-black">Bachelor of Science in Information Technology/Cybersecurity</p>
-            <p className="text-black">Expected Graduation: May 2025</p>
-            <ul className="list-disc list-inside text-black mt-2">
-              <li><strong>Awards:</strong> Dean’s List, Athletics Director’s Honor Roll</li>
-              <li><strong>Organizations:</strong> ACM, National Student Cybersecurity Association, Kean Esports</li>
-            </ul>
-        </section>
+{/* Education Section */}
+<section id="education" className="mb-10 flex flex-col items-center">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4 text-center">Education</h2>
+  <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 w-full max-w-4xl">
+    <h3 className="font-semibold text-lg text-black">Kean University</h3>
+    <p className="text-black">Bachelor of Science in Information Technology/Cybersecurity</p>
+    <p className="text-black">Expected Graduation: May 2025</p>
+    <ul className="list-disc list-inside text-black mt-2">
+      <li><strong>Awards:</strong> Dean’s List, Athletics Director’s Honor Roll</li>
+      <li><strong>Organizations:</strong> ACM, National Student Cybersecurity Association, Kean Esports</li>
+    </ul>
+  </div>
+</section>
+
       </div>
-
       {/* Scroll to Top Button */}
       {isVisible && (
         <button
