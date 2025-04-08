@@ -28,52 +28,38 @@ const ResumePage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-12">
+      
  {/* Navbar */}
-<nav className="bg-purple-700 p-4">
-  <div className="flex justify-between items-center">
-    <div className="text-white font-semibold text-lg">My Portfolio</div>
-    <div className="lg:hidden">
-      <button className="text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-    <div className={`lg:flex lg:space-x-8 text-white font-semibold ${mobileMenuOpen ? 'block' : 'hidden'}`}>
-      <ul className="flex space-x-8">
-        <li>
-          <a
-            href="#work-experience"
-            className="bg-white text-purple-700 py-2 px-4 rounded-full hover:bg-purple-100 transition duration-300"
-          >
-            Experience
-          </a>
-        </li>
-        <li>
-          <a
-            href="#certifications"
-            className="bg-white text-purple-700 py-2 px-4 rounded-full hover:bg-purple-100 transition duration-300"
-          >
-            Certifications
-          </a>
-        </li>
-        <li>
-          <a
-            href="#education"
-            className="bg-white text-purple-700 py-2 px-4 rounded-full hover:bg-purple-100 transition duration-300"
-          >
-            Education
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-{/* Mobile Integration */}
-<script>
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-</script>
+  <nav className="bg-purple-700 p-4">
+        <div className="flex justify-center">
+          <ul className="flex space-x-8 text-white font-semibold">
+            <li>
+              <a
+                href="#work-experience"
+                className="bg-white text-purple-700 py-2 px-4 rounded-full hover:bg-purple-100 transition duration-300"
+              >
+                Experience
+              </a>
+            </li>
+            <li>
+              <a
+                href="#certifications"
+                className="bg-white text-purple-700 py-2 px-4 rounded-full hover:bg-purple-100 transition duration-300"
+              >
+                Certifications
+              </a>
+            </li>
+            <li>
+              <a
+                href="#education"
+                className="bg-white text-purple-700 py-2 px-4 rounded-full hover:bg-purple-100 transition duration-300"
+              >
+                Education
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
 
       <div className="max-w-6xl mx-auto px-6">
