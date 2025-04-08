@@ -133,10 +133,10 @@ const ResumePage = () => {
     ].map((category, index) => (
       <div
         key={index}
-        className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center"
+        className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
       >
-        <div className="flex flex-col items-center mb-3">
-          <img src={category.logo} alt={category.title} className="w-12 h-12 object-contain mb-2" />
+        <div className="flex items-center space-x-4 mb-3">
+          <img src={category.logo} alt={category.title} className="w-12 h-12 object-contain" />
           <h3 className="text-lg font-semibold text-black">{category.title}</h3>
         </div>
         <ul className="list-disc list-inside text-left text-black">
