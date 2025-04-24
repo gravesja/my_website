@@ -52,6 +52,20 @@ export default function Portfolio() {
 
           {/* Project 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-bold mb-4">Hybrid Cloud VPN Network Deployment</h2>
+            <p className="text-black-700 mb-4">
+            A hybrid cloud VPN network connecting three AWS Lightsail Windows Server VMs via WireGuard, with secure file sharing (NAS) and MySQL database access across isolated, port-forwarded environments.
+            </p>
+            <a
+              href="https://graves-jayden.vercel.app/awsnetwork.png"
+              className="text-purple-700 hover:underline"
+            >
+              Network Diagram
+            </a>
+          </div>
+
+          {/* Project 4 */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">Open AI API- CivAI technology assistant</h2>
             <p className="text-black-700 mb-4">
             CivAI was developed during the Kean 2025 Hackathon as a collaborative project by a team of three, utilizing the OpenAI API. Designed to bridge the urban tech divide, CivAI is an AI-powered chatbot that provides 24/7 support for city residents navigating emerging technologies.
@@ -64,7 +78,7 @@ export default function Portfolio() {
             </a>
           </div>
 
-          {/* Project 4 */}
+          {/* Project 5 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">Open AI API- Homework Helper Bot</h2>
             <p className="text-black-700 mb-4">
@@ -78,7 +92,7 @@ export default function Portfolio() {
             </a>
           </div>
 
-          {/* Project 5 */}
+          {/* Project 6 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">OpenAI API- SESmag chatbot</h2>
             <p className="text-black-700 mb-4">
@@ -92,7 +106,7 @@ export default function Portfolio() {
             </a>
           </div>
 
-          {/* Project 6 */}
+          {/* Project 7 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">Web Development- Comic Book Website</h2>
             <p className="text-black-700 mb-4">
