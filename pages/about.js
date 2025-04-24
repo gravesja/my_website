@@ -98,6 +98,14 @@ const ResumePage = () => {
         ],
       },
       {
+        title: "Hybrid Cloud VPN Network Deployment (See portfolio page for more details)",
+        logo: "/awslogo.png",
+        points: [
+          "Designed and deployed a hybrid cloud network using three AWS Lightsail Windows Server VMs, interconnected through a WireGuard VPN hosted on a port-forwarded ASUS router.",
+          "Configured one VM as a NAS (SMB) and another as a MySQL server, enabling secure file and database access across VMs.",
+        ],
+      },
+      {
         title: "Network Security & Infrastructure",
         logo: "/security.jpg",
         points: [
