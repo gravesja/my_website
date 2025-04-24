@@ -57,7 +57,7 @@ export default function Portfolio() {
             A hybrid cloud VPN network connecting three AWS Lightsail Windows Server VMs via WireGuard, with secure file sharing (NAS) and MySQL database access across isolated, port-forwarded environments.
             </p>
             <a
-              href="https://graves-jayden.vercel.app/awsnetwork.png"
+              href="/awsnetwork.png"  target="_blank"
               className="text-purple-700 hover:underline"
             >
               Network Diagram
