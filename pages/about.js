@@ -172,22 +172,22 @@ const ResumePage = () => {
       {
         title: "Cybersecurity",
         image: "/cyber.png",
-        skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "Ubiquiti Cloud Gateway", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"]
+        skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", " UniFi (Cloud Gateway, APs)", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"]
       },
       {
         title: "Cloud",
         image: "/cloud.jpg",
-        skills: ["Azure AD", "WatchGuard Cloud", "AWS"]
+        skills: ["Azure AD,", "AWS", "WatchGuard Cloud", "Okta Admin (IAM, IDP)"]
       },
       {
-        title: "Hardware",
-        image: "/hardware.jpg",
-        skills: ["Routers", "APs", "Fiber", "Coaxial"]
+        title: "Virtualization & Containers",
+        image: "/virtual.png",
+        skills: ["Proxmox VE (Windows Server 2022)", "Docker (InfluxDB, Grafana)", "VirtualBox (Ubuntu, Kali Linux)"]
       },
       {
         title: "IT",
         image: "/it.jpg",
-        skills: ["Windows", "Mac", "iOS", "Office 365",  "Google Suite", "Cisco Webex", "Dell", "Xerox", "Sharp"]
+        skills: ["Windows","Freshservice(ITSM)", "MacOS", "iOS", "Office 365",  "Google Suite", "Cisco Webex", "Dell", "Xerox", "Sharp"]
       },
       {
         title: "Coding",
