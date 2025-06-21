@@ -79,88 +79,6 @@ const ResumePage = () => {
           </p>
         </section>
 
- {/* Career Highlights Section */}
-<section className="mb-10 text-center flex flex-col items-center">
-  <h2 className="text-2xl font-bold text-purple-700 mb-6">Career Highlights</h2>
-  <div className="grid gap-6 max-w-6xl w-full px-4 md:grid-cols-1">
-    {[
-      {
-        title: "Network Administration Course Instructor",
-        logo: "/teach.png",
-        points: [
-          "Recognized as the #1 instructor for the 2024 Kean University IT Student Rotational Learning Program.",
-        ],
-      },
-      {
-        title: "Senior Project: Portable Mobile Network (See portfolio page for more details)",
-        logo: "/moblie.png",
-        points: [
-          "Constructed a mobile network with an AT&T Netgear router, integrating Fortinet FortiGate-90D and pfSense firewalls, GL.iNet router, captive portal, Cisco Catalyst 2960X, ad-blocking DNS, and a NAS interchangeably for scalable enterprise field deployments.",
-          "Developed a dedicated website showcasing the project, including an AI chatbot for technical assistance and troubleshooting.",
-        ],
-      },
-      {
-        title: "Hybrid Cloud VPN Network Deployment (See portfolio page for more details)",
-        logo: "/awslogo.png",
-        points: [
-          "Designed and deployed a hybrid cloud network using three AWS Lightsail Windows Server VMs, interconnected through a WireGuard VPN hosted on a port-forwarded ASUS router.",
-          "Configured one VM as a NAS (SMB) and another as a MySQL server, enabling secure file and database access across VMs.",
-        ],
-      },
-      {
-        title: "Network Security & Infrastructure",
-        logo: "/security.jpg",
-        points: [
-          "Configured a WatchGuard firewall to host AD, Group Policy, Linux DNS, MFA, DHCP, and a captive portal for network access.",
-          "Imaged and configured pfSense and OPNsense firewalls on mini-PCs and integrated them into network security appliances.",
-          "Deployed Splunk Enterprise SIEM, improving threat detection and response efficiency.",
-          "Developed a Firewall Recovery Plan for a WatchGuard Firebox, ensuring rapid restoration, failover, and business continuity.",
-        ],
-      },
-      {
-        title: "Data Center Network Operations",
-        logo: "/center.png",
-        points: [
-          "Collaborated on a data center reorganization project, optimizing space and rack positioning.",
-          "Decommissioned legacy servers and PDUs, installed new ones, and mapped, inventoried, and labeled servers while tracking operational status in Excel.",
-          "Set up and deployed Extreme Networks switches using PuTTY and assisted with data center integration.",
-        ],
-      },
-      {
-        title: "Active Directory & Identity Management",
-        logo: "/AD.png",
-        points: [
-          "Managed 20,000+ AD objects (users, groups, devices), enforcing security policies for authentication and compliance.",
-          "Migrated a Windows Server 2019 AD to Microsoft Entra ID (Azure AD) for user access across hybrid cloud environments.",
-        ],
-      },
-      {
-        title: "Talent Development & Hiring",
-        logo: "/inter.png",
-        points: [
-          "Led the hiring process for the Student Security Operations Analyst position.",
-          "Refined candidate evaluation methods and conducted interviews to recruit top talent for IT security operations.",
-        ],
-      },
-    ].map((category, index) => (
-      <div
-        key={index}
-        className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
-      >
-        <div className="flex items-center space-x-4 mb-3">
-          <img src={category.logo} alt={category.title} className="w-12 h-12 object-contain" />
-          <h3 className="text-lg font-semibold text-black">{category.title}</h3>
-        </div>
-        <ul className="list-disc list-inside text-left text-black">
-          {category.points.map((point, idx) => (
-            <li key={idx}>{point}</li>
-          ))}
-        </ul>
-      </div>
-    ))}
-  </div>
-</section>
-
  {/* Skills section */}
         <section className="mb-10">
   <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">Technical Skills</h2>
@@ -223,16 +141,37 @@ const ResumePage = () => {
 <section id="work-experience" className="mb-10 flex flex-col items-center">
   <h2 className="text-2xl font-bold text-purple-700 mb-6">Work Experience</h2>
   <div className="space-y-6 w-full max-w-5xl">
-    {/* Network */}
+
+    {/* Sysadmin */}
+    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+      <h3 className="font-semibold text-lg text-black">System Administrator/Data Technician</h3>
+      <p className="text-black">May 2025 - Present | JCT Solutions, Springfield, NJ</p>
+      <ul className="list-disc list-inside text-black mt-2">
+        <li>Provide full-scope IT support and infrastructure management for three municipalities (police, fire, and government offices) under a 
+          Managed Service Provider structure, ensuring uptime and compliance across mission-critical systems.</li>
+        <li>Provide Tier 2–3 technical support and endpoint deployment across Lenovo systems, printers, VoIP, and networked peripherals; 
+          utilize Synchro, 
+          Splashtop, and PowerShell scripting to manage AD provisioning and enforce policy compliance. </li>
+        <li>Administer Azure AD and Office 365 Admin Center in a multi-tenant environment; manage licensing, GPOs, and MFA for 400+ users.</li>
+        <li>Maintain VMware ESXi and QNAP infrastructure, hosting SANs to support high-availability operations across departments.</li>
+        <li>Coordinated with legal and administrative departments to process OPRA requests, maintaining compliance with transparency regulations. </li>
+        <li>Deploy and maintain secure VPN access using SonicWall NetExtender for staff across government and public safety departments.</li>
+        <li>Serviced Panasonic Toughbooks deployed in police squad vehicles to ensure reliable operation of mobile law enforcement systems.</li>
+      </ul>
+    </div>
+
+    {/* Network Admin*/}
     <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
       <h3 className="font-semibold text-lg text-black">Network Administrator</h3>
       <p className="text-black">March 2024 - Present | Kean University, Union, NJ</p>
       <ul className="list-disc list-inside text-black mt-2">
-        <li>Resolve Tier III network issues across 34 buildings and collaborate with Network & System Administrators and vendors to optimize and maintain an enterprise-grade network.</li>
+        <li>Resolved Tier III network issues across 34 buildings and collaborated with Network & 
+          System Administrators and vendors to optimize and maintain an enterprise-grade network.</li>
         <li>Implemented and managed a quarantine server to isolate and analyze potentially compromised devices while testing security policies.</li>
         <li>Optimized firewall security (FortiGate & WatchGuard) by analyzing traffic and mitigating threats.</li>
-        <li>Leverage ExtremeCloud IQ Pilot and Extreme Site Engine for real-time network diagnostics and performance optimization.</li>
-        <li>Created training materials and led networking seminars, enhancing hands-on skills for 60+ technicians.</li>
+        <li>Utilized ExtremeCloud IQ Pilot and Site Engine to conduct real-time network diagnostics, reducing latency for access points.</li>
+        <li>Developed and led networking workshops for 60+ technicians; improved team skillset through hands-on training and materials.</li>
+        <li>Led hiring for Student Security Analyst role, refining evaluation criteria, and selecting top cybersecurity candidates.</li>
       </ul>
     </div>
 
@@ -259,6 +198,81 @@ const ResumePage = () => {
         <li>Answered technical inquiries, offering prompt resolutions for faculty, staff, and students during events and classes.</li>
       </ul>
     </div>
+  </div>
+</section>
+
+ {/* Career Highlights Section */}
+<section className="mb-10 text-center flex flex-col items-center">
+  <h2 className="text-2xl font-bold text-purple-700 mb-6">Career Highlights</h2>
+  <div className="grid gap-6 max-w-6xl w-full px-4 md:grid-cols-1">
+    {[
+      {
+        title: "Network Administration Course Instructor",
+        logo: "/teach.png",
+        points: [
+          "Recognized as the #1 instructor for the 2024 Kean University IT Student Rotational Learning Program.",
+        ],
+      },
+      {
+        title: "Senior Project: Portable Mobile Network (See portfolio page for more details)",
+        logo: "/moblie.png",
+        points: [
+          "Constructed a mobile network with an AT&T Netgear router, integrating Fortinet FortiGate-90D and pfSense firewalls, GL.iNet router, captive portal, Cisco Catalyst 2960X, ad-blocking DNS, and a NAS interchangeably for scalable enterprise field deployments.",
+          "Developed a dedicated website showcasing the project, including an AI chatbot for technical assistance and troubleshooting.",
+        ],
+      },
+      {
+        title: "Hybrid Cloud VPN Network Deployment (See portfolio page for more details)",
+        logo: "/awslogo.png",
+        points: [
+          "Designed and deployed a hybrid cloud network using three AWS Lightsail Windows Server VMs, interconnected through a WireGuard VPN hosted on a port-forwarded ASUS router.",
+          "Configured one VM as a NAS (SMB) and another as a MySQL server, enabling secure file and database access across VMs.",
+        ],
+      },
+      {
+        title: "Network Security & Infrastructure",
+        logo: "/security.jpg",
+        points: [
+          "Configured a WatchGuard firewall to host AD, Group Policy, Linux DNS, MFA, DHCP, and a captive portal for network access.",
+          "Imaged and configured pfSense and OPNsense firewalls on mini-PCs and integrated them into network security appliances.",
+          "Deployed Splunk Enterprise SIEM, improving threat detection and response efficiency.",
+          "Developed a Firewall Recovery Plan for a WatchGuard Firebox, ensuring rapid restoration, failover, and business continuity.",
+        ],
+      },
+      {
+        title: "Data Center Network Operations",
+        logo: "/center.png",
+        points: [
+          "Collaborated on a data center reorganization project, optimizing space and rack positioning.",
+          "Decommissioned legacy servers and PDUs, installed new ones, and mapped, inventoried, and labeled servers while tracking operational status in Excel.",
+          "Set up and deployed Extreme Networks switches using PuTTY and assisted with data center integration.",
+        ],
+      },
+      {
+        title: "Active Directory & Identity Management",
+        logo: "/AD.png",
+        points: [
+          "Managed 20,000+ AD objects (users, groups, devices), enforcing security policies for authentication and compliance.",
+          "Migrated a Windows Server 2019 AD to Microsoft Entra ID (Azure AD) for user access across hybrid cloud environments.",
+        ],
+      },
+
+    ].map((category, index) => (
+      <div
+        key={index}
+        className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
+      >
+        <div className="flex items-center space-x-4 mb-3">
+          <img src={category.logo} alt={category.title} className="w-12 h-12 object-contain" />
+          <h3 className="text-lg font-semibold text-black">{category.title}</h3>
+        </div>
+        <ul className="list-disc list-inside text-left text-black">
+          {category.points.map((point, idx) => (
+            <li key={idx}>{point}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
   </div>
 </section>
 
