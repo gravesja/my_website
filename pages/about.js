@@ -304,38 +304,38 @@ const ResumePage = () => {
        logo: "/homelab.png",
        paragraph: "Designed, built, and maintain a comprehensive Unifi network infrastructure featuring the Cloud Gateway Ultra, Ultra POE switch, Power Distribution Pro, and NanoHD access point. This network integrates and hosts multiple enterprise-grade firewalls, including pfSense, SonicWall TZ400, WatchGuard M370, Fortinet Fortigate 90D, and Palo Alto 220 Next-Gen Firewall. The environment also includes a Cisco stack composed of a Catalyst 2960-X switch, a 1900 series router, and an ASA 5515-X Firewall. Remote access and endpoint management are enabled via Tailscale.",
        sectionHeader: "Notable Projects",
-       points: [
-        <span><strong>SIEM Deployment & Log Ingestion Project:</strong> Deployed Wazuh (OSSIM-based SIEM) on Proxmox to monitor Windows and Linux endpoints. Configured secure agent enrollment with authentication keys and AES encryption. Customized manager and syslog ports for optimized log ingestion. Integrated UniFi syslog feeds and ensured real-time log collection and parsing.</span>, 
-        <span><strong>Automation Lab (Infrastructure as Code):</strong> Implemented automated information parsing utilizing Ansible playbooks to enhance deployment efficiency.</span>,
-        <span><strong>Network Access Control & VLAN Segmentation:</strong> Configured UniFi network with role-based access control and automated VLAN assignment. Implemented dynamic VLAN segmentation for IoT, guest, and internal devices based on credentials.</span>,
-        <span><strong>Active Directory Deployment:</strong> Configured a Windows Server-based Active Directory Domain Controller to manage user authentication, apply Group Policy, and streamline device administration for multiple Windows clients in Proxmox.</span>,
-        <span><strong>Network Monitoring Dashboard:</strong> Deployed a full-stack monitoring solution using Prometheus, InfluxDB, Unpoller, and Grafana to visualize and analyze network and system performance hosted on Proxmox with Ubuntu and Docker for container orchestration.</span>,
-       ],
+        points: [
+          <span key="siem"><strong>SIEM Deployment & Log Ingestion Project:</strong> Deployed Wazuh (OSSIM-based SIEM) on Proxmox to monitor Windows and Linux endpoints. Configured secure agent enrollment with authentication keys and AES encryption. Customized manager and syslog ports for optimized log ingestion. Integrated UniFi syslog feeds and ensured real-time log collection and parsing.</span>,
+          <span key="ansible"><strong>Automation Lab (Infrastructure as Code):</strong> Implemented automated information parsing utilizing Ansible playbooks to enhance deployment efficiency.</span>,
+          <span key="vlan"><strong>Network Access Control & VLAN Segmentation:</strong> Configured UniFi network with role-based access control and automated VLAN assignment. Implemented dynamic VLAN segmentation for IoT, guest, and internal devices based on credentials.</span>,
+          <span key="ad"><strong>Active Directory Deployment:</strong> Configured a Windows Server-based Active Directory Domain Controller to manage user authentication, apply Group Policy, and streamline device administration for multiple Windows clients in Proxmox.</span>,
+          <span key="dashboard"><strong>Network Monitoring Dashboard:</strong> Deployed a full-stack monitoring solution using Prometheus, InfluxDB, Unpoller, and Grafana to visualize and analyze network and system performance hosted on Proxmox with Ubuntu and Docker for container orchestration.</span>,
+        ],
       },
 
-    ].map((category, index) => (
-<div
-  key={index}
-  className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
->
-  <div className="flex items-center space-x-4 mb-3">
-    <img src={category.logo} alt={category.title} className="w-12 h-12 object-contain" />
-    <h3 className="text-lg font-semibold text-black">{category.title}</h3>
-  </div>
+   ].map((category, index) => (
+      <div
+        key={index}
+        className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
+      >
+        <div className="flex items-center space-x-4 mb-3">
+          <img src={category.logo} alt={category.title} className="w-12 h-12 object-contain" />
+          <h3 className="text-lg font-semibold text-black">{category.title}</h3>
+        </div>
 
-  {category.paragraph && (
-    <p className="text-black mb-4">{category.paragraph}</p>
-  )}
+        {category.paragraph && (
+          <p className="text-black mb-4">{category.paragraph}</p>
+        )}
 
-  {category.sectionHeader && (
-    <h4 className="text-black font-semibold mb-2">{category.sectionHeader}</h4>
-  )}
+        {category.sectionHeader && (
+          <h4 className="text-black font-semibold mb-2">{category.sectionHeader}</h4>
+        )}
 
-  <ul className="list-disc list-inside text-left text-black">
-    {category.points.map((point, idx) => (
-      <li key={idx} className="mb-2">{point}</li>
-    ))}
-  </ul>
+        <ul className="list-disc list-inside text-left text-black">
+          {category.points.map((point, idx) => (
+            <li key={idx} className="mb-2">{point}</li>
+          ))}
+        </ul>
       </div>
     ))}
   </div>
