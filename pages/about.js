@@ -142,50 +142,53 @@ const ResumePage = () => {
   <h2 className="text-2xl font-bold text-purple-700 mb-6">Work Experience</h2>
   <div className="grid gap-6 max-w-6xl w-full px-4 md:grid-cols-1">
 
-    {/* Sysadmin */}
-    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-      <h3 className="font-semibold text-lg text-black">System Administrator/Data Technician</h3>
-      <p className="text-black">May 2025 - Present | JCT Solutions, Springfield, NJ</p>
-      <ul className="list-disc list-inside text-black mt-2">
-        <li>Provide full-scope IT support and infrastructure management for three municipalities (police, fire, and government offices) under a 
-          Managed Service Provider structure, ensuring uptime and compliance across mission-critical systems.</li>
-        <li>Provide Tier 2–3 technical support and endpoint deployment across Lenovo systems, printers, VoIP, and networked peripherals; 
-          utilize Synchro, 
-          Splashtop, and PowerShell scripting to manage AD provisioning and enforce policy compliance. </li>
-        <li>Administer Azure AD and Office 365 Admin Center in a multi-tenant environment; manage licensing, GPOs, and MFA for 400+ users.</li>
-        <li>Maintain VMware ESXi and QNAP infrastructure, hosting SANs to support high-availability operations across departments.</li>
-        <li>Coordinated with legal and administrative departments to process OPRA requests, maintaining compliance with transparency regulations. </li>
-        <li>Deploy and maintain secure VPN access using SonicWall NetExtender for staff across government and public safety departments.</li>
-        <li>Serviced Panasonic Toughbooks deployed in police squad vehicles to ensure reliable operation of mobile law enforcement systems.</li>
-      </ul>
-    </div>
 
-    {/* Network Admin*/}
-    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-      <h3 className="font-semibold text-lg text-black">Network Administrator</h3>
-      <p className="text-black">March 2024 - Present | Kean University, Union, NJ</p>
-      <ul className="list-disc list-inside text-black mt-2">
-        <li>Resolved Tier III network issues across 34 buildings and collaborated with Network & 
-          System Administrators and vendors to optimize and maintain an enterprise-grade network.</li>
-        <li>Implemented and managed a quarantine server to isolate and analyze potentially compromised devices while testing security policies.</li>
-        <li>Optimized firewall security (FortiGate & WatchGuard) by analyzing traffic and mitigating threats.</li>
-        <li>Utilized ExtremeCloud IQ Pilot and Site Engine to conduct real-time network diagnostics, reducing latency for access points.</li>
-        <li>Developed and led networking workshops for 60+ technicians; improved team skillset through hands-on training and materials.</li>
-        <li>Led hiring for Student Security Analyst role, refining evaluation criteria, and selecting top cybersecurity candidates.</li>
-      </ul>
-    </div>
+   {/* Sysadmin */}
+   <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+     <h3 className="font-semibold text-lg text-black">System Administrator/Data Technician</h3>
+     <p className="text-black">May 2025 - Present | JCT Solutions, Springfield, NJ</p>
+     <ul className="list-disc list-inside text-black mt-2">
+       <li className="mb-2">Provide full-scope IT support and infrastructure management for three municipalities (police, fire, and government offices) under a 
+         Managed Service Provider structure, ensuring uptime and compliance across mission-critical systems.</li>
+       <li className="mb-2">Provide Tier 2–3 technical support and endpoint deployment across Lenovo systems, printers, VoIP, and networked peripherals; 
+         utilize Synchro, 
+         Splashtop, and PowerShell scripting to manage AD provisioning and enforce policy compliance.</li>
+       <li className="mb-2">Administer Azure AD and Office 365 Admin Center in a multi-tenant environment; manage licensing, GPOs, and MFA for 400+ users.</li>
+       <li className="mb-2">Maintain VMware ESXi and QNAP infrastructure, hosting SANs to support high-availability operations across departments.</li>
+       <li className="mb-2">Coordinated with legal and administrative departments to process OPRA requests, maintaining compliance with transparency regulations.</li>
+       <li className="mb-2">Deploy and maintain secure VPN access using SonicWall NetExtender for staff across government and public safety departments.</li>
+       <li className="mb-2">Serviced Panasonic Toughbooks deployed in police squad vehicles to ensure reliable operation of mobile law enforcement systems.</li>
+     </ul>
+   </div>
+
+
+   {/* Network Admin */}
+   <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+     <h3 className="font-semibold text-lg text-black">Network Administrator</h3>
+     <p className="text-black">March 2024 - Present | Kean University, Union, NJ</p>
+     <ul className="list-disc list-inside text-black mt-2">
+       <li className="mb-2">Resolved Tier III network issues across 34 buildings and collaborated with Network & 
+         System Administrators and vendors to optimize and maintain an enterprise-grade network.</li>
+       <li className="mb-2">Implemented and managed a quarantine server to isolate and analyze potentially compromised devices while testing security policies.</li>
+       <li className="mb-2">Optimized firewall security (FortiGate & WatchGuard) by analyzing traffic and mitigating threats.</li>
+       <li className="mb-2">Utilized ExtremeCloud IQ Pilot and Site Engine to conduct real-time network diagnostics, reducing latency for access points.</li>
+       <li className="mb-2">Developed and led networking workshops for 60+ technicians; improved team skillset through hands-on training and materials.</li>
+       <li className="mb-2">Led hiring for Student Security Analyst role, refining evaluation criteria, and selecting top cybersecurity candidates.</li>
+     </ul>
+   </div>
+
 
     {/* IT */}
     <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-      <h3 className="font-semibold text-lg text-black">IT Support Specialist</h3>
-      <p className="text-black">September 2022 - March 2024 | Kean University, Union, NJ</p>
-      <ul className="list-disc list-inside text-black mt-2">
-        <li>Diagnosed and resolved 500+ Tier II system issues across laptops, projectors, desktops, and other peripheral devices.</li>
-        <li>Handled 20–35 weekly IT support tickets, ensuring a 90%+ first-contact resolution rate and minimizing faculty/staff downtime.</li>
-        <li>Tracked IT assets using spreadsheets and ManageEngine Endpoint Central, improving accountability.</li>
-        <li>Assisted in 5+ large-scale IT deployments, ensuring seamless office and lab setups with zero downtime.</li>
-      </ul>
-    </div>
+     <h3 className="font-semibold text-lg text-black">IT Support Specialist</h3>
+     <p className="text-black">September 2022 – March 2024 | Kean University, Union, NJ</p>
+     <ul className="list-disc list-inside text-black mt-2">
+      <li className="mb-2">Diagnosed and resolved 500+ Tier II issues across laptops, desktops, projectors, and peripheral devices, enhancing classroom and office tech performance.</li>
+      <li className="mb-2">Managed 20–35 weekly IT support tickets, maintaining a 90%+ first-contact resolution rate to reduce faculty and staff downtime.</li>
+      <li className="mb-2">Tracked and managed IT assets using spreadsheets and ManageEngine Endpoint Central, improving inventory accuracy and accountability.</li>
+      <li className="mb-2">Supported 5+ large-scale IT deployments, coordinating logistics to ensure seamless setups for new office and lab environments with zero downtime.</li>
+    </ul>
+   </div>
 
     {/* A/V */}
     <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
