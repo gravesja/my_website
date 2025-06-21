@@ -140,7 +140,7 @@ const ResumePage = () => {
     {/* Work Experience Section */}
 <section id="work-experience" className="mb-10 flex flex-col items-center">
   <h2 className="text-2xl font-bold text-purple-700 mb-6">Work Experience</h2>
-  <div className="space-y-6 w-full max-w-5xl">
+  <div className="grid gap-6 max-w-6xl w-full px-4 md:grid-cols-1">
 
     {/* Sysadmin */}
     <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
@@ -192,11 +192,11 @@ const ResumePage = () => {
       <h3 className="font-semibold text-lg text-black">Audio Visual Technician</h3>
       <p className="text-black">September 2021 - September 2022</p>
       <p className="text-black">Kean Information Technology - Kean University | Union, NJ</p>
-      <ul className="list-disc list-inside text-black mt-2">
-        <li>Provided classroom Tier I A/V support for faculty, ensuring smooth projector/multimedia operation and resolving technical issues.</li>
-        <li>Operated 4K camera equipment to live stream on-campus events, enhancing accessibility for remote participants.</li>
-        <li>Answered technical inquiries, offering prompt resolutions for faculty, staff, and students during events and classes.</li>
-      </ul>
+     <ul className="list-disc list-inside text-black mt-2">
+      <li className="mb-2">Provided classroom Tier I A/V support for faculty, ensuring smooth projector/multimedia operation and resolving technical issues.</li>
+      <li className="mb-2">Operated 4K camera equipment to live stream on-campus events, enhancing accessibility for remote participants.</li>
+      <li className="mb-2">Answered technical inquiries, offering prompt resolutions for faculty, staff, and students during events and classes.</li>
+    </ul>
     </div>
   </div>
 </section>
