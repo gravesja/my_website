@@ -301,7 +301,7 @@ const ResumePage = () => {
       },
      {
        title: "Full-Stack Enterprise Network Environment Lab",
-       logo: "/homelab.png",
+       logi: "/homelab.png",
        paragraph: "Designed, built, and maintain a comprehensive Unifi network infrastructure featuring the Cloud Gateway Ultra, Ultra POE switch, Power Distribution Pro, and NanoHD access point. This network integrates and hosts multiple enterprise-grade firewalls, including pfSense, SonicWall TZ400, WatchGuard M370, Fortinet Fortigate 90D, and Palo Alto 220 Next-Gen Firewall. The environment also includes a Cisco stack composed of a Catalyst 2960-X switch, a 1900 series router, and an ASA 5515-X Firewall. Remote access and endpoint management are enabled via Tailscale.",
        sectionHeader: "Notable Projects",
         points: [
@@ -319,7 +319,7 @@ const ResumePage = () => {
         className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
       >
         <div className="flex items-center space-x-4 mb-3">
-          <img src={category.logo} alt={category.title} className="w-12 h-12 object-contain" />
+          <img src={category.logi} alt={category.title} className="w-12 h-12 object-contain" />
           <h3 className="text-lg font-semibold text-black">{category.title}</h3>
         </div>
 
