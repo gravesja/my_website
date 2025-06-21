@@ -87,12 +87,12 @@ const ResumePage = () => {
       {
         title: "Networking",
         image: "/network.png",
-        skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN", "DHCP", "ARP", "NAT", "DNS/DDNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"]
+        skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN/SAN", "DHCP", "ARP", "NAT", "DNS/DDNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"]
       },
       {
         title: "Cybersecurity",
         image: "/cyber.png",
-        skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", " UniFi (Cloud Gateway, APs)", "802.1x", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"]
+        skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "SIEM-Wazuh", "802.1x","Tailscale", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"]
       },
       {
         title: "Cloud",
@@ -102,12 +102,12 @@ const ResumePage = () => {
       {
         title: "Virtualization & Containers",
         image: "/virtual.png",
-        skills: ["Proxmox VE (Windows Server 2022)", "Docker (InfluxDB, Grafana)", "VirtualBox (Ubuntu, Kali Linux)"]
+        skills: ["VMware ESXi (Windows Server 2019)", "Proxmox VE (Windows Server 2022, Pi-hole: DNS, Prometheus)", " Docker (InfluxDB, Grafana)", "VirtualBox (Kali Linux, Windows 11/10-Lenovo specific image)"]
       },
       {
         title: "IT",
         image: "/it.jpg",
-        skills: ["Windows","Freshservice(ITSM)", "MacOS", "iOS", "Office 365",  "Google Suite", "Cisco Webex", "Dell", "Xerox", "Sharp"]
+        skills: ["Windows","Freshservice(ITSM)", "MacOS", "iOS", "Office 365 Admin",  "Google Suite", "Cisco Webex", "Dell", "Xerox","HP", "Sharp", "Cisco Webex"]
       },
       {
         title: "Coding",
@@ -206,7 +206,7 @@ const ResumePage = () => {
 
  {/* Career Highlights Section */}
 <section className="mb-10 text-center flex flex-col items-center">
-  <h2 className="text-2xl font-bold text-purple-700 mb-6">Career Highlights</h2>
+  <h2 className="text-2xl font-bold text-purple-700 mb-6">Professional Highlights</h2>
   <div className="grid gap-6 max-w-6xl w-full px-4 md:grid-cols-1">
     {[
       {
@@ -258,6 +258,59 @@ const ResumePage = () => {
           "Managed 20,000+ AD objects (users, groups, devices), enforcing security policies for authentication and compliance.",
           "Migrated a Windows Server 2019 AD to Microsoft Entra ID (Azure AD) for user access across hybrid cloud environments.",
         ],
+      },
+
+    ].map((category, index) => (
+      <div
+        key={index}
+        className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
+      >
+        <div className="flex items-center space-x-4 mb-3">
+          <img src={category.logo} alt={category.title} className="w-12 h-12 object-contain" />
+          <h3 className="text-lg font-semibold text-black">{category.title}</h3>
+        </div>
+        <ul className="list-disc list-inside text-left text-black">
+          {category.points.map((point, idx) => (
+            <li key={idx}>{point}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>
+
+ {/* Technical Projects Section */}
+<section className="mb-10 text-center flex flex-col items-center">
+  <h2 className="text-2xl font-bold text-purple-700 mb-6">Technical Projects </h2>
+  <div className="grid gap-6 max-w-6xl w-full px-4 md:grid-cols-1">
+    {[
+      {
+        title: "Senior Project: Portable Mobile Network (See portfolio page for more details)",
+        logo: "/moblie.png",
+        points: [
+          "Designed and deployed a scalable mobile network for enterprise field use. Integrated Fortinet FortiGate 90D, pfSense, Cisco Catalyst 2960-X, GL.iNet router, and a NAS with a captive portal.",
+          "Deployed an AI-powered troubleshooting chatbot and website to support users.",
+        ],
+      },
+      {
+        title: "Hybrid Cloud VPN Network Deployment (See portfolio page for more details)",
+        logo: "/awslogo.png",
+        points: [
+          "Deployed a hybrid network with AWS Lightsail Windows Server VMs connected via WireGuard VPN on an ASUS router; configured one as a NAS and another as a MySQL server for secure file and database access.",
+        ],
+      },
+     {
+       title: "Full-Stack Enterprise Network Environment Lab",
+       logo: "/homelab.png",
+       paragraph: "Designed, built, and maintain a comprehensive Unifi network infrastructure featuring the Cloud Gateway Ultra, Ultra POE switch, Power Distribution Pro, and NanoHD access point. This network integrates and hosts multiple enterprise-grade firewalls, including pfSense, SonicWall TZ400, WatchGuard M370, Fortinet Fortigate 90D, and Palo Alto 220 Next-Gen Firewall. The environment also includes a Cisco stack composed of a Catalyst 2960-X switch, a 1900 series router, and an ASA 5515-X Firewall. Remote access and endpoint management are enabled via Tailscale.",
+       sectionHeader: "Notable Projects",
+       points: [
+        <span><strong>SIEM Deployment & Log Ingestion Project:</strong> Deployed Wazuh (OSSIM-based SIEM) on Proxmox to monitor Windows and Linux endpoints. Configured secure agent enrollment with authentication keys and AES encryption. Customized manager and syslog ports for optimized log ingestion. Integrated UniFi syslog feeds and ensured real-time log collection and parsing.</span>, 
+        <span><strong>Automation Lab (Infrastructure as Code):</strong> Implemented automated information parsing utilizing Ansible playbooks to enhance deployment efficiency.</span>,
+        <span><strong>Network Access Control & VLAN Segmentation:</strong> Configured UniFi network with role-based access control and automated VLAN assignment. Implemented dynamic VLAN segmentation for IoT, guest, and internal devices based on credentials.</span>,
+        <span><strong>Active Directory Deployment:</strong> Configured a Windows Server-based Active Directory Domain Controller to manage user authentication, apply Group Policy, and streamline device administration for multiple Windows clients in Proxmox.</span>,
+        <span><strong>Network Monitoring Dashboard:</strong> Deployed a full-stack monitoring solution using Prometheus, InfluxDB, Unpoller, and Grafana to visualize and analyze network and system performance hosted on Proxmox with Ubuntu and Docker for container orchestration.</span>,
+       ],
       },
 
     ].map((category, index) => (
