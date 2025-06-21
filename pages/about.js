@@ -314,19 +314,28 @@ const ResumePage = () => {
       },
 
     ].map((category, index) => (
-      <div
-        key={index}
-        className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
-      >
-        <div className="flex items-center space-x-4 mb-3">
-          <img src={category.logo} alt={category.title} className="w-12 h-12 object-contain" />
-          <h3 className="text-lg font-semibold text-black">{category.title}</h3>
-        </div>
-        <ul className="list-disc list-inside text-left text-black">
-          {category.points.map((point, idx) => (
-            <li key={idx}>{point}</li>
-          ))}
-        </ul>
+<div
+  key={index}
+  className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
+>
+  <div className="flex items-center space-x-4 mb-3">
+    <img src={category.logo} alt={category.title} className="w-12 h-12 object-contain" />
+    <h3 className="text-lg font-semibold text-black">{category.title}</h3>
+  </div>
+
+  {category.paragraph && (
+    <p className="text-black mb-4">{category.paragraph}</p>
+  )}
+
+  {category.sectionHeader && (
+    <h4 className="text-black font-semibold mb-2">{category.sectionHeader}</h4>
+  )}
+
+  <ul className="list-disc list-inside text-left text-black">
+    {category.points.map((point, idx) => (
+      <li key={idx} className="mb-2">{point}</li>
+    ))}
+  </ul>
       </div>
     ))}
   </div>
