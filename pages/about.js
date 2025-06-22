@@ -271,7 +271,7 @@ const ResumePage = () => {
       {
         title: "Senior Project: Portable Mobile Network (See portfolio page for more details)",
         logo: "/moblie.png",
-        paragraph: [
+        points: [
           "Designed and deployed a scalable mobile network for enterprise field use. Integrated Fortinet FortiGate 90D, pfSense, Cisco Catalyst 2960-X, GL.iNet router, and a NAS with a captive portal.",
           "Deployed an AI-powered troubleshooting chatbot and website to support users.",
         ],
@@ -279,7 +279,7 @@ const ResumePage = () => {
       {
         title: "Hybrid Cloud VPN Network Deployment (See portfolio page for more details)",
         logo: "/awslogo.png",
-        paragraph: [
+        points: [
           "Deployed a hybrid network with AWS Lightsail Windows Server VMs connected via WireGuard VPN on an ASUS router; configured one as a NAS and another as a MySQL server for secure file and database access.",
         ],
       },
