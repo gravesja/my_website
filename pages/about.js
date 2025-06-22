@@ -285,7 +285,7 @@ const ResumePage = () => {
       },
       {
         title: "Full-Stack Enterprise Network Environment Lab",
-        logo: "/mobile.png",
+        logo: "/moblie.png",
         paragraph:
            "Designed, built, and maintain a comprehensive Unifi network infrastructure featuring the Cloud Gateway Ultra, Ultra POE switch, Power Distribution Pro, and NanoHD access point. This network integrates and hosts multiple enterprise-grade firewalls, including pfSense, SonicWall TZ400, WatchGuard M370, Fortinet Fortigate 90D, and Palo Alto 220 Next-Gen Firewall. The environment also includes a Cisco stack composed of a Catalyst 2960-X switch, a 1900 series router, and an ASA 5515-X Firewall. Remote access and endpoint management are enabled via Tailscale.",
           
