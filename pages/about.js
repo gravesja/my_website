@@ -217,22 +217,6 @@ const ResumePage = () => {
         ],
       },
       {
-        title: "Senior Project: Portable Mobile Network (See portfolio page for more details)",
-        logo: "/moblie.png",
-        points: [
-          "Constructed a mobile network with an AT&T Netgear router, integrating Fortinet FortiGate-90D and pfSense firewalls, GL.iNet router, captive portal, Cisco Catalyst 2960X, ad-blocking DNS, and a NAS interchangeably for scalable enterprise field deployments.",
-          "Developed a dedicated website showcasing the project, including an AI chatbot for technical assistance and troubleshooting.",
-        ],
-      },
-      {
-        title: "Hybrid Cloud VPN Network Deployment (See portfolio page for more details)",
-        logo: "/awslogo.png",
-        points: [
-          "Designed and deployed a hybrid cloud network using three AWS Lightsail Windows Server VMs, interconnected through a WireGuard VPN hosted on a port-forwarded ASUS router.",
-          "Configured one VM as a NAS (SMB) and another as a MySQL server, enabling secure file and database access across VMs.",
-        ],
-      },
-      {
         title: "Network Security & Infrastructure",
         logo: "/security.jpg",
         points: [
@@ -301,7 +285,7 @@ const ResumePage = () => {
       },
       {
         title: "Full-Stack Enterprise Network Environment Lab",
-        logo: "/homelab.png",
+        logo: "/home.png",
         paragraph:
           "Designed, built, and maintain a comprehensive Unifi network infrastructure featuring the Cloud Gateway Ultra, Ultra POE switch, Power Distribution Pro, and NanoHD access point. This network integrates and hosts multiple enterprise-grade firewalls, including pfSense, SonicWall TZ400, WatchGuard M370, Fortinet Fortigate 90D, and Palo Alto 220 Next-Gen Firewall. The environment also includes a Cisco stack composed of a Catalyst 2960-X switch, a 1900 series router, and an ASA 5515-X Firewall. Remote access and endpoint management are enabled via Tailscale.",
         sectionHeader: "Notable Projects",
