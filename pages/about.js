@@ -298,10 +298,8 @@ const ResumePage = () => {
           "Network Monitoring Dashboard: Deployed a full-stack monitoring solution using Prometheus, InfluxDB, Unpoller, and Grafana to visualize and analyze network and system performance hosted on Proxmox with Ubuntu and Docker for container orchestration.",
         ],
       },
-      {
-        title: "Notable Projects",
-      },
      {
+        title: "Notable Projects",
         sectionHeader: "SIEM Deployment & Log Ingestion Project",
         detailedPoints: [
           "Deployed Wazuh (OSSIM-based SIEM) on Proxmox to monitor Windows and Linux endpoints. Configured secure agent enrollment with authentication keys and AES encryption. Customized manager and syslog ports for optimized log ingestion. Integrated UniFi syslog feeds and ensured real-time log collection and parsing.",
