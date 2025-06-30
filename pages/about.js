@@ -148,14 +148,16 @@ const ResumePage = () => {
      <h3 className="font-semibold text-lg text-black">System Administrator/Data Technician</h3>
      <p className="text-black">May 2025 - Present | JCT Solutions, Springfield, NJ</p>
      <ul className="list-disc list-inside text-black mt-2">
-       <li className="mb-2">Provide full-scope IT support and infrastructure management for three municipalities (police, fire, and government offices) under a 
-         Managed Service Provider structure, ensuring uptime and compliance across mission-critical systems.</li>
-       <li className="mb-2">Provide Tier 2–3 technical support and endpoint deployment across Lenovo systems, printers, VoIP, and networked peripherals; 
-         utilize Synchro, 
-         Splashtop, and PowerShell scripting to manage AD provisioning and enforce policy compliance.</li>
+       <li className="mb-2">Provide full-scope IT support and infrastructure management for three municipalities (police/fire stations, and government sites) 
+        under a Managed Service Provider structure, ensuring uptime and compliance across mission-critical systems.</li>
+       <li className="mb-2">Deliver tier 2–3 technical support and endpoint deployment across Lenovo systems, printers, 
+        VoIP, and networked peripherals; utilize Synchro, Splashtop, and PowerShell scripting to manage AD provisioning and enforce policy compliance. </li>
        <li className="mb-2">Administer Azure AD and Office 365 Admin Center in a multi-tenant environment; manage licensing, GPOs, and MFA for 400+ users.</li>
        <li className="mb-2">Maintain VMware ESXi and QNAP infrastructure, hosting SANs to support high-availability operations across departments.</li>
+       <li className="mb-2">Integrated SonicWall firewall logs into Wazuh (OSSIM-based SIEM) using rsyslog, enhancing visibility into network traffic and 
+        improving threat detection across municipal environments.</li>
        <li className="mb-2">Coordinated with legal and administrative departments to process OPRA requests, maintaining compliance with transparency regulations.</li>
+       <li className="mb-2">Roll out SentinelOne agents across endpoints to enhance threat detection and endpoint security response times.</li>
        <li className="mb-2">Deploy and maintain secure VPN access using SonicWall NetExtender for staff across government and public safety departments.</li>
        <li className="mb-2">Serviced Panasonic Toughbooks deployed in police squad vehicles to ensure reliable operation of mobile law enforcement systems.</li>
      </ul>
@@ -291,32 +293,15 @@ const ResumePage = () => {
           
         sectionHeader: "Notable Projects",
         detailedPoints: [
-          "SIEM Deployment & Log Ingestion Project: Deployed Wazuh (OSSIM-based SIEM) on Proxmox to monitor Windows and Linux endpoints. Configured secure agent enrollment with authentication keys and AES encryption. Customized manager and syslog ports for optimized log ingestion. Integrated UniFi syslog feeds and ensured real-time log collection and parsing.",
-          "Automation Lab (Infrastructure as Code): Implemented automated information parsing utilizing Ansible playbooks to enhance deployment efficiency.",
+          "SIEM Deployment & Log Ingestion Project: Deployed Wazuh SIEM on Proxmox to monitor Windows and Linux endpoints. Configured secure agent enrollment with authentication keys and AES encryption. Customized manager and syslog ports for optimized log ingestion. Integrated UniFi syslog feeds and ensured real-time log collection and parsing.",
+          "Cloudflare DNS Governance & Email Security Management: Orchestrated secure domain management through Cloudflare by configuring and enforcing DNS policies that support reliable email delivery and domain integrity. Implemented SPF, MX, DKIM, and DMARC protocols to mitigate spoofing and phishing risks. Hardened email infrastructure by ensuring DNS-only exposure for mail records and eliminating legacy name server conflicts, aligning with best practices for zero-trust DNS.",
           "Network Access Control & VLAN Segmentation: Configured UniFi network with role-based access control and automated VLAN assignment. Implemented dynamic VLAN segmentation for IoT, guest, and internal devices based on credentials.",
+          "Automation Lab (Infrastructure as Code): Implemented automated information parsing utilizing Ansible playbooks to enhance deployment efficiency.",
           "Active Directory Deployment: Configured a Windows Server-based Active Directory Domain Controller to manage user authentication, apply Group Policy, and streamline device administration for multiple Windows clients in Proxmox.",
           "Network Monitoring Dashboard: Deployed a full-stack monitoring solution using Prometheus, InfluxDB, Unpoller, and Grafana to visualize and analyze network and system performance hosted on Proxmox with Ubuntu and Docker for container orchestration.",
         ],
       },
-     {
-        title: "Notable Projects",
-        sectionHeader: "SIEM Deployment & Log Ingestion Project",
-        detailedPoints: [
-          "Deployed Wazuh (OSSIM-based SIEM) on Proxmox to monitor Windows and Linux endpoints. Configured secure agent enrollment with authentication keys and AES encryption. Customized manager and syslog ports for optimized log ingestion. Integrated UniFi syslog feeds and ensured real-time log collection and parsing.",
-        ],
-        sectionHeader: "Automation Lab (Infrastructure as Code)",
-        detailedPoints: [
-          "Implemented automated information parsing utilizing Ansible playbooks to enhance deployment efficiency.",
-        ],
-        sectionHeader: "Active Directory Deployment",
-        detailedPoints: [
-          "Configured a Windows Server-based Active Directory Domain Controller to manage user authentication, apply Group Policy, and streamline device administration for multiple Windows clients in Proxmox.",
-        ],
-        sectionHeader: "Network Monitoring Dashboard",
-        detailedPoints: [
-          "Deployed a full-stack monitoring solution using Prometheus, InfluxDB, Unpoller, and Grafana to visualize and analyze network and system performance hosted on Proxmox with Ubuntu and Docker for container orchestration.",
-        ],
-      },
+     
     ].map((category, index) => (
   <div
     key={index}
