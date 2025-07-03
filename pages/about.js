@@ -95,6 +95,11 @@ const ResumePage = () => {
         skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "SIEM-Wazuh", "802.1x","Tailscale", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"]
       },
       {
+        title: "Firewalls",
+        image: "/firewall.png",
+        skills: ["Fortinet Fortigate 90D", "Cisco ASA 5515-X", "WatchGuard M370", "Palo Alto 220 Next-Gen", "SonicWall TZ400", "Netgate- pfSense "]
+      },
+      {
         title: "Cloud",
         image: "/cloud.jpg",
         skills: ["Azure AD,", "AWS", "WatchGuard Cloud", "Okta Admin (IAM, IDP)"]
