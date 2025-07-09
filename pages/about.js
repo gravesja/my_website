@@ -147,6 +147,12 @@ const ResumePage = () => {
   <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 w-full max-w-4xl">
     <ul className="list-disc list-inside text-black">
       <li>CompTIA Network+ - July 2025</li>
+      <a
+        href="/network+.png"  target="_blank"
+        className="text-purple-700 hover:underline"
+        >
+          Certificate
+      </a>
       <li>CISCO Threat Management - December 2024</li>
       <li>Cisco Certified Network Associate (CCNA) – In Progress</li>
     </ul>
