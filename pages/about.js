@@ -92,7 +92,7 @@ const ResumePage = () => {
       {
         title: "Cybersecurity",
         image: "/cyber.png",
-        skills: ["IPS/IDS", "EDR", "Fortinet", "Netgate - pfSense", "SIEM-Wazuh", "802.1x","Tailscale", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"]
+        skills: ["IPS/IDS", "EDR", "Netgate - pfSense", "SIEM-Wazuh", "802.1x","Tailscale", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"]
       },
       {
         title: "Firewalls",
@@ -139,6 +139,17 @@ const ResumePage = () => {
         </div>
       </div>
     ))}
+  </div>
+</section>
+{/* Certifications Section */}
+<section id="certifications" className="mb-10 flex flex-col items-center">
+  <h2 className="text-2xl font-bold text-purple-700 mb-4 text-center">Certifications</h2>
+  <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 w-full max-w-4xl">
+    <ul className="list-disc list-inside text-black">
+      <li>CompTIA Network+ - July 2025</li>
+      <li>CISCO Threat Management - December 2024</li>
+      <li>Cisco Certified Network Associate (CCNA) – In Progress</li>
+    </ul>
   </div>
 </section>
 
@@ -346,17 +357,6 @@ const ResumePage = () => {
     </ul>
   </div>
     ))}
-  </div>
-</section>
-
-{/* Certifications Section */}
-<section id="certifications" className="mb-10 flex flex-col items-center">
-  <h2 className="text-2xl font-bold text-purple-700 mb-4 text-center">Certifications</h2>
-  <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 w-full max-w-4xl">
-    <ul className="list-disc list-inside text-black">
-      <li>CISCO Threat Management - December 2024</li>
-      <li>Cisco Certified Network Associate (CCNA) – In Progress</li>
-    </ul>
   </div>
 </section>
 
