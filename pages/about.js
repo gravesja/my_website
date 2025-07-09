@@ -151,7 +151,7 @@ const ResumePage = () => {
         href="/network+.png"  target="_blank"
         className="text-purple-700 hover:underline"
         >
-          Certificate
+          View Certificate
       </a>
       <li>CISCO Threat Management - December 2024</li>
       <li>Cisco Certified Network Associate (CCNA) – In Progress</li>
