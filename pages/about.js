@@ -73,9 +73,11 @@ const ResumePage = () => {
           </button>
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Profile</h2>
           <p className="text-black text-lg leading-relaxed">
-            Passionate and dedicated IT professional with hands-on experience in network administration, cybersecurity, 
-            system administration, and web development. Skilled at integrating creative problem-solving with technical expertise to develop reliable and efficient systems. 
-            Currently focusing on enhancing network automation skills with AI and dynamic applications.
+            Network and Systems Administrator with hands-on experience supporting enterprise infrastructure across government, academic, and lab environments. 
+            Skilled in configuring secure networks using firewalls (WatchGuard, Fortinet, SonicWall), managing identity services (Azure AD, GPOs, MFA), 
+            and deploying hybrid infrastructure with VMware and Proxmox. Strong background in VPN, VLAN segmentation, endpoint security, and firewall-level 
+            DLP implementation aligned with HIPAA and PCI-DSS. Passionate about automation, compliance readiness, and building resilient, zero-trust environments 
+            that align with business continuity and operational security needs.
           </p>
         </section>
 
@@ -87,12 +89,12 @@ const ResumePage = () => {
       {
         title: "Networking",
         image: "/network.png",
-        skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN/SAN", "DHCP", "ARP", "NAT", "DNS/DDNS", "802.11", "Nmap", "Cisco IOS", "TCP/IP", "WPA2/3", "QoS"]
+        skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN/SAN", "DHCP", "ARP", "NAT", "DNS/DDNS", "802.11", "Nmap", "TCP/IP", "QoS"]
       },
       {
         title: "Cybersecurity",
         image: "/cyber.png",
-        skills: ["IPS/IDS", "EDR", "Netgate - pfSense", "SIEM-Wazuh", "802.1x","Tailscale", "TLS/SSL", "VPN", "ACLs", "MFA", "ZTNA", "DLP", "RBAC"]
+        skills: ["IPS/IDS", "EDR", "SIEM-Wazuh", "802.1x","Tailscale", "Group Policy", "Bitlocker", "VPN", "ACLs", "MFA", "SSO","ZTNA", "DLP", "RBAC"]
       },
       {
         title: "Firewalls",
@@ -112,12 +114,12 @@ const ResumePage = () => {
       {
         title: "IT",
         image: "/it.jpg",
-        skills: ["Windows","Freshservice(ITSM)", "MacOS", "iOS", "Office 365 Admin",  "Google Suite", "Cisco Webex", "Dell", "Xerox","HP", "Sharp", "Cisco Webex"]
+        skills: ["Windows","Freshservice(ITSM)", "Lenovo","MacOS", "IOS", "Office 365 Admin",  "Google Suite", "Dell", "Xerox","HP", "Sharp", "Cisco Webex"]
       },
       {
         title: "Coding",
         image: "/coding.png",
-        skills: ["React.js", "Node.js", "JavaScript", "Ruby", "HTML", "Python", "SQL", "PHP", "REST API", "OpenAI API"]
+        skills: ["React.js", "Node.js", "JavaScript", "Ruby", "HTML", "Python", "Ansible Playbooks", "SQL", "PHP", "REST API", "OpenAI API"]
       },
       {
         title: "Editing",
@@ -170,11 +172,13 @@ const ResumePage = () => {
      <h3 className="font-semibold text-lg text-black">System Administrator/Data Technician</h3>
      <p className="text-black">May 2025 - Present | JCT Solutions, Springfield, NJ</p>
      <ul className="list-disc list-inside text-black mt-2">
-       <li className="mb-2">Provide full-scope IT support and infrastructure management for three municipalities (police/fire stations, and government sites) 
+       <li className="mb-2">Provide full-scope IT support and infrastructure management for three municipalities (police/fire stations and government sites) 
         under a Managed Service Provider structure, ensuring uptime and compliance across mission-critical systems.</li>
        <li className="mb-2">Deliver tier 2–3 technical support and endpoint deployment across Lenovo systems, printers, 
         VoIP, and networked peripherals; utilize Synchro, Splashtop, and PowerShell scripting to manage AD provisioning and enforce policy compliance. </li>
        <li className="mb-2">Administer Azure AD and Office 365 Admin Center in a multi-tenant environment; manage licensing, GPOs, and MFA for 400+ users.</li>
+       <li className="mb-2">Decommissioned legacy SATA-based storage servers in accordance with data protection standards; ensured secure drive extraction and compliance with 
+        data retention policies during migration to QNAP-based domain controller.</li>
        <li className="mb-2">Maintain VMware ESXi and QNAP infrastructure, hosting SANs to support high-availability operations across departments.</li>
        <li className="mb-2">Integrated SonicWall firewall logs into Wazuh (OSSIM-based SIEM) using rsyslog, enhancing visibility into network traffic and 
         improving threat detection across municipal environments.</li>
@@ -193,11 +197,22 @@ const ResumePage = () => {
      <ul className="list-disc list-inside text-black mt-2">
        <li className="mb-2">Resolved Tier III network issues across 34 buildings and collaborated with Network & 
          System Administrators and vendors to optimize and maintain an enterprise-grade network.</li>
-       <li className="mb-2">Implemented and managed a quarantine server to isolate and analyze potentially compromised devices while testing security policies.</li>
-       <li className="mb-2">Optimized firewall security (FortiGate & WatchGuard) by analyzing traffic and mitigating threats.</li>
        <li className="mb-2">Utilized ExtremeCloud IQ Pilot and Site Engine to conduct real-time network diagnostics, reducing latency for access points.</li>
-       <li className="mb-2">Developed and led networking workshops for 60+ technicians; improved team skillset through hands-on training and materials.</li>
-       <li className="mb-2">Led hiring for Student Security Analyst role, refining evaluation criteria, and selecting top cybersecurity candidates.</li>
+       <li className="mb-2">Managed 20,000+ AD objects (users, groups, devices), enforcing security policies for authentication and compliance.</li>
+       <li className="mb-2">Designed and managed a quarantine server to isolate compromised endpoints and test the enforcement of security policies.</li>
+       <li className="mb-2">Tuned firewall configurations (FortiGate, WatchGuard) by analyzing traffic logs and mitigating network-layer threats.</li>
+       <li className="mb-2">Configured WatchGuard Firebox M370 to host AD, Group Policy, Linux DNS, DHCP, MFA, and captive portal for secure, segmented network access.</li>
+       <li className="mb-2">Migrated Lab Windows Server 2019 AD to Microsoft Entra ID (Azure AD) for user access across hybrid cloud environments.</li>
+       <li className="mb-2">Implemented Data Loss Prevention policies on WatchGuard M370 using built-in content filters to simulate HIPAA and PCI-DSS compliance. 
+        Configured filters to detect PII/PHI to control sensitive data egress.</li>
+       <li className="mb-2">Developed a firewall recovery and business continuity plan for WatchGuard Firebox, enabling rapid restoration during failure events.</li>
+       <li className="mb-2">Built an SNMP-based monitoring system using Python to automate real-time performance tracking and anomaly detection.</li>
+       <li className="mb-2">Deployed Splunk Enterprise SIEM in a lab environment to aggregate log data and simulate threat monitoring.</li>
+       <li className="mb-2">Ranked #1 Instructor across all rotational program tracks for hands-on network and infrastructure training delivery.</li>
+       <li className="mb-2">Led hiring for the Student Security Analyst role, refining evaluation criteria, and selecting top cybersecurity candidates.</li>
+       <li className="mb-2">Assisted in data center reorganization: decommissioned legacy servers, installed and inventoried new racks and PDUs, 
+        and ensured structured cabling compliance.</li>
+       <li className="mb-2">Configured Extreme Networks switches via CLI and supported switch deployment and integration across the data center fabric.</li>
      </ul>
    </div>
 
@@ -227,8 +242,9 @@ const ResumePage = () => {
     </div>
   </div>
 </section>
-
+ 
  {/* Career Highlights Section */}
+ {/*
 <section className="mb-10 text-center flex flex-col items-center">
   <h2 className="text-2xl font-bold text-purple-700 mb-6">Professional Highlights</h2>
   <div className="grid gap-6 max-w-6xl w-full px-4 md:grid-cols-1">
@@ -286,7 +302,7 @@ const ResumePage = () => {
     ))}
   </div>
 </section>
-
+ */}
  {/* Technical Projects Section */}
 <section className="mb-10 text-center flex flex-col items-center">
   <h2 className="text-2xl font-bold text-purple-700 mb-6">Technical Projects</h2>
@@ -309,22 +325,30 @@ const ResumePage = () => {
       },
       {
         title: "Full-Stack Enterprise Network Environment Lab",
-        logo: "/moblie.png",
+        logo: "/networking.jpg",
         paragraph:
            "Designed, built, and maintain a comprehensive Unifi network infrastructure featuring the Cloud Gateway Ultra, Ultra POE switch, Power Distribution Pro, and NanoHD access point. This network integrates and hosts multiple enterprise-grade firewalls, including pfSense, SonicWall TZ400, WatchGuard M370, Fortinet Fortigate 90D, and Palo Alto 220 Next-Gen Firewall. The environment also includes a Cisco stack composed of a Catalyst 2960-X switch, a 1900 series router, and an ASA 5515-X Firewall. Proxmox VE orchestrates virtualized infrastructure, and Tailscale enables secure remote access and device management.",
           
         sectionHeader: "Notable Projects",
         detailedPoints: [
           "SIEM Deployment & Log Ingestion Project: Deployed Wazuh SIEM on Proxmox to monitor Windows and Linux endpoints. Configured secure agent enrollment with authentication keys and AES encryption. Customized manager and syslog ports for optimized log ingestion. Integrated UniFi syslog feeds and ensured real-time log collection and parsing.",
-          "Virtualized HPC Lab: Simulated a multi-node high-performance computing cluster using Docker and Ubuntu VMs hosted in Proxmox. Emulated scheduler-like behavior for workload distribution, integrated shared storage, and implemented node health monitoring using Prometheus and Grafana.",
-          "Cloudflare DNS Governance & Email Security Management: Orchestrated secure domain management through Cloudflare by configuring and enforcing DNS policies that support reliable email delivery and domain integrity. Implemented SPF, MX, DKIM, and DMARC protocols to mitigate spoofing and phishing risks. Hardened email infrastructure by ensuring DNS-only exposure for mail records and eliminating legacy name server conflicts, aligning with best practices for zero-trust DNS.",
+          "Enterprise Network Diagnostics & Asset Intelligence with SolarWinds Toolset: Deployed SolarWinds Engineer’s Toolset to simulate enterprise diagnostics. Configured SNMP polling and bandwidth gauges across Proxmox VMs and Cisco devices. Used Network Sonar to auto-discover subnets and generate live topology maps. Mapped MAC-to-IP bindings into a custom inventory DB. Performed Wake-on-LAN, TCP session resets, and Switch Port Mapping to trace live port-to-endpoint connections on Catalyst 2960-X.",
+          "Virtualized HPC Lab: Developed a multi-node high-performance computing cluster using Docker and Ubuntu VMs hosted in Proxmox. Emulated scheduler-like behavior for workload distribution, integrated shared storage, and implemented node health monitoring using Prometheus and Grafana.",
+          "Zero-Trust DNS Filtering with DNS-over-HTTPS: Deployed a privacy-focused recursive DNS stack using Pi-hole, Unbound, and Cloudflared to encrypt DNS resolution. Pi-hole forwards all DNS requests to Unbound for recursive resolution, then tunneled upstream requests to Cloudflare via DoH (DNS-over-HTTPS) using Cloudflared.",
           "Network Access Control & VLAN Segmentation: Configured UniFi network with role-based access control and automated VLAN assignment. Implemented dynamic VLAN segmentation for IoT, guest, and internal devices based on credentials.",
+          "Cloudflare DNS Governance & Email Security Management: Orchestrated secure domain management through Cloudflare by configuring and enforcing DNS policies that support reliable email delivery and domain integrity. Implemented SPF, MX, DKIM, and DMARC protocols to mitigate spoofing and phishing risks. Hardened email infrastructure by ensuring DNS-only exposure for mail records and eliminating legacy name server conflicts, aligning with best practices for zero-trust DNS.",
           "Automation Lab (Infrastructure as Code): Implemented automated information parsing utilizing Ansible playbooks to enhance deployment efficiency.",
           "Active Directory Deployment: Deployed a Windows Server-based AD domain controller in Proxmox; configured GPOs, centralized user authentication, and managed policy enforcement across multiple virtual clients.",
           "Network Monitoring Dashboard: Deployed a full-stack monitoring solution using Prometheus, InfluxDB, Unpoller, and Grafana to visualize and analyze network and system performance hosted on Proxmox with Ubuntu and Docker for container orchestration.",
         ],
       },
-     
+     {
+        title: "Full-Stack Employee Management Dashboard",
+        logo: "/database2.png",
+        points: [
+          "Developed a secure, role-based employee management system (LAMP stack) supporting 10,000+ records. Enforced RBAC, audit logging, and security hardening (SQL injection prevention, hashed passwords). Automated MySQL backups and report generation with PowerShell scripts. Built custom UI with Tailwind CSS, dynamic table search, and session management for accessible UX.",
+        ],
+      },
     ].map((category, index) => (
   <div
     key={index}
@@ -373,7 +397,7 @@ const ResumePage = () => {
   <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 w-full max-w-4xl">
     <h3 className="font-semibold text-lg text-black">Kean University</h3>
     <p className="text-black">Bachelor of Science in Information Technology/Cybersecurity</p>
-    <p className="text-black">Expected Graduation: May 2025</p>
+    <p className="text-black">Graduation: May 2025</p>
     <ul className="list-disc list-inside text-black mt-2">
       <li><strong>Awards:</strong> Dean’s List, Athletics Director’s Honor Roll</li>
       <li><strong>Organizations:</strong> ACM, National Student Cybersecurity Association, Kean Esports</li>
