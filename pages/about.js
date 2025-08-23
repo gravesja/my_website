@@ -155,6 +155,13 @@ const ResumePage = () => {
         >
           View Certificate
       </a>
+       <li> Fortinet Certified Associate in Cybersecurity</li>
+      <a
+        href="/fortinet.png"  target="_blank"
+        className="text-purple-700 hover:underline"
+        >
+          View Certificate
+      </a>
       <li>CISCO Threat Management - December 2024</li>
       <li>Cisco Certified Network Associate (CCNA) – In Progress</li>
     </ul>
@@ -193,7 +200,7 @@ const ResumePage = () => {
    {/* Network Admin */}
    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
      <h3 className="font-semibold text-lg text-black">Network Administrator</h3>
-     <p className="text-black">March 2024 - Present | Kean University, Union, NJ</p>
+     <p className="text-black">March 2024 - May 2025 | Kean University, Union, NJ</p>
      <ul className="list-disc list-inside text-black mt-2">
        <li className="mb-2">Resolved Tier III network issues across 34 buildings and collaborated with Network & 
          System Administrators and vendors to optimize and maintain an enterprise-grade network.</li>
