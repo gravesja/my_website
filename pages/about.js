@@ -73,11 +73,11 @@ const ResumePage = () => {
           </button>
           <h2 className="text-2xl font-bold text-purple-700 mb-4">Profile</h2>
           <p className="text-black text-lg leading-relaxed">
-            Network and Systems Administrator with hands-on experience supporting enterprise infrastructure across government, academic, and lab environments. 
-            Skilled in configuring secure networks using firewalls (WatchGuard, Fortinet, SonicWall), managing identity services (Azure AD, GPOs, MFA), 
-            and deploying hybrid infrastructure with VMware and Proxmox. Strong background in VPN, VLAN segmentation, endpoint security, and firewall-level 
-            DLP implementation aligned with HIPAA and PCI-DSS. Passionate about automation, compliance readiness, and building resilient, zero-trust environments 
-            that align with business continuity and operational security needs.
+            Versatile Network and Systems Administrator with deep hands-on experience supporting secure, hybrid enterprise infrastructure across government, 
+            academic, and research environments. Proven ability to architect and maintain high-availability systems using advanced firewalls, virtualization platforms, 
+            and endpoint protection. Skilled in troubleshooting Tier I–III issues, implementing network segmentation, and deploying cybersecurity frameworks that align with 
+            HIPAA, PCI-DSS, and NIST 800-53. Known for improving uptime, reducing ticket resolution times, and proactively building resilient, zero-trust environments through 
+            automation and strategic infrastructure upgrades.
           </p>
         </section>
 
@@ -179,47 +179,61 @@ const ResumePage = () => {
      <h3 className="font-semibold text-lg text-black">System Administrator/Data Technician</h3>
      <p className="text-black">May 2025 - Present | JCT Solutions, Springfield, NJ</p>
      <ul className="list-disc list-inside text-black mt-2">
-       <li className="mb-2">Provide full-scope IT support and infrastructure management for three municipalities (police/fire stations and government sites) 
-        under a Managed Service Provider structure, ensuring uptime and compliance across mission-critical systems.</li>
-       <li className="mb-2">Deliver tier 2–3 technical support and endpoint deployment across Lenovo systems, printers, 
-        VoIP, and networked peripherals; utilize Synchro, Splashtop, and PowerShell scripting to manage AD provisioning and enforce policy compliance. </li>
-       <li className="mb-2">Administer Azure AD and Office 365 Admin Center in a multi-tenant environment; manage licensing, GPOs, and MFA for 400+ users.</li>
-       <li className="mb-2">Decommissioned legacy SATA-based storage servers in accordance with data protection standards; ensured secure drive extraction and compliance with 
-        data retention policies during migration to QNAP-based domain controller.</li>
-       <li className="mb-2">Maintain VMware ESXi and QNAP infrastructure, hosting SANs to support high-availability operations across departments.</li>
-       <li className="mb-2">Integrated SonicWall firewall logs into Wazuh (OSSIM-based SIEM) using rsyslog, enhancing visibility into network traffic and 
-        improving threat detection across municipal environments.</li>
-       <li className="mb-2">Coordinated with legal and administrative departments to process OPRA requests, maintaining compliance with transparency regulations.</li>
-       <li className="mb-2">Roll out SentinelOne agents across endpoints to enhance threat detection and endpoint security response times.</li>
-       <li className="mb-2">Deploy and maintain secure VPN access using SonicWall NetExtender for staff across government and public safety departments.</li>
-       <li className="mb-2">Serviced Panasonic Toughbooks deployed in police squad vehicles to ensure reliable operation of mobile law enforcement systems.</li>
+       <li className="mb-2">Coordinate full-scale IT infrastructure support across three municipalities, including law enforcement, fire, 
+        and government buildings; impact spans 500+ staff.</li>
+       <li className="mb-2">Deliver Tier I–III endpoint and infrastructure support across Lenovo systems, printers, 
+        VoIP, and mobile law enforcement systems using Splashtop, Synchro, and PowerShell. </li>
+       <li className="mb-2">Reduced ticket resolution time by 50%, handling 30+ weekly support tickets with 1–2 hour resolution rates.</li>
+       <li className="mb-2">Administer Azure AD and Microsoft 365 across a multi-tenant setup, supporting 400+ users with MFA, licensing,
+         and GPO management, demonstrating expertise in identity management and enterprise-level system administration.</li>
+       <li className="mb-2">Led decommissioning of legacy SATA-based storage, migrating domain controller services to QNAP-based SAN 
+        infrastructure in under one week, exhibiting speed and technical precision.</li>
+       <li className="mb-2">Deployed SentinelOne EDR across endpoints, enhancing detection response and remediation capabilities.</li>
+       <li className="mb-2">Integrated SonicWall firewall logs into Wazuh SIEM via Rsyslog, improving threat visibility and real-time
+         detection across municipal environments.</li>
+       <li className="mb-2">Executed township-wide hardware upgrades for ~100 machines, improved WAN performance, and led a 10–12 department 
+        printer refresh in under one week—underscoring efficiency and cross-departmental coordination. </li>
+       <li className="mb-2">Rapidly restored law enforcement record systems within 30 minutes during a mission-critical outage, coordinating
+         vendors to recover Lawsoft access within 2 hours and minimizing police dispatch downtime.</li>
+       <li className="mb-2">Deployed WatchGuard evidence management server in coordination with vendor, enabling stable integration with 
+        police body camera systems</li>
+       <li className="mb-2">Configured and troubleshot Lawsoft, Infocop, and Infoshare connections, ensuring reliable access for patrol 
+        officers despite limited vendor-level knowledge.</li>
+       <li className="mb-2">Maintained VMware ESXi hosts and supported QNAP-based SANs to ensure system redundancy and uptime.</li>
+       <li className="mb-2">Provided VPN configuration and deployment (NetExtender) for secure municipal and public safety remote access.</li>
+       <li className="mb-2">Coordinated with legal and administrative departments to process OPRA requests, maintaining compliance with NJ 
+        public transparency regulations.</li>
+       <li className="mb-2">Serviced Panasonic Toughbooks in patrol vehicles, amplifying stable access to mission-critical applications.</li>
      </ul>
    </div>
 
 
-   {/* Network Admin */}
+   {/* Network Admin*/}
    <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
      <h3 className="font-semibold text-lg text-black">Network Administrator</h3>
      <p className="text-black">March 2024 - May 2025 | Kean University, Union, NJ</p>
      <ul className="list-disc list-inside text-black mt-2">
-       <li className="mb-2">Resolved Tier III network issues across 34 buildings and collaborated with Network & 
-         System Administrators and vendors to optimize and maintain an enterprise-grade network.</li>
-       <li className="mb-2">Utilized ExtremeCloud IQ Pilot and Site Engine to conduct real-time network diagnostics, reducing latency for access points.</li>
-       <li className="mb-2">Managed 20,000+ AD objects (users, groups, devices), enforcing security policies for authentication and compliance.</li>
-       <li className="mb-2">Designed and managed a quarantine server to isolate compromised endpoints and test the enforcement of security policies.</li>
-       <li className="mb-2">Tuned firewall configurations (FortiGate, WatchGuard) by analyzing traffic logs and mitigating network-layer threats.</li>
-       <li className="mb-2">Configured WatchGuard Firebox M370 to host AD, Group Policy, Linux DNS, DHCP, MFA, and captive portal for secure, segmented network access.</li>
-       <li className="mb-2">Migrated Lab Windows Server 2019 AD to Microsoft Entra ID (Azure AD) for user access across hybrid cloud environments.</li>
-       <li className="mb-2">Implemented Data Loss Prevention policies on WatchGuard M370 using built-in content filters to simulate HIPAA and PCI-DSS compliance. 
-        Configured filters to detect PII/PHI to control sensitive data egress.</li>
-       <li className="mb-2">Developed a firewall recovery and business continuity plan for WatchGuard Firebox, enabling rapid restoration during failure events.</li>
-       <li className="mb-2">Built an SNMP-based monitoring system using Python to automate real-time performance tracking and anomaly detection.</li>
-       <li className="mb-2">Deployed Splunk Enterprise SIEM in a lab environment to aggregate log data and simulate threat monitoring.</li>
-       <li className="mb-2">Ranked #1 Instructor across all rotational program tracks for hands-on network and infrastructure training delivery.</li>
-       <li className="mb-2">Led hiring for the Student Security Analyst role, refining evaluation criteria, and selecting top cybersecurity candidates.</li>
-       <li className="mb-2">Assisted in data center reorganization: decommissioned legacy servers, installed and inventoried new racks and PDUs, 
-        and ensured structured cabling compliance.</li>
-       <li className="mb-2">Configured Extreme Networks switches via CLI and supported switch deployment and integration across the data center fabric.</li>
+       <li className="mb-2">Resolved escalated Tier III network tickets across 34 campus buildings; resolved 5–7 complex issues weekly with
+         1–2-hour average resolution.</li>
+       <li className="mb-2">Migrated 20,000+ AD objects and transitioned identity infrastructure from Google to Microsoft over a one-year
+         project—completed on time following a 3-month preparation phase.</li>
+       <li className="mb-2">Supported migration process for 20,000+ AD objects during the transition from Google to Microsoft, assisting 
+        end users and tracking critical Google objects like sites.</li>
+       <li className="mb-2">Built a quarantine server in less than 24 hours to isolate endpoints for policy testing; managed server hardening and 
+        network isolation protocols.</li>
+       <li className="mb-2">Designed/implemented hybrid Azure AD network with Entra ID; mirrored lab production environments within 2 hours.</li>
+       <li className="mb-2">Developed proof-of-concept lab for 802.1X NAC, preparing groundwork for future production deployment.</li>
+       <li className="mb-2">Configured and enforced WatchGuard and FortiGate firewall policies; reduced system downtime by 10% through updated 
+        firmware and ACLs.</li>
+       <li className="mb-2">Engineered WatchGuard Firebox M370 deployment to integrate AD, Group Policy, Linux DNS, DHCP, MFA, and captive portal, 
+        securing segmented network access.</li>
+       <li className="mb-2">Led wireless network overhaul with vendor and engineering teams, increasing coverage by 50% across 6–7 buildings.</li>
+       <li className="mb-2">Created DLP simulation policies for HIPAA/PCI-DSS environments; implemented PII/PHI filtering controls on outbound traffic.</li>
+       <li className="mb-2">Built custom SNMP monitoring system with Python; deployed Splunk Enterprise for centralized SIEM log collection.</li>
+       <li className="mb-2">Ranked #1 instructor among all rotational programs, training 60+ technicians and developing future security analysts.</li>
+       <li className="mb-2">Played a key role in data center reorganization; decommissioned legacy servers and helped integrate new rack/PDUs with 
+        structured cabling.</li>
+       <li className="mb-2">Supported Extreme Networks CLI-based switch integration; contributed to core fabric configuration and maintenance.</li>
      </ul>
    </div>
 
@@ -229,10 +243,15 @@ const ResumePage = () => {
      <h3 className="font-semibold text-lg text-black">IT Support Specialist</h3>
      <p className="text-black">September 2022 – March 2024 | Kean University, Union, NJ</p>
      <ul className="list-disc list-inside text-black mt-2">
-      <li className="mb-2">Diagnosed and resolved 500+ Tier II issues across laptops, desktops, projectors, and peripheral devices, enhancing classroom and office tech performance.</li>
-      <li className="mb-2">Managed 20–35 weekly IT support tickets, maintaining a 90%+ first-contact resolution rate to reduce faculty and staff downtime.</li>
-      <li className="mb-2">Tracked and managed IT assets using spreadsheets and ManageEngine Endpoint Central, improving inventory accuracy and accountability.</li>
-      <li className="mb-2">Supported 5+ large-scale IT deployments, coordinating logistics to ensure seamless setups for new office and lab environments with zero downtime.</li>
+      <li className="mb-2">Resolved 500+ Tier II support issues across endpoints, AV, and peripherals, attaining 90%+ first-contact 
+        resolution rate on 20–35 weekly tickets and supporting lab refreshes and IT deployments with zero disruption to operations.</li>
+      <li className="mb-2">Partnered directly with Kean’s enterprise network team, assisting with switch port activation, VLAN assignments,
+         and Wi-Fi reliability 
+        improvements—early exposure to Tier III responsibilities.</li>
+      <li className="mb-2">Tracked and managed IT assets using spreadsheets and ManageEngine Endpoint Central, improving inventory accuracy
+         and accountability.</li>
+      <li className="mb-2">Supported 5+ large-scale IT deployments, coordinating logistics to ensure seamless setups for new office and 
+        lab environments with zero downtime.</li>
     </ul>
    </div>
 
@@ -242,9 +261,9 @@ const ResumePage = () => {
       <p className="text-black">September 2021 - September 2022</p>
       <p className="text-black">Kean Information Technology - Kean University | Union, NJ</p>
      <ul className="list-disc list-inside text-black mt-2">
-      <li className="mb-2">Provided classroom Tier I A/V support for faculty, ensuring smooth projector/multimedia operation and resolving technical issues.</li>
-      <li className="mb-2">Operated 4K camera equipment to live stream on-campus events, enhancing accessibility for remote participants.</li>
-      <li className="mb-2">Answered technical inquiries, offering prompt resolutions for faculty, staff, and students during events and classes.</li>
+      <li className="mb-2">Provided Tier I AV support across classrooms and campus events, including 4K camera setup, projector troubleshooting,
+         and audio configuration; supported 1,300+ faculty with reliable AV functionality across campus.</li>
+      <li className="mb-2">Maintained a 95%+ first-contact resolution rate across 8–10 weekly AV service tickets.</li>
     </ul>
     </div>
   </div>
