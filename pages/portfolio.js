@@ -19,10 +19,10 @@ export default function Portfolio() {
             Github
           </button>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> 
  {/* Project 1 */}
         {/* Grid for projects */}
-       { /*
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">          
+       { /*         
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">AI Voice Cloning Project</h2>
             <p className="text-black-700 mb-4">
@@ -123,5 +123,6 @@ export default function Portfolio() {
           
         </div>
       </div>
+    </div>
   );
 }
