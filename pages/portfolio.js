@@ -19,24 +19,25 @@ export default function Portfolio() {
             Github
           </button>
         </div>
-
+ {/* Project 1 */}
         {/* Grid for projects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Project 1 */}
+       { /*
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">          
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">AI Voice Cloning Project</h2>
             <p className="text-black-700 mb-4">
               Learn how to register for classes at Kean University with our nation&apos;s great leaders!
             </p>
             <a
-              href="https://youtu.be/8B8M89NanDE"
+              href=" get link again"
               className="text-purple-700 hover:underline"
             >
               View on YouTube
             </a>
-          </div>
+          </div>  */}
 
           {/* Project 2 */}
+          
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-4">Mobile Network Solution- Senior Project</h2>
             <p className="text-black-700 mb-4">
@@ -48,7 +49,7 @@ export default function Portfolio() {
             >
               Visit Website
             </a>
-          </div>
+          </div> 
 
           {/* Project 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -122,6 +123,5 @@ export default function Portfolio() {
           
         </div>
       </div>
-    </div>
   );
 }
