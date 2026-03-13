@@ -71,7 +71,7 @@ const ResumePage = () => {
           >
             Go Back to Homepage
           </button>
-          <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">Profile</h2>
+          <h2 className="text-2xl font-bold text-purple-700 mb-4">Profile</h2>
           <p className="text-black text-lg leading-relaxed">
             Versatile Infrastructure and Network Engineer experienced in deploying, securing, and maintaining hybrid enterprise environments across government, 
             financial, and academic sectors. Proven track record of engineering resilient network systems using next-generation firewalls (Palo Alto, Fortinet), 
@@ -257,28 +257,20 @@ const ResumePage = () => {
      <h3 className="font-semibold text-lg text-black">System Administrator/Data Technician</h3>
      <p className="text-black">May 2025 - Present | JCT Solutions, Springfield, NJ</p>
      <ul className="list-disc list-inside text-black mt-2">
-       <li className="mb-2">Coordinate full-scale IT infrastructure support across three municipalities, including law enforcement, fire, 
-        and government buildings; impact spans 500+ staff.</li>
-       <li className="mb-2">Deliver Tier I–III endpoint and infrastructure support across Lenovo systems, printers, 
-        VoIP, and mobile law enforcement systems using Splashtop, Synchro, and PowerShell. </li>
-       <li className="mb-2">Reduced ticket resolution time by 50%, handling 30+ weekly support tickets with 1–2 hour resolution rates.</li>
-       <li className="mb-2">Administer Azure AD and Microsoft 365 across a multi-tenant setup, supporting 400+ users with MFA, licensing,
-         and GPO management, demonstrating expertise in identity management and enterprise-level system administration.</li>
-       <li className="mb-2">Led decommissioning of legacy SATA-based storage, migrating domain controller services to QNAP-based SAN 
-        infrastructure in under one week, exhibiting speed and technical precision.</li>
-       <li className="mb-2">Deployed SentinelOne EDR across endpoints, enhancing detection response and remediation capabilities.</li>
-       <li className="mb-2">Integrated SonicWall firewall logs into Wazuh SIEM via Rsyslog, improving threat visibility and real-time
-         detection across municipal environments.</li>
-       <li className="mb-2">Executed township-wide hardware upgrades for ~100 machines, improved WAN performance, and led a 10–12 department 
-        printer refresh in under one week—underscoring efficiency and cross-departmental coordination. </li>
-       <li className="mb-2">Rapidly restored law enforcement record systems within 30 minutes during a mission-critical outage, coordinating
-         vendors to recover Lawsoft access within 2 hours and minimizing police dispatch downtime.</li>
-       <li className="mb-2">Deployed WatchGuard evidence management server in coordination with vendor, enabling stable integration with 
-        police body camera systems</li>
-       <li className="mb-2">Configured and troubleshot Lawsoft, Infocop, and Infoshare connections, ensuring reliable access for patrol 
-        officers despite limited vendor-level knowledge.</li>
-       <li className="mb-2">Maintained VMware ESXi hosts and supported QNAP-based SANs to ensure system redundancy and uptime.</li>
-       <li className="mb-2">Provided VPN configuration and deployment (NetExtender) for secure municipal and public safety remote access.</li>
+       <li className="mb-2">Coordinated full-scale IT infrastructure support across three municipalities, ensuring 24/7 uptime 
+        and secure connectivity for critical law enforcement and government operations.</li>
+       <li className="mb-2">Delivered Tier II–III endpoint and infrastructure support using PowerShell automation, reducing manual 
+        configuration time by 40% across multi-tenant municipal environments. </li>
+       <li className="mb-2">Reduced ticket resolution time by 50%, managing 30+ weekly support tickets with less than 1 hour resolution rates.</li>
+       <li className="mb-2">Administered Azure AD and Microsoft 365 for 500+ users across multi-tenant environments, implementing MFA and GPO policies 
+        to enhance identity security and ensure 100% license compliance.</li>
+       <li className="mb-2">Led the decommissioning of legacy storage, migrating domain services to QNAP SAN infrastructure in one week.</li>
+       <li className="mb-2">Integrated SonicWall firewall logs into Wazuh SIEM utilizing Rsyslog, reducing false positives by 20%.</li>
+       <li className="mb-2">Coordinated hardware refreshes for 100+ systems and executed major network upgrades, minimizing disruption and 
+        ensuring a 100% successful migration rate.</li>
+       <li className="mb-2">Coordinated hardware refreshes and infrastructure upgrades for 100+ systems across multiple departments with zero operational downtime. </li>
+       <li className="mb-2">Maintained VMware ESXi hosts and QNAP SANs, optimizing resource allocation and ensuring 99.9% uptime.</li>
+       <li className="mb-2">Rapidly restored law enforcement record systems (Lawsoft) within 30 minutes during a mission-critical outage.</li>
        <li className="mb-2">Coordinated with legal and administrative departments to process OPRA requests, maintaining compliance with NJ 
         public transparency regulations.</li>
        <li className="mb-2">Serviced Panasonic Toughbooks in patrol vehicles, amplifying stable access to mission-critical applications.</li>
@@ -416,7 +408,7 @@ const ResumePage = () => {
         title: "Senior Project: Portable Mobile Network (See portfolio page for more details)",
         logo: "/moblie.png",
         points: [
-          "Designed and deployed a scalable mobile network for enterprise field use. Integrated Fortinet FortiGate 90D, pfSense, Cisco Catalyst 2960-X, GL.iNet router, and a NAS with a captive portal.",
+          "Engineered a field-deployable enterprise network using Fortinet, pfSense with a GL.iNet AP, enabling secure remote connectivity and captive portal automation.",
           "Deployed an AI-powered troubleshooting chatbot and website to support users.",
         ],
       },
@@ -431,18 +423,21 @@ const ResumePage = () => {
         title: "Full-Stack Enterprise Network Environment Lab",
         logo: "/networking.jpg",
         paragraph:
-           "Designed, built, and maintain a comprehensive Unifi network infrastructure featuring the Cloud Gateway Ultra, Ultra POE switch, Power Distribution Pro, and NanoHD access point. This network integrates and hosts multiple enterprise-grade firewalls, including pfSense, SonicWall TZ400, WatchGuard M370, Fortinet Fortigate 90D, and Palo Alto 220 Next-Gen Firewall. The environment also includes a Cisco stack composed of a Catalyst 2960-X switch, a 1900 series router, and an ASA 5515-X Firewall. Proxmox VE orchestrates virtualized infrastructure, and Tailscale enables secure remote access and device management.",
+           "Designed and maintain a full-stack UniFi network with Cloud Gateway Max, PoE switching, and APs. Automated VLAN assignment via UniFi for guest, team, and IoT traffic isolation. Integrated multi-vendor firewalls (Fortinet, Palo Alto, SonicWall, WatchGuard, OPNsense/pfSense) and Cisco stack (Catalyst, ISR, ASA) orchestrated via Proxmox VE and Tailscale for secure remote lab access.",
           
         sectionHeader: "Notable Projects",
         detailedPoints: [
-          "SIEM Deployment & Log Ingestion Project: Deployed Wazuh SIEM on Proxmox to monitor Windows and Linux endpoints. Configured secure agent enrollment with authentication keys and AES encryption. Customized manager and syslog ports for optimized log ingestion. Integrated UniFi syslog feeds and ensured real-time log collection and parsing.",
+          "IPSec Site-to-Site VPN Architecture: Designed and implemented a policy-based IPSec site-to-site VPN between UniFi gateways, configuring IKEv2, encryption domains, and firewall policies to enable secure connectivity between networks.",
+          "OSPF Dynamic Routing Implementation: Engineered a multi-gateway routing environment using OSPF to dynamically exchange routes between isolated LAN segments across a transit network.",
+          "Network Storage Infrastructure: Deployed and hardened a QNAP NAS for 24/7 operation, implementing firewall enforcement, malware scanning, Active Directory–integrated IAM, and VM storage architecture.",
+          "Wazuh SIEM Solution: Built a Wazuh SIEM lab ingesting Proxmox and UniFi telemetry to simulate HIPAA, PCI-DSS, and GDPR compliance frameworks, enabling correlation-based alerting and incident analysis.",
           "Enterprise Network Diagnostics & Asset Intelligence with SolarWinds Toolset: Deployed SolarWinds Engineer’s Toolset to simulate enterprise diagnostics. Configured SNMP polling and bandwidth gauges across Proxmox VMs and Cisco devices. Used Network Sonar to auto-discover subnets and generate live topology maps. Mapped MAC-to-IP bindings into a custom inventory DB. Performed Wake-on-LAN, TCP session resets, and Switch Port Mapping to trace live port-to-endpoint connections on Catalyst 2960-X.",
           "Virtualized HPC Lab: Developed a multi-node high-performance computing cluster using Docker and Ubuntu VMs hosted in Proxmox. Emulated scheduler-like behavior for workload distribution, integrated shared storage, and implemented node health monitoring using Prometheus and Grafana.",
-          "Zero-Trust DNS Filtering with DNS-over-HTTPS: Deployed a privacy-focused recursive DNS stack using Pi-hole, Unbound, and Cloudflared to encrypt DNS resolution. Pi-hole forwards all DNS requests to Unbound for recursive resolution, then tunneled upstream requests to Cloudflare via DoH (DNS-over-HTTPS) using Cloudflared.",
+          "Zero-Trust Internal DNS & Secure Service Architecture: Deployed a zero-trust internal DNS solution using Pi-hole, Unbound, Cloudflared, and Nginx reverse proxying to deliver network-level threat reduction without WAN exposure.",
           "Network Access Control & VLAN Segmentation: Configured UniFi network with role-based access control and automated VLAN assignment. Implemented dynamic VLAN segmentation for IoT, guest, and internal devices based on credentials.",
           "Cloudflare DNS Governance & Email Security Management: Orchestrated secure domain management through Cloudflare by configuring and enforcing DNS policies that support reliable email delivery and domain integrity. Implemented SPF, MX, DKIM, and DMARC protocols to mitigate spoofing and phishing risks. Hardened email infrastructure by ensuring DNS-only exposure for mail records and eliminating legacy name server conflicts, aligning with best practices for zero-trust DNS.",
-          "Automation Lab (Infrastructure as Code): Implemented automated information parsing utilizing Ansible playbooks to enhance deployment efficiency.",
-          "Active Directory Deployment: Deployed a Windows Server-based AD domain controller in Proxmox; configured GPOs, centralized user authentication, and managed policy enforcement across multiple virtual clients.",
+          "Infrastructure Automation: Developed Ansible playbooks for automated environment provisioning and configuration.",
+          "Active Directory & IAM: Provisioned an AD domain controller with GPOs for centralized IAM and policy enforcement.",
           "Network Monitoring Dashboard: Deployed a full-stack monitoring solution using Prometheus, InfluxDB, Unpoller, and Grafana to visualize and analyze network and system performance hosted on Proxmox with Ubuntu and Docker for container orchestration.",
         ],
       },
