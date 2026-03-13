@@ -71,13 +71,12 @@ const ResumePage = () => {
           >
             Go Back to Homepage
           </button>
-          <h2 className="text-2xl font-bold text-purple-700 mb-4">Profile</h2>
+          <h2 className="text-xl font-bold text-purple-700 mb-4 text-center">Profile</h2>
           <p className="text-black text-lg leading-relaxed">
-            Versatile Network and Systems Administrator with deep hands-on experience supporting secure, hybrid enterprise infrastructure across government, 
-            academic, and research environments. Proven ability to architect and maintain high-availability systems using advanced firewalls, virtualization platforms, 
-            and endpoint protection. Skilled in troubleshooting Tier I–III issues, implementing network segmentation, and deploying cybersecurity frameworks that align with 
-            HIPAA, PCI-DSS, and NIST 800-53. Known for improving uptime, reducing ticket resolution times, and proactively building resilient, zero-trust environments through 
-            automation and strategic infrastructure upgrades.
+            Versatile Infrastructure and Network Engineer experienced in deploying, securing, and maintaining hybrid enterprise environments across government, 
+            financial, and academic sectors. Proven track record of engineering resilient network systems using next-generation firewalls (Palo Alto, Fortinet), 
+            Cisco enterprise switching, and cloud services (AWS). 
+            Skilled in implementing Zero-Trust segmentation and automation to drive security compliance in mission-critical environments.
           </p>
         </section>
 
@@ -87,40 +86,119 @@ const ResumePage = () => {
   <div className="flex justify-between flex-wrap gap-3">
     {[ 
       {
-        title: "Networking",
-        image: "/network.png",
-        skills: ["PowerShell", "Wireshark", "PuTTY", "VLAN/LAN/WAN/SAN", "DHCP", "ARP", "NAT", "DNS/DDNS", "802.11", "Nmap", "TCP/IP", "QoS"]
-      },
+  title: "Networking & Infrastructure",
+  image: "/network.png",
+  skills: [
+    "TCP/IP",
+    "VLAN (802.1Q)",
+    "LAN / WAN / SAN",
+    "OSPF",
+    "STP",
+    "NAT",
+    "DHCP",
+    "DNS",
+    "802.11 Wireless",
+    "802.1X NAC",
+    "SNMP",
+    "SD-WAN",
+    "Cisco (Meraki / Nexus)",
+    "Arista CVP",
+    "Extreme Fabric",
+    "UniFi"
+  ]
+},
       {
         title: "Cybersecurity",
         image: "/cyber.png",
-        skills: ["IPS/IDS", "EDR", "SIEM-Wazuh", "802.1x","Tailscale", "Group Policy", "Bitlocker", "VPN", "ACLs", "MFA", "SSO","ZTNA", "DLP", "RBAC"]
+        skills: [ "SIEM (Wazuh, Splunk)",
+    "IPS / IDS",
+    "EDR",
+    "Zero Trust (ZTNA)",
+    "VPN",
+    "MFA",
+    "SSO",
+    "RBAC",
+    "ACLs",
+    "DLP",
+    "BitLocker",
+    "Incident Response",
+    "Group Policy"]
       },
       {
         title: "Firewalls",
         image: "/firewall.png",
-        skills: ["Fortinet Fortigate 90D", "Cisco ASA 5515-X", "WatchGuard M370", "Palo Alto 220 Next-Gen", "SonicWall TZ400", "Netgate- pfSense "]
+        skills: [ "Fortinet FortiGate",
+    "WatchGuard",
+    "Palo Alto Panorama",
+    "SonicWall TZ400",
+    "Cisco ASA",
+    "pfSense / OPNsense"]
       },
       {
-        title: "Cloud",
-        image: "/cloud.jpg",
-        skills: ["Azure AD,", "AWS", "WatchGuard Cloud", "Okta Admin (IAM, IDP)"]
+  title: "Cloud & Identity",
+  image: "/cloud.jpg",
+  skills: [
+    "Azure AD / Entra ID",
+    "AWS",
+    "AWS VPC",
+    "Microsoft 365",
+    "Okta (IAM / IDP)",
+    "WatchGuard Cloud"
+  ]
+},
+      {
+  title: "Virtualization & Systems",
+  image: "/virtual.png",
+  skills: [
+    "VMware ESXi",
+    "Proxmox VE",
+    "Docker",
+    "QNAP SAN/NAS",
+    "Windows Server",
+    "Linux",
+    "macOS"]
       },
       {
-        title: "Virtualization & Containers",
-        image: "/virtual.png",
-        skills: ["VMware ESXi (Windows Server 2019)", "Proxmox VE (Windows Server 2022, Pi-hole: DNS, Prometheus)", " Docker (InfluxDB, Grafana)", "VirtualBox (Kali Linux, Windows 11/10-Lenovo specific image)"]
-      },
-      {
-        title: "IT",
-        image: "/it.jpg",
-        skills: ["Windows","Freshservice(ITSM)", "Lenovo","MacOS", "IOS", "Office 365 Admin",  "Google Suite", "Dell", "Xerox","HP", "Sharp", "Cisco Webex"]
-      },
-      {
-        title: "Coding",
-        image: "/coding.png",
-        skills: ["React.js", "Node.js", "JavaScript", "Ruby", "HTML", "Python", "Ansible Playbooks", "SQL", "PHP", "REST API", "OpenAI API"]
-      },
+  title: "Monitoring & IT Operations",
+  image: "/it.jpg",
+  skills: [
+    "SolarWinds",
+    "ServiceNow",
+    "ManageEngine",
+    "Freshservice",
+    "Windows",
+    "Lenovo",
+    "MacOS",
+    "IOS",
+    "Office 365 Admin",
+    "Google Workspace",
+    "Dell",
+    "Xerox",
+    "HP",
+    "Sharp",
+    "Cisco Webex"
+  ]
+},
+ {
+  title: "Coding & Automation",
+  image: "/coding.png",
+  skills: [
+    "PowerShell",
+    "Python",
+    "Ansible",
+    "REST APIs",
+    "Git",
+    "SQL / MySQL",
+    "Node.js",
+    "React",
+    "JavaScript",
+    "Ruby",
+    "HTML",
+    "PHP",
+    "OpenAI API",
+    "CI/CD"
+  ]
+},
       {
         title: "Editing",
         image: "/edit.jpg",
